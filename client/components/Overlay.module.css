@@ -1,0 +1,13 @@
+.overlay {
+	padding-left: 4%;
+	padding-right: 4%;
+	background-image: url("../public/images/cascade.jpg");
+	background-blend-mode: soft-light;
+	background-color: #6c59d440;
+	z-index: 1;
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

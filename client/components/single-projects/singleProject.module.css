@@ -1,0 +1,24 @@
+
+
+.projectSection{
+    margin-top: 2%;
+    width: 90%;
+}
+
+.projectSection_heading{
+    padding-bottom: 1%;
+}
+
+.projectSection_project{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.projectSection_project > img {
+    padding: 0 1% 1% 0;
+    display: flex;
+   
+}
