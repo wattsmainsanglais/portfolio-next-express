@@ -40,6 +40,15 @@ const onSubmitForm = async () => {
   const returndata = await response.json()
   console.log(returndata)
   // ...
+
+ 
+}
+
+const clearData = () => {
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+  
 }
 
 
@@ -66,35 +75,36 @@ const onSubmitForm = async () => {
       {children}
         <footer>
 
-        <section>
+        <section className='contact'>
      
-        <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          onSubmitForm();
-        }}
-      >
+          <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            onSubmitForm();
+            clearData();
+          }}
+          >
 
              <h2>Contact me here!</h2>
                 
             <label >Name</label>
             <br/>
-            <input  type="text" name="name"  required="" onChange={(e) => setData( prevData => ({ ...prevData, name: e.target.value }))} />
+            <input id='name' type="text" name="name"  required="" onChange={(e) => setData( prevData => ({ ...prevData, name: e.target.value }))} />
             <br/>
             <label >Email address</label>
             <br/>
-            <input  type="text" name="email" onChange={(e) => setData(prevData => ({ ...prevData, email: e.target.value }))}  required=""/>
+            <input  id='email' type="text" name="email" onChange={(e) => setData(prevData => ({ ...prevData, email: e.target.value }))}  required=""/>
             <br/>
             <label>Message</label>
             <br/>
-            <textarea  name="message" rows="6"  cols="25" onChange={(e) => setData( prevData => ({ ...prevData, message: e.target.value }))}></textarea>
+            <textarea id='message'  name="message" rows="10"  cols="25" onChange={(e) => setData( prevData => ({ ...prevData, message: e.target.value }))}></textarea>
 
 
-               
+              <br /> 
 
 
-        <button type="submit">Submit</button>
-      </form>
+            <button type="submit">Submit</button>
+          </form>
         </section>
 
 

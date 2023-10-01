@@ -4,8 +4,9 @@ const cors = require('cors')
 
 const app = express();
 
+app.use(bodyParser.text());
 app.use(cors())
-app.use(bodyParser.json());
+
 
 
 app.get('/', (req, res) =>{
@@ -18,9 +19,11 @@ app.get('/', (req, res) =>{
 
 app.post('/api/express/contact', (req, res) =>{
   
+  const data = JSON.parse(req.body)
+
   
-  console.log(req.body);
-  res.json('message received');
+  console.log(data);
+  res.json('Message received. Thank you ' + data.name + ' , I will be in contact soon');
 })
 
 app.listen(5000, () => console.log('App listening on port 5000!'));

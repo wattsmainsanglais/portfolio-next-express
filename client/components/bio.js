@@ -7,7 +7,7 @@ export default function Bio(){
         <section className={styles.bio}>  
                 <article className={styles.about}>
                     <h2 className='animatedHeader'>About Me</h2>
-                    <p>Hi i'm Andrew, i'm an English & French speaking web developer based in South West France.
+                    <p>Hi i'm Andrew, an English & French speaking web developer based in South West France.
                     I'm proficient in full stack development and can get your project off the ground from front-end to back.
                     I'm on Github under the username 'wattsmainsanglais'. Please find my tech stack listed below, this site has been developed in NextJS with a custom ExpressJS server. Please contact me using the below contact form for any and all enquiries. </p>
                 

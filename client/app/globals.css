@@ -92,7 +92,34 @@ footer{
   display: flex;
   justify-content: space-around;
   padding: 5%;
+  
+  color: #59595c;
+    
+
 }
+
+.contact {
+  width: 50%;
+}
+
+.contact > form > label{
+  font-size: 1.3em;
+}
+
+.contact > form > input[type=text] {
+  width: 40%;
+}
+
+.contact > form > button {
+  width: 15%;
+  padding: 1%;
+}
+
+.contact > form > textarea {
+  width: 50%;
+}
+
+
 
 @keyframes skew {
     
