@@ -1,26 +1,48 @@
 
-import {onSubmit} from '../utils/SubmitForm'
+
+const onSubmitForm = async () => {
+
+
+    const response = await fetch('http://localhost:5000/api/express/contact', {
+      method: 'POST',
+      body: 'this is a post request',
+    })
+  
+    // Handle response if necessary
+    const data = await response.json()
+    console.log(data)
+    // ...
+  }
+
+
+
+
 
 export default function ContactForm() {
-    
+
+  
    
     return (
-      <form onSubmit={onSubmit}>
-        
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSubmitForm();
+        }}
+      >
 
              <h2>Contact me here!</h2>
                 
-            <label for="name">Name</label>
+            <label >Name</label>
             <br/>
-            <input  type="text" name="name" id="name" required="" />
+            <input  type="text" name="name"  required="" />
             <br/>
-            <label for="email">Email address</label>
+            <label >Email address</label>
             <br/>
-            <input  type="text" name="email" id="email" required=""/>
+            <input  type="text" name="email"  required=""/>
             <br/>
-            <label for="message">Message</label>
+            <label>Message</label>
             <br/>
-            <textarea  name="message" rows="6" id="message" required="" value="Type message here" cols="25"></textarea>
+            <textarea  name="message" rows="6"  cols="25"></textarea>
 
 
                

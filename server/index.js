@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 
 const app = express();
 
-
+app.use(cors())
 app.use(bodyParser.json());
 
 
@@ -15,11 +16,11 @@ app.get('/', (req, res) =>{
 
 })
 
-app.post('/contact', (req, res) =>{
+app.post('/api/express/contact', (req, res) =>{
   
-  const data = req.body.description
-  console.log(data);
-  res.json('message received' + data);
+  
+  console.log(req.body);
+  res.json('message received');
 })
 
 app.listen(5000, () => console.log('App listening on port 5000!'));

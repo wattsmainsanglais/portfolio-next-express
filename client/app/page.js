@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import Overlay from '@/components/Overlay'
 import Bio from '@/components/bio'
 
+
 export default function Page() {
   return (
     <Overlay>
@@ -15,6 +16,8 @@ export default function Page() {
       
       
      </div> 
+  
+
   </Overlay>
   )
 }
