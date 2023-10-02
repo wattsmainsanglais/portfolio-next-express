@@ -51,7 +51,7 @@ const clearData = () => {
         <br/>
         <label>Message</label>
         <br/>
-        <textarea id='message'  name="message" rows="10"  cols="25" onChange={(e) => setData( prevData => ({ ...prevData, message: e.target.value }))}></textarea>
+        <textarea id='message'  name="message" rows="6"  cols="25" onChange={(e) => setData( prevData => ({ ...prevData, message: e.target.value }))}></textarea>
 
 
           <br /> 
