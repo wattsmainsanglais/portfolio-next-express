@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from './singleProject.module.css'
 
-export default function SingleProject({heading ,src, alt, desc}){
+export default function SingleProject({heading ,src, alt, desc, link}){
 
     return(
         
@@ -10,15 +10,18 @@ export default function SingleProject({heading ,src, alt, desc}){
             <h2 className={styles.projectSection_heading}>{heading}</h2>
 
             <article className={styles.projectSection_project}>
+            <a href={link} target='_blank' className={styles.projectLink} >
             <Image
             src={src}
             alt={alt}
             width={320}
             
             height={200} 
+            
             />
+            </a>
 
-            <p>{desc}</p>
+            <p className={styles.description}>{desc}</p>
             </article>
         
         </section>

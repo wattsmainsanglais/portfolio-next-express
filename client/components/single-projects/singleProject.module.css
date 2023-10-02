@@ -17,8 +17,18 @@
     width: 100%;
 }
 
-.projectSection_project > img {
-    padding: 0 1% 1% 0;
-    display: flex;
-   
+.projectLink{
+    border: 2px solid #5c47d600;
+    height: 200px;
 }
+
+
+.projectLink:hover{
+    border: 2px solid #907ff3;
+    filter: contrast(85%);
+    
+  }
+
+  .description{
+    padding-left: 5px;
+  }

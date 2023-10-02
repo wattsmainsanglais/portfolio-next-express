@@ -77,10 +77,12 @@ p {
 
 .projects{
   padding: 1%;
-  margin-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 3%;
   background-color: #38353b62;
 
 }
+
 
 .animatedHeader {
 	font-size: 1.9em;
