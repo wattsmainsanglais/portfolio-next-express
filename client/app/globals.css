@@ -61,9 +61,13 @@ a {
   text-decoration: none;
 }
 
+h1{
+  font-weight: 500;
+}
+
 h2{
   font-size: 1.9em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p {
@@ -92,7 +96,7 @@ footer{
   display: flex;
   justify-content: space-around;
   padding: 5%;
-  
+  font-weight: 600;
   color: #59595c;
     
 
@@ -103,7 +107,7 @@ footer{
 }
 
 .contact > form > label{
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .contact > form > input[type=text] {
@@ -136,4 +140,31 @@ footer{
 
 @media (prefers-color-scheme: dark) {
 
+}
+
+.nodelogohover {
+	width: 100px;
+	height: 90px;
+	background-color: #a79ddf69;
+	padding: 2px;
+	border-radius: 10px;
+}
+
+.nodelogohover:hover{
+  width: 99px;
+  height: 89px;
+  background-color: #cdcae269;
+  padding: 1px;
+  border-radius: 10px;
+  border: 2px solid #5d47d669;
+}
+
+
+.links > aside {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.links > aside > a {
+  margin: 2% 2% 0 0; 
 }

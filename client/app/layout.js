@@ -1,12 +1,14 @@
 
-'use client'
 import './globals.css'
 import { Genos } from 'next/font/google'
-import profilePic from '../public/images/profilebw.jpg'
 import Image from 'next/image'
-import headerStyle from './header.module.css'
-import { useState} from "react";
 
+import profilePic from '../public/images/profilebw.jpg'
+import linkedIn from '../public/images/linkedin_socialnetwork_17441.png'
+import gitHub from '../public/images/github_original_wordmark_logo_icon_146506.png'
+
+import headerStyle from './header.module.css'
+import ContactForm from '@/components/contact_form'
 
  
 const genos = Genos({
@@ -26,32 +28,7 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
-  const [data, setData] = useState({name: '', email: '', message: ''});
   
-const onSubmitForm = async () => {
-
-  console.log(data)
-  const response = await fetch('http://localhost:5000/api/express/contact', {
-    method: 'POST',
-    body: JSON.stringify(data)
-  })
-
-  // Handle response if necessary
-  const returndata = await response.json()
-  console.log(returndata)
-  // ...
-
- 
-}
-
-const clearData = () => {
-  document.getElementById('name').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('message').value = '';
-  
-}
-
-
   
   return (
     <html lang="en" className={genos.className}>
@@ -76,42 +53,32 @@ const clearData = () => {
         <footer>
 
         <section className='contact'>
-     
-          <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            onSubmitForm();
-            clearData();
-          }}
-          >
-
-             <h2>Contact me here!</h2>
-                
-            <label >Name</label>
-            <br/>
-            <input id='name' type="text" name="name"  required="" onChange={(e) => setData( prevData => ({ ...prevData, name: e.target.value }))} />
-            <br/>
-            <label >Email address</label>
-            <br/>
-            <input  id='email' type="text" name="email" onChange={(e) => setData(prevData => ({ ...prevData, email: e.target.value }))}  required=""/>
-            <br/>
-            <label>Message</label>
-            <br/>
-            <textarea id='message'  name="message" rows="10"  cols="25" onChange={(e) => setData( prevData => ({ ...prevData, message: e.target.value }))}></textarea>
-
-
-              <br /> 
-
-
-            <button type="submit">Submit</button>
-          </form>
+          <ContactForm />
+         
         </section>
 
 
-        <section >
+        <section className='links' >
                 <h2>Links</h2>
                 <h2>I'm also active on the following platforms</h2>
                 <aside>
+                  <a target="_blank" href="https://www.linkedin.com/in/andrew-watts-9a7145269/">
+                    <Image src={linkedIn} 
+                    alt='Linkedin Logo and link'
+                    width={100}
+                    height={90}
+                    className='nodelogohover'
+                    />
+                  </a>
+
+                 <a target="_blank" href="https://github.com/wattsmainsanglais">   
+                  <Image src={gitHub} 
+                    alt='Linkedin Logo and link'
+                    width={100}
+                    height={90}
+                    className='nodelogohover'
+                    />
+                  </a>
                     
                 </aside>
             </section>

@@ -1,54 +1,64 @@
-
-
-const onSubmitForm = async () => {
-
-
-    const response = await fetch('http://localhost:5000/api/express/contact', {
-      method: 'POST',
-      body: 'this is a post request',
-    })
-  
-    // Handle response if necessary
-    const data = await response.json()
-    console.log(data)
-    // ...
-  }
-
-
-
+'use client'
+import { useState } from "react";
 
 
 export default function ContactForm() {
 
+  const [data, setData] = useState({name: '', email: '', message: ''});
   
+const onSubmitForm = async () => {
+
+  console.log(data)
+  const response = await fetch('http://localhost:5000/api/express/contact', {
+    method: 'POST',
+    body: JSON.stringify(data)
+  })
+
+  // Handle response if necessary
+  const returndata = await response.json();
+  console.log(returndata);
+  window.alert(returndata);
+  // ...
+
+ 
+}
+
+const clearData = () => {
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+  
+}
    
     return (
       <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          onSubmitForm();
-        }}
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmitForm();
+        clearData();
+      }}
       >
 
-             <h2>Contact me here!</h2>
-                
-            <label >Name</label>
-            <br/>
-            <input  type="text" name="name"  required="" />
-            <br/>
-            <label >Email address</label>
-            <br/>
-            <input  type="text" name="email"  required=""/>
-            <br/>
-            <label>Message</label>
-            <br/>
-            <textarea  name="message" rows="6"  cols="25"></textarea>
+         <h2>Contact me here!</h2>
+            
+        <label >Name</label>
+        <br/>
+        <input id='name' type="text" name="name"  required="" onChange={(e) => setData( prevData => ({ ...prevData, name: e.target.value }))} />
+        <br/>
+        <label >Email address</label>
+        <br/>
+        <input  id='email' type="text" name="email" onChange={(e) => setData(prevData => ({ ...prevData, email: e.target.value }))}  required=""/>
+        <br/>
+        <label>Message</label>
+        <br/>
+        <textarea id='message'  name="message" rows="10"  cols="25" onChange={(e) => setData( prevData => ({ ...prevData, message: e.target.value }))}></textarea>
 
 
-               
+          <br /> 
 
 
         <button type="submit">Submit</button>
       </form>
+     
     )
   }
