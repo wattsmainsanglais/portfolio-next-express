@@ -59,4 +59,4 @@ app.post('/api/express/contact', (req, res) =>{
 })
 
 
-app.listen(port, 0.0.0.0, () => console.log('App listening on port 5000 i think!'));
+app.listen(port, '0.0.0.0', () => console.log('App listening on port 5000 i think!'));
