@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors')
+
 const {handleContactForm} = require('./utils/handleContact')
 
 
@@ -27,7 +27,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(bodyParser.text());
-app.use(cors())
+
 
 
 
