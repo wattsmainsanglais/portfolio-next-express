@@ -11,7 +11,10 @@ const onSubmitForm = async () => {
   console.log(data)
   const response = await fetch('https://server-production-7c47.up.railway.app/api/express/contact', {
     method: 'POST',
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
+    mode: "no-cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "omit" // include, *same-origin, omit
   })
 
   // Handle response if necessary
