@@ -3,14 +3,14 @@
 const sendMail = require ('./sendmail');
 const validator = require ('validator');
 
-vaildateContactForm = function(tel, email, url, cb){
+vaildateContactForm = function(tel, email, url = '', cb){
     let msg = '';
     
     if(validator.isNumeric(tel, {no_symbols : false})){
         
         if(validator.isEmail(email)){
             
-            return cb(null)
+            return cb(null) 
 
         } else {
             if(url === 'https://awattsdev.eu/fr'){
@@ -37,7 +37,7 @@ vaildateContactForm = function(tel, email, url, cb){
 
 }
 
-exports.handleContactForm= function(name, tel, email, message, url, cb){
+exports.handleContactForm= function(name, tel, email, message, url = '', cb){
     console.log(url);
     const cleanName = validator.escape(name);
     const cleanMessage = validator.escape(message);
