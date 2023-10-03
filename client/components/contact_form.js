@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function ContactForm() {
 
-  const [data, setData] = useState({name: '', email: '', message: ''});
+  const [data, setData] = useState({name: '', tel: '', email: '', message: ''});
   
 const onSubmitForm = async () => {
 
@@ -25,6 +25,7 @@ const onSubmitForm = async () => {
 
 const clearData = () => {
   document.getElementById('name').value = '';
+  document.getElementById('tel').value = '';
   document.getElementById('email').value = '';
   document.getElementById('message').value = '';
   
@@ -44,6 +45,10 @@ const clearData = () => {
         <label >Name</label>
         <br/>
         <input id='name' type="text" name="name"  required="" onChange={(e) => setData( prevData => ({ ...prevData, name: e.target.value }))} />
+        <br/>
+        <label >Tel</label>
+        <br/>
+        <input id='tel' type="number" name="tel"  required="" onChange={(e) => setData( prevData => ({ ...prevData, tel: e.target.value }))} />
         <br/>
         <label >Email address</label>
         <br/>
