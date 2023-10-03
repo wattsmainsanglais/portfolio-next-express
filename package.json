@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "npm start  --prefix server",
-    "client": "npm run dev --omit=dev  --prefix client",
+    "client-install": "npm-install --prefix client",
+    "client": "npm run dev  --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
