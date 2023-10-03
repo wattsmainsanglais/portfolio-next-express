@@ -7,7 +7,7 @@ function sendMail(name, tel, email, message){
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
         port: 465,
-        secure: false,
+        secure: true,
         auth: {
             user: process.env.USER,
             pass: process.env.PASS,
