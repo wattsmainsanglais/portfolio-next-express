@@ -15,7 +15,7 @@ const nextConfig = {
         return [
             {
                 // matching all API routes
-                source: "/api/express,
+                source: "/api/express",
                 headers: [
                     { key: "Access-Control-Allow-Credentials", value: "true" },
                     { key: "Access-Control-Allow-Origin", value: "https://server-production-7c47.up.railway.app/" }, // replace this your actual origin
