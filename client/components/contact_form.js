@@ -48,7 +48,7 @@ const clearData = () => {
         <br/>
         <label >Tel</label>
         <br/>
-        <input id='tel' type="number" name="tel"  required="" onChange={(e) => setData( prevData => ({ ...prevData, tel: e.target.value }))} />
+        <input id='tel' type="text" name="tel"  required="" onChange={(e) => setData( prevData => ({ ...prevData, tel: e.target.value }))} />
         <br/>
         <label >Email address</label>
         <br/>

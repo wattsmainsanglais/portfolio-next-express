@@ -172,11 +172,39 @@ footer{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .projects{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact, .links{
+    width: 85%;
+
+  }
+
+  .links{
+    margin-top: 3%;
+  
+  }
+
+  .contact > form > input[type=text] {
+    width: 50%;
+  }
+  
+  .contact > form > button {
+    width: 30%;
+    padding: 1%;
+  }
+  
+  .contact > form > textarea {
+    width: 80%;
   }
   
 }
