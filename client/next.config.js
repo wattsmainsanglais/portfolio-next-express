@@ -6,7 +6,7 @@ const nextConfig = {
             // rewritting API requests to Express server
             {
                 source: "/api/express",
-                destination: "http://localhost:5000/api/express"
+                destination: "https://server-production-7c47.up.railway.app/api/express"
             },
         ];
     },
