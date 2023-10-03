@@ -17,7 +17,7 @@ function sendMail(name, tel, email, message){
     })
 
     let mailOptions = {
-        from: email,
+        from: 'awattsdev new request',
         to: process.env.USER,
         subject: 'New enquiry',
         text: 'New enquiry from...  ' + name + ', telephone: ' + tel + ' message: ' + message + ' email: ' + email
