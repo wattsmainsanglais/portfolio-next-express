@@ -5,6 +5,7 @@ const {handleContactForm} = require('./utils/handleContact')
 
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.use(function (req, res, next) {
   res.setHeader(
@@ -58,4 +59,4 @@ app.post('/api/express/contact', (req, res) =>{
 })
 
 
-app.listen(5000, () => console.log('App listening on port 5000 i think!'));
+app.listen(port, 0.0.0.0, () => console.log('App listening on port 5000 i think!'));
