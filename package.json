@@ -2,12 +2,13 @@
   "name": "portfolio-next-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npm start  --prefix server",
     "client-install": "npm-install --prefix client",
     "client": "npm run dev  --prefix client",
+    "server": "npm start  --prefix server",
+  
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
