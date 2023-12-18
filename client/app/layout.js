@@ -33,6 +33,8 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en" className={genos.className}>
+
+      
       <body>
         <header className={headerStyle.headercss}>
             <aside className="profile">
