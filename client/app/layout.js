@@ -17,8 +17,6 @@ const genos = Genos({
 })
 
 
-
-
 export const metadata = {
   title: 'awattsdev',
   description: 'Homepage of Andrew Watts full stack development',
@@ -35,6 +33,8 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en" className={genos.className}>
+
+      
       <body>
         <header className={headerStyle.headercss}>
             <aside className="profile">

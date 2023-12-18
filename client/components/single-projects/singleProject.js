@@ -16,7 +16,7 @@ export default function SingleProject({heading ,src, alt, desc, link}){
             alt={alt}
             width={320}
             
-            height={200} 
+            height={180} 
             
             />
             </a>
