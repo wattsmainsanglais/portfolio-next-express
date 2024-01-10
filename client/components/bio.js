@@ -25,6 +25,7 @@ export default function Bio(){
                         <img  className={styles.skillsImg} src="next.svg" aria-label="NextJs logo" />
                         <img  className={styles.skillsImg} src="images/react_original_wordmark_logo_icon_146375.png" aria-label=" React logo" />
                         <img  className={styles.skillsImg} src="images/postgresql_original_wordmark_logo_icon_146392.png" aria-label="Postgres logo" />
+                        <img className={styles.skillsImg} src="images/python_vertical_logo_icon_168039.png" aria-label="Python logo"/>
                     </aside>
                 </article>
                     <hr />
