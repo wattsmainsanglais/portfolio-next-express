@@ -17,11 +17,11 @@ const genos = Genos({
 })
 
 
-
 export const metadata = {
   title: 'awattsdev',
   description: 'Homepage of Andrew Watts full stack development',
 }
+
 
 
 
