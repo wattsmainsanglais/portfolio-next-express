@@ -1,23 +1,19 @@
 
-import styles from './page.module.css'
-import Overlay from '@/components/Overlay'
-
+import styles from './Overlay.module.css'
+import Bio from '@/components/bio'
+import Projects from '@/components/projects'
 
 
 export default function Page() {
   return (
-    <Overlay>
-    
-    <div className={styles.main}>
-    
- 
-      
-      
-      
-      
-     </div> 
-  
+    <div className={styles.overlay}>
 
-  </Overlay>
+    <Bio />
+    <Projects />
+    
+   
+
+    
+    </div>
   )
 }
