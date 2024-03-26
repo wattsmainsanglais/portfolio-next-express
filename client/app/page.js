@@ -1,7 +1,7 @@
 
 import styles from './Overlay.module.css'
-import Bio from '@/components/bio'
-import Projects from '@/components/projects'
+import Bio from '@/app/components/bio'
+import Projects from '@/app/components/projects'
 
 
 export default function Page() {

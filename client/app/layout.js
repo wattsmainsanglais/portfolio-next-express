@@ -8,7 +8,7 @@ import linkedIn from '../public/images/linkedin_socialnetwork_17441.png'
 import gitHub from '../public/images/github_original_wordmark_logo_icon_146506.png'
 
 import headerStyle from './header.module.css'
-import ContactForm from '@/components/contact_form'
+import ContactForm from '@/app/components/contact_form'
 
  
 const genos = Genos({

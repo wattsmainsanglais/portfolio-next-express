@@ -1,10 +1,10 @@
 import SingleProject from "./single-projects/singleProject"
 
-import ndThumb from '../public/images/naturedopesthumb.png'
-import popupThumb from '../public/images/popweddingThumb.png'
-import ptcThumb from '../public/images/PTC.png'
-import ndFinder from '../public/images/nd-flower-finder.png'
-import spaceThumb from '../public/images/spacescreen.png'
+import ndThumb from '../../public/images/naturedopesthumb.png'
+import popupThumb from '../../public/images/popweddingThumb.png'
+import ptcThumb from '../../public/images/PTC.png'
+import ndFinder from '../../public/images/nd-flower-finder.png'
+import spaceThumb from '../../public/images/spacescreen.png'
 
 export default function Projects(){
 
