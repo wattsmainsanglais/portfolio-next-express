@@ -9,7 +9,7 @@ function sendMail(name, tel, email, message){
         port: 465,
         secure: true,
         auth: {
-            user: process.env.USER,
+            user: process.env.USERADD,
             pass: process.env.PASS,
             
             
@@ -17,8 +17,8 @@ function sendMail(name, tel, email, message){
     })
 
     let mailOptions = {
-        from: process.env.USER,
-        to: process.env.USER,
+        from: process.env.USERADD,
+        to: process.env.USERADD,
         subject: 'New enquiry',
         text: 'New enquiry from...  ' + name + ', telephone: ' + tel + ' message: ' + message + ' email: ' + email
     }
