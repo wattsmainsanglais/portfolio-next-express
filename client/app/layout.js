@@ -3,6 +3,8 @@ import './globals.css'
 import { Genos } from 'next/font/google'
 import Image from 'next/image'
 
+import awattsdevImg from '../public/images/awattsdev-wh.svg'
+
 import profilePic from '../public/images/profilebw.jpg'
 import linkedIn from '../public/images/linkedin_socialnetwork_17441.png'
 import gitHub from '../public/images/github_original_wordmark_logo_icon_146506.png'
@@ -18,8 +20,8 @@ const genos = Genos({
 
 
 export const metadata = {
-  title: 'awattsdev',
-  description: 'Homepage of Andrew Watts full stack development',
+  title: 'awattsdev - web developer',
+  description: 'Homepage of awattsdev web development',
 }
 
 
@@ -49,7 +51,12 @@ export default function RootLayout({ children }) {
                 </div>
                
             </aside>
-            <h1>Andrew Watts Development</h1>
+            <Image
+            
+            height={100}
+            alt='Awattsdev Logo'
+            src={awattsdevImg}
+             />
           </header> 
          
       {children}
