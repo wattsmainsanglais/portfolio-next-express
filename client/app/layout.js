@@ -39,9 +39,14 @@ export default function RootLayout({ children }) {
       
       <body>
         <header className={headerStyle.headercss}>
-            <aside className="profile">
+            <aside className={headerStyle.profile}>
                 <Image
-               
+                style={{
+                  width: '100%',
+                  height: 'auto'
+                 
+                }}
+              
                 src={profilePic}
                 alt='Picture of Andrew Watts (awattsdev)'
                 />
@@ -52,10 +57,14 @@ export default function RootLayout({ children }) {
                
             </aside>
             <Image
-            
-            height={100}
+           
             alt='Awattsdev Logo'
             src={awattsdevImg}
+            style={{
+              width: '50%',
+              height: '10%',
+            }}
+            sizes="(max-width: 808px) 50vw, 100vw"
              />
           </header> 
          

@@ -13,9 +13,13 @@
 }
 
 @media screen and (max-width: 800px) {
+	.overlay{
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	}
+
 
 }
 
