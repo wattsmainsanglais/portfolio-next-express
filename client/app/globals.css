@@ -19,7 +19,7 @@ body {
   /*background-image: url('../public/images/cascade.jpg');
   background-repeat: no-repeat;
   background-size: cover ;*/
-  background-image: linear-gradient(to bottom right, #907ff3, #D4D0C5);
+  background-image: linear-gradient(to right, #ffffff, #907ff3);
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ p {
   padding: 1%;
   margin-top: 2%;
   margin-bottom: 3%;
-  background-color: #38353b62;
+  background-color: #41394bab;
 
 }
 
