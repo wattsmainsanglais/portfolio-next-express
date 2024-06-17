@@ -3,14 +3,14 @@ import './globals.css'
 import { Genos } from 'next/font/google'
 import Image from 'next/image'
 
-import awattsdevImg from '../public/images/awattsdev-wh.svg'
+import awattsdevImg from '../public/images/nologo.svg'
 
 import profilePic from '../public/images/profilebw.jpg'
 import linkedIn from '../public/images/linkedin_socialnetwork_17441.png'
 import gitHub from '../public/images/github_original_wordmark_logo_icon_146506.png'
 
 import headerStyle from './header.module.css'
-import ContactForm from '@/app/components/contact_form'
+import ContactForm from '@/app/_components/contact_form'
 
  
 const genos = Genos({
