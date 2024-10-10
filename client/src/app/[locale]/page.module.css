@@ -2,11 +2,16 @@
 	color: rgb(255, 255, 255);
 	font-size: 1.3em;
 	
-	padding: 0 5%;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-image: linear-gradient(to right, #ffffff, #907ff3);
+	
+	
+	
+	margin: 0px;
 }
 
 

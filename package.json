@@ -2,24 +2,22 @@
   "name": "portfolio-next-express",
   "version": "1.0.0",
   "description": "",
-  
   "scripts": {
-    
     "client-install": "npm-install --prefix client",
     "client": "npm run dev  --prefix client",
     "server": "npm start  --prefix server",
-  
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC", 
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "concurrently": "^8.2.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "monorepo": "github:radix-ui/themes",
     "next": "^13.5.4",
     "nodemailer": "^6.9.5",
     "nodemon": "^3.0.1",

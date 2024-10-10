@@ -1,7 +1,9 @@
+
+
 .overlay {
 	padding-left: 4%;
 	padding-right: 4%;
-	background-image: url("../public/images/367347.jpg");
+	background-image: url("/images/367347.jpg");
 	background-blend-mode:screen;
 	/*background-color: #6c59d440;*/
 	background-color: #907ff359;
