@@ -64,7 +64,19 @@ export default function Page(){
       setActiveTab(index);
     };
 
-    const tabs = ['Hello', 'Skills', 'Exp', 'Education']
+    const tabs = [
+      {tag: 'Hello',
+       color: '#9850e5'
+      },
+      {tag: 'Skills',
+        color: '#7030b5'
+      }, 
+      {tag: 'Exp',
+        color: '#726f75'
+      }, 
+      {tag: 'Education',
+        color: '#36115e'
+      }]
 
 
 
@@ -83,8 +95,8 @@ export default function Page(){
                       <Text className={activeTab === index ? style.activeTab: style.inactiveTab} 
                       key={index} 
                       onClick={() => handleTabClick(index)} 
-                      style={{color: activeTab === index? 'blue':'white', borderColor: 'blue'  }}>
-                        {tab}
+                      style={{color: activeTab === index? 'blue':'white', borderColor: tab.color  }}>
+                        {tab.tag}
                         </Text>
                     ))}
                 </Flex>
@@ -104,7 +116,7 @@ export default function Page(){
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: 500, opacity: 0 }}
                   transition={{duration: 1}}
-                  style={{borderRight: '5px solid blue', width:'75vw', height:'80vh'}}
+                  style={{borderRight: `2px solid ${tabs[1].color}`, width:'75vw', height:'80vh'}}
                   >
                   <Flex p='9'>
                   skills page
@@ -118,7 +130,7 @@ export default function Page(){
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: 500, opacity: 0 }}
                   transition={{duration: 1}}
-                  style={{borderRight: '5px solid blue', width:'75vw', height:'80vh'}}
+                  style={{borderRight: `2px solid ${tabs[2].color}`, width:'75vw', height:'80vh'}}
                   >
                   <Flex p='9'>
                   exp page
