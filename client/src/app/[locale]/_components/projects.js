@@ -1,5 +1,7 @@
 import SingleProject from "./single-projects/singleProject"
 
+import { Heading } from "@radix-ui/themes"
+
 import ndThumb from '../../../../public/images/nd-background.jpg'
 import popupThumb from '../../../../public/images/popweddingThumb.png'
 import ptcThumb from '../../../../public/images/PTC.png'
@@ -10,7 +12,7 @@ export default function Projects(){
 
     return(
         <section className='projects'>
-            <h2 className="animatedHeader">Projects</h2>
+            <Heading weight='light' size='9'>Portfolio</Heading>
 
              <SingleProject link="https://www.naturedopes.com/" heading='Nature Dopes' src={ndThumb} alt='Nature Dopes Thumbnail' desc="Nature Dopes 
              is an ongoing project dedicated to creating a site firstly for the appreciation of natural flora, secondly as an educational tool. 
