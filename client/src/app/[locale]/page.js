@@ -5,6 +5,7 @@ import headerStyle from './header.module.css'
 import Bio from './_components/bio'
 import Projects from './_components/projects'
 import ContactForm from './_components/contact_form'
+import Services from './_components/services/services'
 
 import Image from 'next/image'
 
@@ -53,6 +54,7 @@ export default function Page() {
         <div className={styles.overlay}>
 
         <Bio />
+        <Services />
         <Projects />
         
         

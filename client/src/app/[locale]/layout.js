@@ -1,7 +1,10 @@
-
+import { Theme } from "@radix-ui/themes";
+import "@radix-ui/themes/styles.css";
 import './globals.css'
 import { Genos } from 'next/font/google'
 import Image from 'next/image'
+
+
 
 
 import {NextIntlClientProvider} from 'next-intl';
@@ -9,7 +12,8 @@ import {getMessages} from 'next-intl/server';
 
  
 const genos = Genos({
-  subsets: ['latin']
+  subsets: ['latin'],
+  variable: "--font-genos"
 
 })
 
@@ -32,7 +36,9 @@ export default async function RootLayout({ children, params:{locale} }) {
       <body>
        
       <NextIntlClientProvider messages={messages} >
+        <Theme data-is-root-theme='false' grayColor="olive" accentColor="purple" >
         {children}
+        </Theme>
       </NextIntlClientProvider>
       
         

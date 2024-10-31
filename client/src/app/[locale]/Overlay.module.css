@@ -4,9 +4,9 @@
 	padding-left: 4%;
 	padding-right: 4%;
 	background-image: url("/images/367347.jpg");
-	background-blend-mode:screen;
+	background-blend-mode: darken ;
 	/*background-color: #6c59d440;*/
-	background-color: #907ff359;
+	background-color: #15141d99;
 
 	z-index: 1;
 	min-height: 600px;

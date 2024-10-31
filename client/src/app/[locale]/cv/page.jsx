@@ -95,7 +95,7 @@ export default function Page(){
                       <Text className={activeTab === index ? style.activeTab: style.inactiveTab} 
                       key={index} 
                       onClick={() => handleTabClick(index)} 
-                      style={{color: activeTab === index? 'blue':'white', borderColor: tab.color  }}>
+                      style={{color: activeTab === index? tab.color:'white', borderColor: tab.color  }}>
                         {tab.tag}
                         </Text>
                     ))}
