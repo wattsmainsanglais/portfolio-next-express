@@ -34,7 +34,7 @@ const supportServices = [
 export default function Services(){
  
     return (
-      <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column'>
+      <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column' pb='5'>
         <Flex direction='column' justify='center' align='center' width='80%'>
           <Heading weight='light' size='9'>
             Services

@@ -12,6 +12,7 @@ import Image from 'next/image'
 import { Flex } from '@radix-ui/themes'
 
 import awattsdevImg from '../../../public/images/nologo.svg'
+import whiteLogo from '../../../public/images/White-logo-no background.svg'
 
 import profilePic from '../../../public/images/profilebw.jpg'
 import linkedIn from '../../../public/images/linkedin_socialnetwork_17441.png'
@@ -85,31 +86,17 @@ export default function Page() {
           </section>
 
 
-          <section className='links' >
-                  <h2>Links</h2>
-                  <h2>I'm also active on the following platforms</h2>
-                  <aside>
-                    <a target="_blank" href="https://www.linkedin.com/in/andrew-watts-9a7145269/">
-                      <Image src={linkedIn} 
-                      alt='Linkedin Logo and link'
-                      width={100}
-                      height={90}
-                      className='nodelogohover'
-                      />
-                    </a>
+          <Flex justify='center' align='center' >
 
-                  <a target="_blank" href="https://github.com/wattsmainsanglais">   
-                    <Image src={gitHub} 
-                      alt='Linkedin Logo and link'
-                      width={100}
-                      height={90}
-                      className='nodelogohover'
-                      />
-                    </a>
-                      
-                  </aside>
-              </section>
-          </footer>
+            <Image 
+              src={whiteLogo}
+              alt='awattsdev logo white, web developer'
+              width={400}
+            
+            />
+       
+          </Flex>
+        </footer>
     </div>
   )
 }
