@@ -2,7 +2,7 @@
 
 .projectSection{
     margin-top: 2%;
-    width: 90%;
+    width: 100%;
 }
 
 .projectSection_heading{
@@ -10,16 +10,16 @@
 }
 
 .projectSection_project{
-    display: inline-flex;
+    display: flex;
     flex-wrap: nowrap;
-    justify-content:flex-start;
+   
     align-items: center;
     width: 100%;
 }
 
 .projectLink{
     border: 2px solid #5c47d600;
-    height: 184px;
+   
 
 }
 

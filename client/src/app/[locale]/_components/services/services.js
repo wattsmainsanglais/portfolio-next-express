@@ -59,12 +59,12 @@ export default function Services(){
 
               <Tabs.Content  value='dev'>
                 {devServices.map((d, index) => (
-                  <Flex align='center'><CheckIcon color="#907ff3"  /><Text size="5" key={index}>{d}</Text></Flex>
+                  <Flex align='center' key={index}><CheckIcon color="#907ff3"  /><Text size="5" >{d}</Text></Flex>
                   ))}
               </Tabs.Content>
               <Tabs.Content value='support'>
                   {supportServices.map((d, index) => (
-                  <Flex align='center'><CheckIcon color="#907ff3"  /><Text size="5" key={index}>{d}</Text></Flex>
+                  <Flex align='center' key={index}><CheckIcon color="#907ff3"  /><Text size="5" >{d}</Text></Flex>
                   ))}
               </Tabs.Content>
            

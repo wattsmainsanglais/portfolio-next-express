@@ -54,23 +54,36 @@ footer{
   width: 90vw;
   justify-content: space-between;
   padding: 5%;
-  font-weight: 600;
-  color: #59595c;
+  font-weight: 400;
+  color: 'white';
     
 
 }
+
+
 
 .contact {
   width: 50%;
 }
 
-.contact > form > label{
-  font-size: 1.2em;
-}
+
 
 .contact > form > input[type=text] {
   width: 40%;
+
 }
+
+.contact > form > input {
+ 
+  color: #000000;
+}
+
+.contact > form > textarea {
+ 
+  color: #000000;
+}
+
+
 
 .contact > form > button {
   width: 15%;

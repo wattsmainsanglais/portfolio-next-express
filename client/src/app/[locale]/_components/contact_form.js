@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react";
+import { Heading } from "@radix-ui/themes";
 
 
 export default function ContactForm() {
@@ -42,9 +43,10 @@ const clearData = () => {
         onSubmitForm();
         clearData();
       }}
+      className=""
       >
 
-         <h2>Contact me here!</h2>
+        <Heading>Contact me here!</Heading>
             
         <label >Name</label>
         <br/>
@@ -66,7 +68,7 @@ const clearData = () => {
           <br /> 
 
 
-        <button type="submit">Submit</button>
+        <button style={{backgroundColor: '#907ff3', borderRadius: '2px'}} type="submit">Submit</button>
       </form>
      
     )
