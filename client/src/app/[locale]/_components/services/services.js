@@ -1,6 +1,9 @@
 import { CheckIcon } from "@radix-ui/react-icons"
+import { FaLaptop } from "react-icons/fa";
 
-import { Flex, Tabs, Box, Text, Heading } from "@radix-ui/themes"
+import { Flex, Tabs, Box, Text, Heading, Strong } from "@radix-ui/themes"
+
+
 
 const devServices = [
 '100% Customisable Site, built to specification',
@@ -35,13 +38,38 @@ export default function Services(){
  
     return (
       <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column' pb='5'>
-        <Flex direction='column' justify='center' align='center' width='80%'>
-          <Heading weight='light' size='9'>
-            Services
-          </Heading>
-          <Text>
-            I offer two avenues of service to clients, from self employed start-ups to established enterprises. Web Development involves the creation of a new web site or application. Web Support focuses on technical support to clients within exisiting sites.
-          </Text>
+        <Flex direction='column' justify='center' align='center' width='100%'>
+          <Flex width='100%' justify='start' pl='3'>
+            <Heading weight='light' size='9'>
+              Services
+            </Heading>
+          </Flex>  
+          <Flex justify='center' align='center' width='80%'>
+            <Flex width='50%' >
+              <Flex direction='column' >
+                <Text align='center'>-New business looking to sell your products online? </Text>
+                  <br />
+                <Text align='center'> -Online booking system to save time?</Text>
+                <br />
+                <Text align='center'>-Need a more customised site than what 3rd party web builders can offer you?</Text>
+                <br />
+              
+                <Text><Strong><FaLaptop /> My Web Development Services can meet your needs</Strong></Text>
+              </Flex>
+            </Flex>
+            <Flex width='50%'>
+              <Flex direction='column' pt='5' >
+                <Text align='center'>-Building your own site but need some guidance? </Text>
+                <br />
+                 <Text align='center'>-Need advice choosing a domain and hosting provider? Confused by SEO?</Text>
+                <br />
+                <Text align='center'> <Strong>I offer technical support to guide you through your online journey</Strong></Text> 
+              </Flex>
+            </Flex>
+
+          </Flex>
+        
+        
         </Flex>
         <Tabs.Root defaultValue="dev" >
           <Flex justify='center'>

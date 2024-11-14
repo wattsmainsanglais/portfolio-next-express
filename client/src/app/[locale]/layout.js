@@ -19,8 +19,8 @@ const genos = Genos({
 
 
 export const metadata = {
-  title: 'awattsdev - web developer',
-  description: 'Homepage of awattsdev web development',
+  title: 'awattsdev web development & support',
+  description: ' Web Development & Technical support to clients small and large. || web developer || web design || tech support. Based in South West France',
 }
 
 
