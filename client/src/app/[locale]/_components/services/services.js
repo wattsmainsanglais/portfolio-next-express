@@ -1,5 +1,6 @@
 import { CheckIcon } from "@radix-ui/react-icons"
 import { FaLaptop } from "react-icons/fa";
+import { MdOutlineSupportAgent } from "react-icons/md";
 
 import { Flex, Tabs, Box, Text, Heading, Strong } from "@radix-ui/themes"
 
@@ -37,14 +38,14 @@ const supportServices = [
 export default function Services(){
  
     return (
-      <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column' pb='5'>
+      <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column' pb='5' pt='5'>
         <Flex direction='column' justify='center' align='center' width='100%'>
-          <Flex width='100%' justify='start' pl='3'>
+          <Flex width='100%' justify='center' pl='3' pb='6'>
             <Heading weight='light' size='9'>
               Services
             </Heading>
           </Flex>  
-          <Flex justify='center' align='center' width='80%'>
+          <Flex justify='center' align='center' width='80%' p='5' style={{backgroundColor: '#15141d99', borderRadius: '5px'}} >
             <Flex width='50%' >
               <Flex direction='column' >
                 <Text align='center'>-New business looking to sell your products online? </Text>
@@ -53,17 +54,20 @@ export default function Services(){
                 <br />
                 <Text align='center'>-Need a more customised site than what 3rd party web builders can offer you?</Text>
                 <br />
-              
-                <Text><Strong><FaLaptop /> My Web Development Services can meet your needs</Strong></Text>
+                <Flex justify='center'><FaLaptop size={34}  /></Flex>
+                <Text align='center'><Strong> I offer a range of web development Services to meet your needs</Strong></Text>
               </Flex>
             </Flex>
-            <Flex width='50%'>
-              <Flex direction='column' pt='5' >
+            <Flex width='50%' >
+              <Flex direction='column' pt='5'  >
                 <Text align='center'>-Building your own site but need some guidance? </Text>
                 <br />
-                 <Text align='center'>-Need advice choosing a domain and hosting provider? Confused by SEO?</Text>
+                 <Text align='center'>-Need advice choosing a domain and hosting provider? </Text>
                 <br />
-                <Text align='center'> <Strong>I offer technical support to guide you through your online journey</Strong></Text> 
+                <Text align='center'>-Confused by SEO?</Text>
+                <br />
+                <Flex justify='center'><MdOutlineSupportAgent size={34} /></Flex>
+                <Text align='center'> <Strong>I can provide technical support to guide you through your online journey</Strong></Text> 
               </Flex>
             </Flex>
 
@@ -72,7 +76,7 @@ export default function Services(){
         
         </Flex>
         <Tabs.Root defaultValue="dev" >
-          <Flex justify='center'>
+          <Flex justify='center' pt='5'>
             <Tabs.List size='2'>
                       
                   <Tabs.Trigger value="dev"><Text size='6' style={{color: 'white'}}>Web Development</Text></Tabs.Trigger>

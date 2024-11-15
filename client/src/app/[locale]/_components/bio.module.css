@@ -2,15 +2,11 @@
 
 
 
-.bio article {
+.bio {
 	background-color: hsla(265, 14%, 26%, 0.671);
 }
 
-.about {
-	padding: 0% 1% 1% 1%;
-	margin-top: 11%;
-	margin-bottom: 5%;
-}
+
 
 .skills {
 	margin-top: 3%;

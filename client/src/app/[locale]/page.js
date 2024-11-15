@@ -19,29 +19,14 @@ import linkedIn from '../../../public/images/linkedin_socialnetwork_17441.png'
 import gitHub from '../../../public/images/github_original_wordmark_logo_icon_146506.png'
 
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import Intro from './_components/intro/intro'
 
 export default function Page() {
   return (
     <div className={stylesPage.main}>
           <header className={headerStyle.headercss}>
             <Flex align='center'>
-              <aside className={headerStyle.profile}>
-                  <Image
-                  style={{
-                    width: '80%',
-                    height: 'auto'
-                  
-                  }}
-                
-                  src={profilePic}
-                  alt='Picture of Andrew Watts (awattsdev)'
-                  />
-                  
-                  <div className="mask">
-                      
-                  </div>
-                
-              </aside>
+            
               <Image
             
               alt='Awattsdev Logo'
@@ -68,9 +53,10 @@ export default function Page() {
 
 
         <div className={styles.overlay}>
-
-        <Bio />
+        <Intro />
+        
         <Services />
+        <Bio />
         <Projects />
         
         
