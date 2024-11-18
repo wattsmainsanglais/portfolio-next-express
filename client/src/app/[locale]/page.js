@@ -24,21 +24,21 @@ import Intro from './_components/intro/intro'
 export default function Page() {
   return (
     <div className={stylesPage.main}>
-          <header className={headerStyle.headercss}>
-            <Flex align='center'>
+          <Flex justify='between' width='100vw'>
+            <Flex align='center' width='40vw'  p='4'>
             
               <Image
             
               alt='Awattsdev Logo'
               src={awattsdevImg}
               style={{
-                width: '35%',
-                height: '10%',
+                width: '100%',
+               
               }}
               sizes="(max-width: 808px) 50vw 30vw"
               />
             </Flex>
-            <Flex direction='column' height='100%' align='start' justify='start' >
+            <Flex direction='column' height='100%' align='start' justify='start' pr='2' >
 
               <Flex gap='2'>
                 <a target='_blank' href='https://www.facebook.com/profile.php?id=61553113778974' ><FaFacebookSquare fontSize={26} /></a>
@@ -49,7 +49,7 @@ export default function Page() {
 
             </Flex>
 
-        </header> 
+        </Flex>
 
 
         <div className={styles.overlay}>

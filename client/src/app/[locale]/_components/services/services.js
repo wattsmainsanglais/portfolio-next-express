@@ -45,8 +45,8 @@ export default function Services(){
               Services
             </Heading>
           </Flex>  
-          <Flex justify='center' align='center' width='80%' p='5' style={{backgroundColor: '#15141d99', borderRadius: '5px'}} >
-            <Flex width='50%' >
+          <Flex justify='center' align='center' width='80%' p='5' direction={{initial: 'column', xs: 'column', small: 'column', md: 'row'}} style={{backgroundColor: '#15141d99', borderRadius: '5px'}} >
+            <Flex width={{initial: '90%', xs: '90%', small:'90%', md:'50%'}} >
               <Flex direction='column' >
                 <Text align='center'>-New business looking to sell your products online? </Text>
                   <br />
@@ -58,7 +58,7 @@ export default function Services(){
                 <Text align='center'><Strong> I offer a range of web development Services to meet your needs</Strong></Text>
               </Flex>
             </Flex>
-            <Flex width='50%' >
+            <Flex width={{initial: '90%', xs: '90%', small:'90%', md:'50%'}} >
               <Flex direction='column' pt='5'  >
                 <Text align='center'>-Building your own site but need some guidance? </Text>
                 <br />

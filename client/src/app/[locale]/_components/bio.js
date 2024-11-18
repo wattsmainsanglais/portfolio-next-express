@@ -10,14 +10,11 @@ export default function Bio(){
      
                <Flex direction='column' mt='9' mb='9' p='5' className={styles.bio} >
                     <Heading pb='3' weight='light' size='9'>About</Heading>
-                    <Flex>
-                        <Flex>
+                    <Flex direction={{initial: 'column', xs: 'column', small: 'column', md: 'row' }}>
+                        <Flex justify='center'>
                             <Image
-                                style={{
-                                    width: '100%',
-                                    height: 'auto'
-                                
-                                }}
+                                width={200}
+
                                 src={profilePic}
                                 alt='Picture of Andrew Watts (awattsdev)'
                             />
