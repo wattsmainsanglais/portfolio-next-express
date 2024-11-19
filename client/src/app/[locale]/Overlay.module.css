@@ -1,0 +1,29 @@
+
+
+.overlay {
+	padding-left: 4%;
+	padding-right: 4%;
+	background-image: url("/images/367347.jpg");
+	background-blend-mode: darken ;
+	/*background-color: #6c59d440;*/
+	background-color: #15141d99;
+
+	z-index: 1;
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+	.overlay{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+
+}
+
