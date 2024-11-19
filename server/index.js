@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
   res.setHeader('X-Content-Type-Options', 'nosniff');
 
 
-  const allowedOrigins = ['https://server-production-7c47.up.railway.app/api/express/contact', 'https://portfolio-next-express-production.up.railway.app', 'http://localhost:5000', 'http://localhost:3000', 'https://www.awattsdev.eu/'];
+  const allowedOrigins = ['https://server-production-7c47.up.railway.app/api/express/contact', 'https://portfolio-next-express-production.up.railway.app', 'http://localhost:5000', 'http://localhost:3000', 'https://www.awattsdev.eu'];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin);
