@@ -9,7 +9,10 @@ export default function Bio(){
     return(
      
                <Flex direction='column' mt='9' mb='9' p='5' className={styles.bio} >
-                    <Heading pb='3' weight='light' size='9'>About</Heading>
+                    <Flex justify={{initial: 'center', md: 'center'}} pb='3'>
+                        <Heading  weight='light' size='9'>About</Heading>
+                    </Flex>
+                    
                     <Flex direction={{initial: 'column', xs: 'column', small: 'column', md: 'row' }}>
                         <Flex justify='center'>
                             <Image

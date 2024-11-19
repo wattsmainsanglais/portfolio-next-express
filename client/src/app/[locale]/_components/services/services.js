@@ -79,8 +79,8 @@ export default function Services(){
           <Flex justify='center' pt='5'>
             <Tabs.List size='2'>
                       
-                  <Tabs.Trigger value="dev"><Text size='6' style={{color: 'white'}}>Web Development</Text></Tabs.Trigger>
-                  <Tabs.Trigger value="support"><Text size='6' style={{color: 'white'}} >Web Support</Text></Tabs.Trigger>
+                  <Tabs.Trigger pr='3' value="dev"><Text size={{initial: '6', xs: '6', sm:'7', md:'7'}} style={{color: 'white'}}  >Web Development</Text></Tabs.Trigger>
+                  <Tabs.Trigger pl='3' value="support"><Text size={{initial: '6', xs: '6', sm:'7', md:'7'}} style={{color: 'white'}}  >Web Support</Text></Tabs.Trigger>
               </Tabs.List>
 
             
@@ -91,12 +91,12 @@ export default function Services(){
 
               <Tabs.Content  value='dev'>
                 {devServices.map((d, index) => (
-                  <Flex align='center' key={index}><CheckIcon color="#907ff3"  /><Text size="5" >{d}</Text></Flex>
+                  <Flex align='center' pb='1' key={index}><CheckIcon color="#907ff3"  /><Text  size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{d}</Text></Flex>
                   ))}
               </Tabs.Content>
               <Tabs.Content value='support'>
                   {supportServices.map((d, index) => (
-                  <Flex align='center' key={index}><CheckIcon color="#907ff3"  /><Text size="5" >{d}</Text></Flex>
+                  <Flex align='center' key={index}><CheckIcon color="#907ff3"  /><Text size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{d}</Text></Flex>
                   ))}
               </Tabs.Content>
            
