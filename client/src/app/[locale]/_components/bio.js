@@ -4,13 +4,16 @@ import Image from 'next/image'
 import profilePic from '../../../../public/images/AWattsBrand-46-s.jpg'
 
 import styles from './bio.module.css'
+import { useTranslations } from 'next-intl'
 
 export default function Bio(){
+
+    const t = useTranslations("About")
     return(
      
                <Flex direction='column' mt='9' mb='9' p='5' className={styles.bio} >
                     <Flex justify={{initial: 'center', md: 'center'}} pb='3'>
-                        <Heading  weight='light' size='9'>About</Heading>
+                        <Heading  weight='light' size='9'>{t("heading")}</Heading>
                     </Flex>
                     
                     <Flex direction={{initial: 'column', xs: 'column', small: 'column', md: 'row' }}>
@@ -25,8 +28,7 @@ export default function Bio(){
                         <Flex p='5' width='80vw'>
 
                         <Text>
-                            Hi i'm Andrew, an English & French speaking web developer based in South West France. If you're looking for web design, site modernization, shopping sites, servers and databases, you've come to the right place. 
-                            I'm proficient in full stack development and can get your project off the ground from front-end to back. Please contact me using the below contact form or through my social media outlets - links in the header
+                           {t("para")}
                         </Text>
                         </Flex>
                         

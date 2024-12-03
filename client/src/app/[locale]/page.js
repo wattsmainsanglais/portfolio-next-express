@@ -21,7 +21,14 @@ import gitHub from '../../../public/images/github_original_wordmark_logo_icon_14
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import Intro from './_components/intro/intro'
 
-export default function Page() {
+import LanguageSwitcher from './_components/language/LanguageSwitcher'
+
+export default async function Page({params}) {
+
+const {locale} = await params 
+
+
+
   return (
     <div className={stylesPage.main}>
           <Flex justify='between' width='100vw'>
@@ -45,8 +52,9 @@ export default function Page() {
                 <a target='_blank' href='https://www.instagram.com/awattsdev/' ><FaInstagram fontSize={26} /></a>
                 <a target='_blank' href='https://www.linkedin.com/in/andrew-watts-9a7145269/' ><FaLinkedinIn fontSize={26} /></a>
                 <a target='_blank' href='https://github.com/wattsmainsanglais' ><FaGithub fontSize={26} /></a>
+                <LanguageSwitcher locale={locale} />
               </Flex>
-
+              
             </Flex>
 
         </Flex>

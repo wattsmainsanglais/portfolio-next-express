@@ -3,6 +3,7 @@ import { FaLaptop } from "react-icons/fa";
 import { MdOutlineSupportAgent } from "react-icons/md";
 
 import { Flex, Tabs, Box, Text, Heading, Strong } from "@radix-ui/themes"
+import { useTranslations } from "next-intl";
 
 
 
@@ -28,7 +29,7 @@ const supportServices = [
   'Offer In person (Location Dependant) or Virtual Support',
   'Hourly Rates or Support Packages',
   'Open Communication Lines',
-  "Don't pay 000's to SEO experts, speak to me first",
+  "Don't pay 000's to SEO 'experts', speak to me first",
   'Extended support, i work with design and marketing experts'
 
 
@@ -36,6 +37,8 @@ const supportServices = [
 ]
 
 export default function Services(){
+
+  const t = useTranslations("Services")
  
     return (
       <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column' pb='5' pt='5'>
@@ -48,26 +51,26 @@ export default function Services(){
           <Flex justify='center' align='center' width='80%' p='5' direction={{initial: 'column', xs: 'column', small: 'column', md: 'row'}} style={{backgroundColor: '#15141d99', borderRadius: '5px'}} >
             <Flex width={{initial: '90%', xs: '90%', small:'90%', md:'50%'}} >
               <Flex direction='column' >
-                <Text align='center'>-New business looking to sell your products online? </Text>
+                <Text align='center'>{t("dev.1")}</Text>
                   <br />
-                <Text align='center'> -Online booking system to save time?</Text>
+                <Text align='center'>{t("dev.2")}</Text>
                 <br />
-                <Text align='center'>-Need a more customised site than what 3rd party web builders can offer you?</Text>
+                <Text align='center'>{t("dev.3")}</Text>
                 <br />
                 <Flex justify='center'><FaLaptop size={34}  /></Flex>
-                <Text align='center'><Strong> I offer a range of web development Services to meet your needs</Strong></Text>
+                <Text align='center'><Strong> {t("dev.end")}</Strong></Text>
               </Flex>
             </Flex>
             <Flex width={{initial: '90%', xs: '90%', small:'90%', md:'50%'}} >
               <Flex direction='column' pt='5'  >
-                <Text align='center'>-Building your own site but need some guidance? </Text>
+                <Text align='center'> {t("support.1")} </Text>
                 <br />
-                 <Text align='center'>-Need advice choosing a domain and hosting provider? </Text>
+                 <Text align='center'>{t("support.2")}</Text>
                 <br />
-                <Text align='center'>-Confused by SEO?</Text>
+                <Text align='center'>{t("support.3")}</Text>
                 <br />
                 <Flex justify='center'><MdOutlineSupportAgent size={34} /></Flex>
-                <Text align='center'> <Strong>I can provide technical support to guide you through your online journey</Strong></Text> 
+                <Text align='center'> <Strong>{t("support.end")}</Strong></Text> 
               </Flex>
             </Flex>
 
@@ -91,12 +94,12 @@ export default function Services(){
 
               <Tabs.Content  value='dev'>
                 {devServices.map((d, index) => (
-                  <Flex align='center' pb='1' key={index}><CheckIcon color="#907ff3"  /><Text  size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{d}</Text></Flex>
+                  <Flex align='center' pb='1' key={index}><CheckIcon color="#907ff3"  /><Text  size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{t(`tabs.dev.${index+1}`)}</Text></Flex>
                   ))}
               </Tabs.Content>
               <Tabs.Content value='support'>
                   {supportServices.map((d, index) => (
-                  <Flex align='center' key={index}><CheckIcon color="#907ff3"  /><Text size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{d}</Text></Flex>
+                  <Flex align='center' pb='1' key={index}><CheckIcon color="#907ff3"  /><Text size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{t(`tabs.support.${index+1}`)}</Text></Flex>
                   ))}
               </Tabs.Content>
            

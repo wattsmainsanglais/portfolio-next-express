@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
-import { Heading } from "@radix-ui/themes";
+import { Heading, Text } from "@radix-ui/themes";
+import {RxPaperPlane} from "react-icons/rx"
 
 
 export default function ContactForm() {
@@ -56,7 +57,7 @@ const clearData = () => {
         <br/>
         <input id='tel' type="text" name="tel"  required="" onChange={(e) => setData( prevData => ({ ...prevData, tel: e.target.value }))} />
         <br/>
-        <label >Email address</label>
+        <label >Mail</label>
         <br/>
         <input  id='email' type="text" name="email" onChange={(e) => setData(prevData => ({ ...prevData, email: e.target.value }))}  required=""/>
         <br/>
@@ -68,7 +69,7 @@ const clearData = () => {
           <br /> 
 
 
-        <button style={{backgroundColor: '#907ff3', borderRadius: '2px'}} type="submit">Submit</button>
+        <button style={{backgroundColor: '#907ff3', borderRadius: '2px', display:'flex', justifyContent:'center'}} type="submit"><Text align='center'><RxPaperPlane /></Text></button>
       </form>
      
     )

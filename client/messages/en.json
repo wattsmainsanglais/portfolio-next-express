@@ -1,3 +1,57 @@
 {
+"Intro": {
+    "heading1": "Digital Solutions to make your life easier",
+    "heading2": "A new site from scratch or a helping hand, awattsdev has you covered"
+},
+"Services": {
+    "dev": {
+        "1": "-New business looking to sell your products online? ",
+        "2": "-Online booking system to save time?",
+        "3": "-Need a more customised site than what 3rd party web builders can offer you?",
+        "end": "I offer a range of web development Services to meet your needs"
+    },
+    "support": {
+        "1": "-Building your own site but need some guidance?",
+        "2": "-Need advice choosing a domain and hosting provider? ",
+        "3": "-Confused by SEO?",
+        "end": "I can provide technical support to guide you through your online journey"
+    },
+    "tabs": {
+        "dev": {
+            "1": "100% Customisable Site, built to specification",
+            "2": "Multiple hosting Options to fit the size of your business",
+            "3": "SEO optimized site, right out of the box",
+            "4": "Shopping sites with choices of payment options",
+            "5": "Custom Reservation Systems to Save you time",
+            "6": "Multi Language Sites",
+            "7": "Integrate your Social Media",
+            "8": "Interested in Web3? I can discuss options",
+            "9": "New Sites from €495"
+        },
+        "support": {
+            "1": "Advice, Handholding or Clearing up technical jargon",
+            "2": "Hands on approach to bring your existing project upto date",
+            "3": "Experienced with modern Web design techniques",
+            "4": "I can work with third party software such as Shopify",
+            "5": "Offer In person (Location Dependant) or Virtual Support",
+            "6": "Hourly Rates or Support Packages",
+            "7": "Open Communication Lines",
+            "8": "Don't pay 000's to SEO 'experts', speak to me first",
+            "9": "Extended support, i work with design and marketing experts"
+        }
+    }
+
+},
+"About": {
+    "heading": "About",
+    "para": "Hi i'm Andrew, an English & French speaking web developer based in South West France. If you're looking for web design, site modernization, shopping sites, servers and databases, you've come to the right place. I'm proficient in full stack development and can get your project off the ground from front-end to back. Please contact me using the below contact form or through my social media outlets - links in the header"
+},
+"Portfolio": {
+    "nd": "Nature Dopes is an ongoing project dedicated to creating a site firstly for the appreciation of natural flora, secondly as an educational tool. To preserve the environment, we first need to understand it. It's a full stack application developed in NextJs 14 Typescipt, It utilizes many of the latest NextJs tools, such as Next-auth for authentification, Next-intl for multi language, Radix Ui, Iagon for decentralized storage and Prisma for Database management. Follow the link to view",
+    "pop": "This is the homepage page for a new startup business offering childcare options for weddings and large events, please give them a look if you have any major events planned in South West France. The site is a web application developed in NextJs 14 and uses Next-Int for intuitive language switching. Follow the link to view ",
+    "pocket": "This is a complete site redesign for an upcoming Web 3 gaming and NFT project called Pocket Towne. Developed in HTML, CSS , Javascript. Please check them out if you're interested in Metaverse & web 3",
+    "space": "S.P.A.C.E is an NFT Art/ Utility project. I've developed a landing page to serve as the homepage for the project. The site has been developed using NextJs, using React hooks & components to give the site a responsive and animated feel. "
+}
+
     
 }

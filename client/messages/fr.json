@@ -1,4 +1,59 @@
-{
 
-    
+
+{
+    "Intro": {
+        "heading1": "Solutions numériques pour vous simplifier la vie",
+        "heading2": "Un nouveau site à partir de zéro ou un coup de main, awattsdev est là pour vous"
+    },
+    "Services": {
+    "dev": {
+        "1": "-Vous êtes une nouvelle entreprise et vous souhaitez vendre vos produits en ligne?",
+        "2": "-Système de réservation en ligne pour gagner du temps ?",
+        "3": "-Besoin d'un site plus personnalisé que ce que les créateurs de sites Web tiers peuvent vous proposer ?",
+        "end": "Je propose une gamme de services de développement Web pour répondre à vos besoins"
+    },
+    "support": {
+        "1": "-Vous créez votre propre site mais vous avez besoin de conseils ? ",
+        "2": "-Besoin de conseils pour choisir un domaine et un fournisseur d'hébergement ?",
+        "3": "-Confus par le SEO ?",
+        "end": "Je peux vous fournir un support technique pour vous guider tout au long de votre parcours en ligne"
+    },
+    "tabs": {
+        "dev": {
+            "1": "Site 100% personnalisable, construit selon les spécifications",
+            "2": "Plusieurs options d'hébergement adaptées à la taille de votre entreprise",
+            "3": "Site optimisé pour SEO, prêt à l'emploi",
+            "4": "Sites commerciaux avec choix d'options de paiement",
+            "5": "Systèmes de réservation personnalisés pour vous faire gagner du temps",
+            "6": "Sites multilingues",
+            "7": "Intégrez vos réseaux sociaux",
+            "8": "Vous êtes intéressé par Web3 ? Je peux discuter des options",
+            "9": "Nouveaux sites à partir de 495 €"
+        },
+        "support": {
+            "1": "Conseils, aide ou clarification du jargon technique",
+            "2": "Approche pratique pour mettre à jour votre projet existant",
+            "3": "Expérience avec les techniques modernes de conception Web",
+            "4": "Je peux travailler avec des logiciels tiers tels que Shopify",
+            "5": "Offrir une assistance en personne (selon le distance) ou virtuelle",
+            "6": "Tarifs horaires ou forfaits d'assistance",
+            "7": "Lignes de communication ouvertes",
+            "8": "Ne payez pas des milliers de dollars aux « experts » SEO, parlez-moi d'abord",
+            "9": "Support étendu, je travaille avec des experts en conception et en marketing"
+        }
+    }
+
+},
+"About": {
+    "heading": "Qui suis je?",
+    "para": "Bonjour, je suis Andrew, un développeur web anglophone et francophone basé dans le sud-ouest de la France. Si vous recherchez une conception de sites web, une modernisation de sites, des sites commerciaux, des serveurs et des bases de données, vous êtes au bon endroit. Je maîtrise le développement full stack et je peux faire décoller votre projet du front-end au back-end. Veuillez me contacter en utilisant le formulaire de contact ci-dessous ou via mes réseaux sociaux - liens dans l'en-tête"
+}, 
+"Portfolio": {
+    "nd": "Nature Dopes est un projet en cours dédié à la création d'un site d'abord pour l'appréciation de la flore naturelle, ensuite comme outil pédagogique. Pour préserver l'environnement, nous devons d'abord le comprendre. Il s'agit d'une application full stack développée dans NextJs 14 Typescipt, elle utilise de nombreux outils NextJs les plus récents, tels que Next-auth pour l'authentification, Next-intl pour le multilingue, Radix Ui, Iagon pour le stockage décentralisé et Prisma pour la gestion de base de données. Suivez le lien pour voir",
+    "pop": "Il s'agit de la page d'accueil d'une nouvelle entreprise en démarrage proposant des options de garde d'enfants pour les mariages et les grands événements. N'hésitez pas à leur jeter un œil si vous avez prévu des événements majeurs dans le sud-ouest de la France. Le site est une application Web développée dans NextJs 14 et utilise Next-Int pour un changement de langue intuitif. Suivez le lien pour voir",
+    "pocket": "Il s'agit d'une refonte complète du site pour un prochain projet de jeu Web 3 et NFT appelé Pocket Towne. Développé en HTML, CSS, Javascript. N'hésitez pas à les consulter si vous êtes intéressé par le métaverse et le Web 3",
+    "space": "S.P.A.C.E est un projet NFT Art/Utility. J'ai développé une page de destination pour servir de page d'accueil au projet. Le site a été développé à l'aide de NextJs, en utilisant des hooks et des composants React pour donner au site une sensation réactive et animée."
 }
+            
+}
+    
