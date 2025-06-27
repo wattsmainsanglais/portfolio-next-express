@@ -7,6 +7,8 @@ import popupThumb from '../../../../public/images/popweddingThumb.png'
 import ptcThumb from '../../../../public/images/PTC.png'
 import ndFinder from '../../../../public/images/nd-flower-finder.png'
 import spaceThumb from '../../../../public/images/spacescreen.png'
+import boisThumb from '@/public/images/boisrenard.png'
+
 import { useTranslations } from "next-intl"
 
 export default function Projects(){
@@ -15,6 +17,8 @@ export default function Projects(){
     return(
         <section className='projects'>
             <Heading weight='light' size='9'>Portfolio</Heading>
+
+            <SingleProject link="https://giteduboisrenard.fr/en" heading="Le Gite du Bois Renard" src={boisThumb} alt="Bois Renard placeholder" desc={t("bois")} />
 
              <SingleProject link="https://www.naturedopes.com/" heading='Nature Dopes' src={ndThumb} alt='Nature Dopes Thumbnail' desc={t("nd")} /> 
 
