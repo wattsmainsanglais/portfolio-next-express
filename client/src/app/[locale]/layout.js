@@ -39,7 +39,7 @@ export default async function RootLayout({ children, params }) {
         <title>awattsdev web development & support</title>
        
       </head>
-      <GoogleAnalytics gaMeasurementId="G-4BVEYN2HGS" />
+      <GoogleAnalytics gaId="G-4BVEYN2HGS"/>
       
       <body>
        
