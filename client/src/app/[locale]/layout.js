@@ -3,7 +3,7 @@ import "@radix-ui/themes/styles.css";
 import './globals.css'
 import { Genos } from 'next/font/google'
 import Image from 'next/image'
-import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 
 
