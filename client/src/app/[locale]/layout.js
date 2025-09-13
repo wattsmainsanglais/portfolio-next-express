@@ -3,6 +3,7 @@ import "@radix-ui/themes/styles.css";
 import './globals.css'
 import { Genos } from 'next/font/google'
 import Image from 'next/image'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 
@@ -33,7 +34,12 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages();
   return (
     <html lang={locale} className={genos.className}>
-
+      
+      <head>
+        <title>awattsdev web development & support</title>
+       
+      </head>
+      <GoogleAnalytics gaMeasurementId="G-4BVEYN2HGS" />
       
       <body>
        
