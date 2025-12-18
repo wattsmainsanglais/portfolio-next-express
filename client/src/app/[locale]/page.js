@@ -1,96 +1,99 @@
-
-import styles from './Overlay.module.css'
-import stylesPage from './page.module.css'
-import headerStyle from './header.module.css'
+import Image from 'next/image'
+import { FaFacebookSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa"
+import Intro from './_components/intro/intro'
 import Bio from './_components/bio'
 import Projects from './_components/projects'
 import ContactForm from './_components/contact_form'
 import Services from './_components/services/services'
-
-import Image from 'next/image'
-
-import { Flex } from '@radix-ui/themes'
-
+import LanguageSwitcher from './_components/language/LanguageSwitcher'
 import awattsdevImg from '../../../public/images/nologo.svg'
 import whiteLogo from '../../../public/images/White-logo-no background.svg'
 
-import profilePic from '../../../public/images/profilebw.jpg'
-import linkedIn from '../../../public/images/linkedin_socialnetwork_17441.png'
-import gitHub from '../../../public/images/github_original_wordmark_logo_icon_146506.png'
-
-import { FaFacebookSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import Intro from './_components/intro/intro'
-
-import LanguageSwitcher from './_components/language/LanguageSwitcher'
-
 export default async function Page({params}) {
-
-const {locale} = await params 
-
-
+  const {locale} = await params
 
   return (
-    <div className={stylesPage.main}>
-          <Flex justify='between' width='100vw'>
-            <Flex align='center' width='40vw'  p='4'>
-            
-              <Image
-            
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900">
+      {/* Header */}
+      <header className="container mx-auto px-4 py-6">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="w-48">
+            <Image
               alt='Awattsdev Logo'
               src={awattsdevImg}
-              style={{
-                width: '100%',
-               
-              }}
-              sizes="(max-width: 808px) 50vw 30vw"
-              />
-            </Flex>
-            <Flex direction='column' height='100%' align='start' justify='start' pr='2' >
+              className="w-full h-auto"
+              sizes="200px"
+              priority
+            />
+          </div>
 
-              <Flex gap='2'>
-                <a target='_blank' href='https://www.facebook.com/profile.php?id=61553113778974' ><FaFacebookSquare fontSize={26} /></a>
-                <a target='_blank' href='https://www.instagram.com/awattsdev/' ><FaInstagram fontSize={26} /></a>
-                <a target='_blank' href='https://www.linkedin.com/in/andrew-watts-9a7145269/' ><FaLinkedinIn fontSize={26} /></a>
-                <a target='_blank' href='https://github.com/wattsmainsanglais' ><FaGithub fontSize={26} /></a>
-                <LanguageSwitcher locale={locale} />
-              </Flex>
-              
-            </Flex>
+          {/* Social Links & Language Switcher */}
+          <div className="flex items-center gap-4">
+            <a
+              href='https://www.facebook.com/profile.php?id=61553113778974'
+              target='_blank'
+              rel="noopener noreferrer"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="Facebook"
+            >
+              <FaFacebookSquare size={24} />
+            </a>
+            <a
+              href='https://www.instagram.com/awattsdev/'
+              target='_blank'
+              rel="noopener noreferrer"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/andrew-watts-9a7145269/'
+              target='_blank'
+              rel="noopener noreferrer"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn size={24} />
+            </a>
+            <a
+              href='https://github.com/wattsmainsanglais'
+              target='_blank'
+              rel="noopener noreferrer"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="GitHub"
+            >
+              <FaGithub size={24} />
+            </a>
+            <LanguageSwitcher locale={locale} />
+          </div>
+        </div>
+      </header>
 
-        </Flex>
-
-
-        <div className={styles.overlay}>
+      {/* Main Content */}
+      <main>
         <Intro />
-        
         <Services />
         <Bio />
         <Projects />
-        
-        
+      </main>
 
-        
+      {/* Footer with Contact */}
+      <footer className="bg-slate-950 text-white">
+        <section className="container mx-auto px-4 py-16">
+          <ContactForm />
+        </section>
+
+        <div className="flex justify-center items-center py-8 border-t border-slate-800">
+          <Image
+            src={whiteLogo}
+            alt='awattsdev logo white, web developer'
+            width={300}
+            className="opacity-80"
+          />
         </div>
-
-        <footer>
-
-          <section className='contact'>
-            <ContactForm />
-          
-          </section>
-
-
-          <Flex justify='center' align='center' >
-
-            <Image 
-              src={whiteLogo}
-              alt='awattsdev logo white, web developer'
-              width={400}
-            
-            />
-       
-          </Flex>
-        </footer>
+      </footer>
     </div>
   )
 }

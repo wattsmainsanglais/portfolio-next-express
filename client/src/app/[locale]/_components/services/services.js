@@ -1,114 +1,117 @@
+'use client'
+
+import { useState } from 'react'
 import { CheckIcon } from "@radix-ui/react-icons"
-import { FaLaptop } from "react-icons/fa";
-import { MdOutlineSupportAgent } from "react-icons/md";
+import { FaLaptop } from "react-icons/fa"
+import { MdOutlineSupportAgent } from "react-icons/md"
+import { useTranslations } from "next-intl"
 
-import { Flex, Tabs, Box, Text, Heading, Strong } from "@radix-ui/themes"
-import { useTranslations } from "next-intl";
-
-
-
-const devServices = [
-'100% Customisable Site, built to specification',
-'Multiple hosting Options to fit the size of your business',
-'SEO optimized site, right out of the box',
-'Shopping sites with choices of payment options',
-'Custom Reservation Systems to Save you time',
-'Multi Language Sites',
-'Integrate your Social Media',
-'Interested in Web3? I can discuss options',
-'New Sites from €495'
-
-
-]
-
-const supportServices = [
-  'Advice, Handholding or Clearing up technical jargon',
-  'Hands on approach to bring your existng project upto date',
-  'Experienced with modern Web design techniques',
-  'I can work with third party software such as Shopify',
-  'Offer In person (Location Dependant) or Virtual Support',
-  'Hourly Rates or Support Packages',
-  'Open Communication Lines',
-  "Don't pay 000's to SEO 'experts', speak to me first",
-  'Extended support, i work with design and marketing experts'
-
-
-
-]
-
-export default function Services(){
-
+export default function Services() {
+  const [activeTab, setActiveTab] = useState('dev')
   const t = useTranslations("Services")
- 
-    return (
-      <Flex justify='center' align='center' style={{backgroundColor: '#41394bab'}} direction='column' pb='5' pt='5'>
-        <Flex direction='column' justify='center' align='center' width='100%'>
-          <Flex width='100%' justify='center' pl='3' pb='6'>
-            <Heading weight='light' size='9'>
-              Services
-            </Heading>
-          </Flex>  
-          <Flex justify='center' align='center' width='80%' p='5' direction={{initial: 'column', xs: 'column', small: 'column', md: 'row'}} style={{backgroundColor: '#15141d99', borderRadius: '5px'}} >
-            <Flex width={{initial: '90%', xs: '90%', small:'90%', md:'50%'}} >
-              <Flex direction='column' >
-                <Text align='center'>{t("dev.1")}</Text>
-                  <br />
-                <Text align='center'>{t("dev.2")}</Text>
-                <br />
-                <Text align='center'>{t("dev.3")}</Text>
-                <br />
-                <Flex justify='center'><FaLaptop size={34}  /></Flex>
-                <Text align='center'><Strong> {t("dev.end")}</Strong></Text>
-              </Flex>
-            </Flex>
-            <Flex width={{initial: '90%', xs: '90%', small:'90%', md:'50%'}} >
-              <Flex direction='column' pt='5'  >
-                <Text align='center'> {t("support.1")} </Text>
-                <br />
-                 <Text align='center'>{t("support.2")}</Text>
-                <br />
-                <Text align='center'>{t("support.3")}</Text>
-                <br />
-                <Flex justify='center'><MdOutlineSupportAgent size={34} /></Flex>
-                <Text align='center'> <Strong>{t("support.end")}</Strong></Text> 
-              </Flex>
-            </Flex>
 
-          </Flex>
-        
-        
-        </Flex>
-        <Tabs.Root defaultValue="dev" >
-          <Flex justify='center' pt='5'>
-            <Tabs.List size='2'>
-                      
-                  <Tabs.Trigger pr='3' value="dev"><Text size={{initial: '6', xs: '6', sm:'7', md:'7'}} style={{color: 'white'}}  >Web Development</Text></Tabs.Trigger>
-                  <Tabs.Trigger pl='3' value="support"><Text size={{initial: '6', xs: '6', sm:'7', md:'7'}} style={{color: 'white'}}  >Web Support</Text></Tabs.Trigger>
-              </Tabs.List>
+  const devServices = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const supportServices = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-            
-          </Flex>
-        
-          <Flex pt="3" width='75vw' justify='center'>
-          
+  return (
+    <section className="container mx-auto px-4 py-20" id="services">
+      {/* Heading */}
+      <h2 className="text-xl md:text-6xl font-light text-white text-center mb-16">
+        Services
+      </h2>
 
-              <Tabs.Content  value='dev'>
-                {devServices.map((d, index) => (
-                  <Flex align='center' pb='1' key={index}><CheckIcon color="#907ff3"  /><Text  size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{t(`tabs.dev.${index+1}`)}</Text></Flex>
-                  ))}
-              </Tabs.Content>
-              <Tabs.Content value='support'>
-                  {supportServices.map((d, index) => (
-                  <Flex align='center' pb='1' key={index}><CheckIcon color="#907ff3"  /><Text size={{initial: '5', xs: '5', sm:'6', md:'6'}} >{t(`tabs.support.${index+1}`)}</Text></Flex>
-                  ))}
-              </Tabs.Content>
-           
+      {/* Service Overview Cards */}
+      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8  mb-16">
+        {/* Web Development Card */}
+        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-purple-500 transition-all">
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center">
+              <FaLaptop className="text-purple-400" size={32} />
+            </div>
+          </div>
 
+          <div className="text-center text-lg md:text-2xl text-slate-300 space-y-4">
+            <p>{t("dev.1")}</p>
+            <p>{t("dev.2")}</p>
+            <p>{t("dev.3")}</p>
+          </div>
 
-          </Flex>
-        </Tabs.Root>
+          <p className="text-center mt-6 text-2xl font-semibold text-white">
+            {t("dev.end")}
+          </p>
+        </div>
 
-      </Flex>
-  
-    )
+        {/* Web Support Card */}
+        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-purple-500 transition-all">
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center">
+              <MdOutlineSupportAgent className="text-purple-400" size={32} />
+            </div>
+          </div>
+
+          <div className="text-center text-lg md:text-2xl text-slate-300 space-y-4">
+            <p>{t("support.1")}</p>
+            <p>{t("support.2")}</p>
+            <p>{t("support.3")}</p>
+          </div>
+
+          <p className="text-center mt-6 text-2xl font-semibold text-white">
+            {t("support.end")}
+          </p>
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div className="max-w-4xl mx-auto">
+        {/* Tab Buttons */}
+        <div className="flex justify-center gap-4 mb-8">
+          <button
+            onClick={() => setActiveTab('dev')}
+            className={`px-8 py-3 rounded-lg font-medium text-lg transition-all ${
+              activeTab === 'dev'
+                ? 'bg-purple-600 text-white shadow-lg'
+                : 'bg-slate-800/50 text-slate-300 hover:bg-slate-700'
+            }`}
+          >
+            Web Development
+          </button>
+          <button
+            onClick={() => setActiveTab('support')}
+            className={`px-8 py-3 rounded-lg font-medium text-lg transition-all ${
+              activeTab === 'support'
+                ? 'bg-purple-600 text-white shadow-lg'
+                : 'bg-slate-800/50 text-slate-300 hover:bg-slate-700'
+            }`}
+          >
+            Web Support
+          </button>
+        </div>
+
+        {/* Tab Content */}
+        <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
+          {activeTab === 'dev' && (
+            <ul className="space-y-3">
+              {devServices.map((_, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-200 text-lg md:text-2xl">
+                  <CheckIcon className="text-purple-400 flex-shrink-0 mt-1" width={20} height={20} />
+                  <span className="text-2xl">{t(`tabs.dev.${index + 1}`)}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {activeTab === 'support' && (
+            <ul className="space-y-3">
+              {supportServices.map((_, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-200">
+                  <CheckIcon className="text-purple-400 flex-shrink-0 mt-1" width={20} height={20} />
+                  <span className="text-lg md:text-2xl">{t(`tabs.support.${index + 1}`)}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    </section>
+  )
 }
