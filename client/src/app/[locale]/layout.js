@@ -49,11 +49,6 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages();
   return (
     <html lang={locale} className={genos.className}>
-      
-      <head>
-        <title>awattsdev web development & support</title>
-       
-      </head>
       <GoogleAnalytics gaId="G-4BVEYN2HGS"/>
       
       <body>

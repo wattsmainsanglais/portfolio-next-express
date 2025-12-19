@@ -49,50 +49,6 @@ a {
   text-decoration: underline;
 }
 
-footer{
-  display: flex;
-  width: 90vw;
-  justify-content: space-between;
-  padding: 5%;
-  font-weight: 400;
-  color: 'white';
-    
-
-}
-
-
-
-.contact {
-  width: 50%;
-}
-
-
-
-.contact > form > input[type=text] {
-  width: 40%;
-
-}
-
-.contact > form > input {
- 
-  color: #000000;
-}
-
-.contact > form > textarea {
- 
-  color: #000000;
-}
-
-
-
-.contact > form > button {
-  width: 15%;
-  padding: 1%;
-}
-
-.contact > form > textarea {
-  width: 50%;
-}
 
 
 

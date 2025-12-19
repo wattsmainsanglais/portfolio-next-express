@@ -80,18 +80,20 @@ export default async function Page({params}) {
       </main>
 
       {/* Footer with Contact */}
-      <footer className="bg-slate-950 text-white">
-        <section className="container mx-auto px-4 py-16">
-          <ContactForm />
-        </section>
+      <footer className="w-full bg-slate-950 text-white" >
+        <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row justify-center md:justify-between items-center gap-8">
+          <section className="flex w-full md:w-1/2 max-w-2xl">
+            <ContactForm />
+          </section>
 
-        <div className="flex justify-center items-center py-8 border-t border-slate-800">
-          <Image
-            src={whiteLogo}
-            alt='awattsdev logo white, web developer'
-            width={300}
-            className="opacity-80"
-          />
+          <div className="flex justify-center w-full md:w-1/2 items-center">
+            <Image
+              src={whiteLogo}
+              alt='awattsdev logo white, web developer'
+              width={300}
+              className="opacity-80"
+            />
+          </div>
         </div>
       </footer>
     </div>
