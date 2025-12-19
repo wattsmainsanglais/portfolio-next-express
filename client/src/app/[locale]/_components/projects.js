@@ -4,6 +4,7 @@ import popupThumb from '../../../../public/images/popweddingThumb.png'
 import ptcThumb from '../../../../public/images/PTC.png'
 import spaceThumb from '../../../../public/images/spacescreen.png'
 import boisThumb from '@/public/images/boisrenard.png'
+import carpetcoThumb from '@/public/images/carpetcothumb.png'
 import { useTranslations } from "next-intl"
 
 export default function Projects() {
@@ -23,6 +24,14 @@ export default function Projects() {
             src={boisThumb}
             alt="Bois Renard placeholder"
             desc={t("bois")}
+          />
+
+          <SingleProject
+            link="https://www.carpetcodukinfield.co.uk/"
+            heading="CarpetCo Dukinfield"
+            src={carpetcoThumb}
+            alt="CarpetCo professional carpet fitting services"
+            desc={t("carpetco")}
           />
 
           <SingleProject
