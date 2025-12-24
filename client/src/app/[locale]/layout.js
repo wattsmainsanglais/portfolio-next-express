@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   const baseUrl = 'https://www.awattsdev.eu'
 
   return {
-    title: 'Web Developer France | Next.js & React | awattsdev',
+    title: 'Web Developer France | Web Design | Next.js & React | awattsdev',
     description: 'Professional web development services in France. Custom Next.js websites, e-commerce platforms, and bilingual sites. Fast delivery, transparent pricing. Serving businesses across France and Europe.',
     keywords: [
       'web developer', 'France', 'Next.js', 'React', 'website development', 'e-commerce', 'bilingual websites', 'Nouvelle-Aquitaine', 'web design',
