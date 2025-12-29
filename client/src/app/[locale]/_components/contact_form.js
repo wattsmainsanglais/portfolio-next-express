@@ -1,40 +1,31 @@
 'use client'
 import { useState } from "react"
 import { RxPaperPlane } from "react-icons/rx"
+import { submitContactForm } from "../_lib/SubmitContactForm"
 
 export default function ContactForm() {
-  const [data, setData] = useState({name: '', tel: '', email: '', message: ''})
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const onSubmitForm = async () => {
+  const onSubmitForm = async (event) => {
+    event.preventDefault()
     setIsSubmitting(true)
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        body: JSON.stringify(data),
-        mode: "cors",
-        cache: "no-cache",
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
 
-      const returndata = await response.json()
-      if (returndata.message) {
-        window.alert(returndata.message)
-        clearData()
-      } else if (returndata.error) {
-        window.alert(returndata.error)
+    try {
+      const formData = new FormData(event.target)
+      const result = await submitContactForm(formData)
+
+      if (result.message) {
+        window.alert(result.message)
+        event.target.reset()
+      } else if (result.error) {
+        window.alert(result.error)
       }
     } catch (error) {
+      console.error(error)
       window.alert('Error sending message. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
-  }
-
-  const clearData = () => {
-    setData({name: '', tel: '', email: '', message: ''})
   }
 
   return (
@@ -44,10 +35,7 @@ export default function ContactForm() {
       </h2>
 
       <form
-        onSubmit={(e) => {
-          e.preventDefault()
-          onSubmitForm()
-        }}
+        onSubmit={onSubmitForm}
         className="space-y-6"
       >
         {/* Name */}
@@ -60,8 +48,6 @@ export default function ContactForm() {
             type="text"
             name="name"
             required
-            value={data.name}
-            onChange={(e) => setData(prevData => ({ ...prevData, name: e.target.value }))}
             className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
             placeholder="Your name"
           />
@@ -77,8 +63,6 @@ export default function ContactForm() {
             type="tel"
             name="tel"
             required
-            value={data.tel}
-            onChange={(e) => setData(prevData => ({ ...prevData, tel: e.target.value }))}
             className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
             placeholder="+33 X XX XX XX XX"
           />
@@ -94,8 +78,6 @@ export default function ContactForm() {
             type="email"
             name="email"
             required
-            value={data.email}
-            onChange={(e) => setData(prevData => ({ ...prevData, email: e.target.value }))}
             className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
             placeholder="your@email.com"
           />
@@ -110,8 +92,6 @@ export default function ContactForm() {
             id='message'
             name="message"
             rows="6"
-            value={data.message}
-            onChange={(e) => setData(prevData => ({ ...prevData, message: e.target.value }))}
             className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition resize-none"
             placeholder="Tell me about your project..."
           />
