@@ -8,8 +8,9 @@ export default function ContactForm() {
 
   const onSubmitForm = async () => {
     setIsSubmitting(true)
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://server-production-7c47.up.railway.app'
     try {
-      const response = await fetch('https://server-production-7c47.up.railway.app/api/express/contact', {
+      const response = await fetch(`${apiUrl}/api/express/contact`, {
         method: 'POST',
         body: JSON.stringify(data),
         mode: "cors",
