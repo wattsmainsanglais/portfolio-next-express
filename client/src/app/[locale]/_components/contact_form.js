@@ -8,9 +8,8 @@ export default function ContactForm() {
 
   const onSubmitForm = async () => {
     setIsSubmitting(true)
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://server-production-7c47.up.railway.app'
     try {
-      const response = await fetch(`${apiUrl}/api/express/contact`, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         body: JSON.stringify(data),
         mode: "cors",
@@ -21,8 +20,12 @@ export default function ContactForm() {
       })
 
       const returndata = await response.json()
-      window.alert(returndata)
-      clearData()
+      if (returndata.message) {
+        window.alert(returndata.message)
+        clearData()
+      } else if (returndata.error) {
+        window.alert(returndata.error)
+      }
     } catch (error) {
       window.alert('Error sending message. Please try again.')
     } finally {
