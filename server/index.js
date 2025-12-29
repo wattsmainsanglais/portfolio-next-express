@@ -27,7 +27,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(bodyParser.text());
+app.use(bodyParser.json());
 
 
 
@@ -41,9 +41,9 @@ app.get('/', (req, res) =>{
 })
 
 app.post('/api/express/contact', (req, res) =>{
-  
-  
-  const {name, tel, email, message} = JSON.parse(req.body)
+
+
+  const {name, tel, email, message} = req.body
   console.log(name, tel, email, message);
   
   try{

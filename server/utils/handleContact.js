@@ -3,7 +3,7 @@
 const sendMail = require ('./sendmail');
 const validator = require ('validator');
 
-vaildateContactForm = function(tel, email, url = '', cb){
+const vaildateContactForm = function(tel, email, url = '', cb){
     let msg = '';
     
     if(validator.isNumeric(tel, {no_symbols : false})){
