@@ -14,5 +14,17 @@ export default function sitemap() {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    {
+      url: `${baseUrl}/en/cv`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/fr/cv`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ]
 }
