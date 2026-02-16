@@ -5,6 +5,7 @@ import ptcThumb from '../../../../public/images/PTC.png'
 import spaceThumb from '../../../../public/images/spacescreen.png'
 import boisThumb from '@/public/images/boisrenard.png'
 import carpetcoThumb from '@/public/images/carpetcothumb.png'
+import sageThumb from '@/public/images/sage-bg.png'
 import { useTranslations } from "next-intl"
 
 export default function Projects() {
@@ -18,6 +19,14 @@ export default function Projects() {
         </h2>
 
         <div className="space-y-8">
+          <SingleProject
+            link="https://www.sophissageschool.com"
+            heading="Sophi's Sage School"
+            src={sageThumb}
+            alt="Sophi's Sage School language learning website"
+            desc={t("sage")}
+          />
+
           <SingleProject
             link="https://giteduboisrenard.fr/en"
             heading="Le Gite du Bois Renard"
