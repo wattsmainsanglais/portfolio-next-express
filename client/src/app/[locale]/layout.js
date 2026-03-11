@@ -104,8 +104,8 @@ export default async function RootLayout({ children, params }) {
                 ? "Web designer & developer building professional websites for small businesses. AI training workshops and IT support."
                 : "Web designer & développeur créant des sites web professionnels pour petites entreprises. Formations IA et support informatique.",
               "url": "https://www.awattsdev.eu",
-              "logo": "https://www.awattsdev.eu/images/logo.png",
-              "image": "https://www.awattsdev.eu/images/logo.png",
+              "logo": "https://www.awattsdev.eu/images/awattsdev.png",
+              "image": "https://www.awattsdev.eu/images/awattsdev.png",
               "email": "awattsdev@gmail.com",
               "founder": {
                 "@type": "Person",
