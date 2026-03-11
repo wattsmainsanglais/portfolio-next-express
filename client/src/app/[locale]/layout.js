@@ -31,19 +31,23 @@ export async function generateMetadata({ params }) {
       ? 'Web Designer France & UK | Small Business Websites | awattsdev'
       : 'Web Designer France & UK | Sites Web pour Entreprises | awattsdev',
     description: isEn
-      ? 'Web designer & developer building professional websites for small businesses in France & UK. One-time payment from €375, no monthly fees. AI training & IT support.'
-      : 'Web designer créant des sites web professionnels pour entreprises en France & UK. Paiement unique à partir de 375€, sans abonnement. Formations IA & support informatique.',
+      ? 'Web designer & developer building professional websites for small businesses in France & UK. Based near Civray, serving Vienne, Charente & Greater Manchester. One-time payment from €375, no monthly fees.'
+      : 'Web designer créant des sites web professionnels pour entreprises en France & UK. Basé près de Civray, Vienne 86. Paiement unique à partir de 375€, sans abonnement.',
     keywords: [
       // EN - what customers actually search
       'web designer France', 'web developer France', 'web development France', 'website designer',
       'website for small business', 'professional website', 'affordable web design', 'web design and development',
       'freelance web designer', 'business website', 'website no monthly fees', 'web design France',
       'AI training workshops', 'IT support France', 'Nouvelle-Aquitaine', 'website designer near me',
+      'web designer Civray', 'web developer Vienne', 'web designer Ruffec', 'web designer Charroux',
+      'web designer Poitiers', 'web designer Greater Manchester', 'web designer Tameside',
       // FR - what French customers search
       'web designer France', 'développement web France', 'création site web', 'site internet professionnel',
       'créateur site web', 'site web pas cher', 'web designer freelance',
       'site web entreprise', 'site internet sans abonnement', 'formation IA',
       'support informatique', 'web designer Nouvelle-Aquitaine', 'site web Charente', 'site web Vienne',
+      'création site web Civray', 'création site web Ruffec', 'création site web Vienne 86',
+      'site internet Civray', 'site internet Charroux', 'web designer Vienne 86',
     ],
     authors: [{ name: 'Andrew Watts' }],
     alternates: {
@@ -121,6 +125,13 @@ export default async function RootLayout({ children, params }) {
                 { "@type": "Country", "name": "France" },
                 { "@type": "Country", "name": "United Kingdom" },
                 { "@type": "AdministrativeArea", "name": "Nouvelle-Aquitaine" },
+                { "@type": "City", "name": "Civray" },
+                { "@type": "City", "name": "Charroux" },
+                { "@type": "City", "name": "Ruffec" },
+                { "@type": "City", "name": "Poitiers" },
+                { "@type": "AdministrativeArea", "name": "Vienne" },
+                { "@type": "AdministrativeArea", "name": "Greater Manchester" },
+                { "@type": "City", "name": "Tameside" },
               ],
               "priceRange": "€€",
               "currenciesAccepted": "EUR, GBP",
