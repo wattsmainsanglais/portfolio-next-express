@@ -186,6 +186,67 @@ export default async function RootLayout({ children, params }) {
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": locale === 'en' ? "How much does a website cost?" : "Combien coûte un site web ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": locale === 'en'
+                      ? "Websites start from €375 as a one-time payment — no monthly fees, no subscriptions. This includes a professional responsive design, dual language support (English & French), contact form, and free hosting on Vercel."
+                      : "Les sites web commencent à partir de 375 € en paiement unique — sans abonnement mensuel. Cela comprend un design professionnel responsive, le support bilingue (anglais et français), un formulaire de contact et l'hébergement gratuit sur Vercel."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": locale === 'en' ? "How long does it take to build a website?" : "Combien de temps faut-il pour créer un site web ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": locale === 'en'
+                      ? "Websites are delivered within 10 days of receiving all content (text, images, logo). The process starts with a planning call, then build, review, and launch."
+                      : "Les sites web sont livrés dans les 10 jours suivant la réception de tous les contenus (textes, images, logo). Le processus commence par un appel de planification, puis la construction, la révision et le lancement."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": locale === 'en' ? "Are there any monthly fees after the website is built?" : "Y a-t-il des frais mensuels après la création du site ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": locale === 'en'
+                      ? "No monthly fees. The €375 is a one-time payment. Hosting is free on Vercel (client's own account). You own your website, your code, and all your accounts outright."
+                      : "Aucun frais mensuel. Les 375 € sont un paiement unique. L'hébergement est gratuit sur Vercel (compte du client). Vous êtes propriétaire de votre site, de votre code et de tous vos comptes."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": locale === 'en' ? "What areas do you serve?" : "Quelles zones géographiques couvrez-vous ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": locale === 'en'
+                      ? "Based near Civray in Vienne (86), Nouvelle-Aquitaine, France. Serving businesses across France — particularly Civray, Charroux, Ruffec, Poitiers and the wider Vienne and Charente area — and in Greater Manchester and Tameside in the UK. Remote work available across Europe."
+                      : "Basé près de Civray dans la Vienne (86), Nouvelle-Aquitaine, France. Je travaille avec des entreprises dans toute la France — notamment Civray, Charroux, Ruffec, Poitiers et la région Vienne/Charente — ainsi qu'à Greater Manchester et Tameside au Royaume-Uni. Travail à distance disponible dans toute l'Europe."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": locale === 'en' ? "Do you offer IT support?" : "Proposez-vous un support informatique ?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": locale === 'en'
+                      ? "Yes. On-site IT support for businesses and individuals — hardware issues, software problems, email setup, OS upgrades, network troubleshooting. First hour is €55, then €45/hr. No contracts, pay per visit."
+                      : "Oui. Support informatique sur site pour entreprises et particuliers — problèmes matériels, logiciels, configuration d'email, mises à jour OS, dépannage réseau. Première heure à 55 €, puis 45 €/h. Sans contrat, paiement à la visite."
+                  }
+                },
+              ]
+            })
+          }}
+        />
       <NextIntlClientProvider messages={messages} >
         <ThemeProvider>
           <Theme data-is-root-theme='false' grayColor="olive" accentColor="purple" >

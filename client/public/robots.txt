@@ -2,4 +2,21 @@ User-agent: *
 Allow: /
 Disallow: /api
 
+# AI Search Crawlers (allow for AI search visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 Sitemap: https://www.awattsdev.eu/sitemap.xml
+LLMs: https://www.awattsdev.eu/llms.txt

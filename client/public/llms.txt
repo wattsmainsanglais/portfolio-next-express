@@ -1,0 +1,32 @@
+# awattsdev
+
+> Andrew Watts — freelance web designer & developer based near Civray, Nouvelle-Aquitaine, France. Building professional websites for small businesses in France and the UK.
+
+## Services
+
+- **Website Design & Development**: Custom-coded professional websites for small businesses. One-time payment from €375 — no monthly fees, no subscriptions, no vendor lock-in. Built with Next.js. Clients own all accounts (GitHub, Vercel, Google). Dual language (English + French) included. Delivered in 10 days from content receipt.
+- **IT Support**: On-site tech support for businesses and individuals. Hardware issues, software problems, OS upgrades, email setup, network troubleshooting. First hour €55, subsequent hours €45. No contracts — pay per visit.
+- **AI Workshops**: 60-minute practical Claude AI workshop for small business owners. €35 per attendee. Learn to automate admin tasks, draft emails, and save hours every week using AI tools.
+
+## Location & Service Areas
+
+Based in Civray (Vienne 86), Nouvelle-Aquitaine, France. Serving:
+- France: Civray, Charroux, Ruffec, Poitiers, Vienne (86), Charente (16), Nouvelle-Aquitaine
+- United Kingdom: Greater Manchester, Tameside, and surrounding areas
+- Also serving clients remotely across France, UK, and Europe
+
+## Contact
+
+- Email: awattsdev@gmail.com
+- Website: https://www.awattsdev.eu
+- Facebook: https://www.facebook.com/awattsdev
+- LinkedIn: https://www.linkedin.com/in/awattsdev
+
+## Key Facts
+
+- Registered French business — SIRET: 81996076600015
+- Languages: English & French (bilingual service)
+- Payment: One-time fee, bank transfer — no ongoing charges
+- Websites delivered in 10 days from content receipt
+- Free hosting on Vercel — client owns their own hosting account forever
+- Competitive advantage over GoDaddy/Wix: no monthly fees, full code ownership, professional custom design
