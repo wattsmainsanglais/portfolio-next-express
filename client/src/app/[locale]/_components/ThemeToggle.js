@@ -10,7 +10,7 @@ export default function ThemeToggle() {
 
   return (
     <div className="flex flex-col items-center gap-4 py-10">
-      <p className="text-slate-500 dark:text-slate-400 text-xl md:text-2xl font-medium tracking-wide">
+      <p className="text-slate-500 dark:text-slate-400 text-xl md:text-2xl font-medium tracking-wide text-center px-4">
         {t('question')}
       </p>
       <button
