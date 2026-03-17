@@ -23,6 +23,11 @@
         "desc": "Session pratique de 60 minutes pour faire utiliser Claude AI à votre entreprise — prompts, automatisation, gain de temps."
     }
 },
+"ThemeToggle": {
+    "question": "Votre site a-t-il un mode clair et sombre ? Essayez",
+    "toLight": "Passer en mode clair",
+    "toDark": "Passer en mode sombre"
+},
 "About": {
     "heading": "Qui suis je?",
     "para": "Bonjour, je suis Andrew, développeur web anglophone et francophone basé près de Civray, dans la Vienne (86), en Nouvelle-Aquitaine. J'interviens auprès des entreprises locales — Charroux, Ruffec, Poitiers et toute la région — ainsi qu'auprès de clients au Royaume-Uni, notamment dans le Grand Manchester. Si vous recherchez la création d'un site web, une modernisation, une boutique en ligne ou un support informatique, vous êtes au bon endroit. Contactez-moi via le formulaire ci-dessous ou sur mes réseaux sociaux — liens dans l'en-tête."

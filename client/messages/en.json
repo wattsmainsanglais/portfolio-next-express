@@ -21,6 +21,11 @@
         "desc": "60-minute hands-on session to get your business using Claude AI — prompting, automating tasks, saving time."
     }
 },
+"ThemeToggle": {
+    "question": "Does your site have light & dark mode? Give it a try",
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+},
 "About": {
     "heading": "About",
     "para": "Hi, I'm Andrew, an English & French speaking web developer based near Civray, Vienne (86), in South West France. I serve businesses across the local area — Charroux, Ruffec, Poitiers and throughout Nouvelle-Aquitaine — as well as clients in Greater Manchester and Tameside, UK. If you're looking for web design, site modernisation, online shops or IT support, you've come to the right place. Please contact me using the form below or through my social media — links in the header."

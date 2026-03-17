@@ -30,7 +30,7 @@ export default function ContactForm() {
 
   return (
     <div id="contact" className="w-full mx-auto">
-      <h2 className="text-4xl md:text-5xl font-light text-white text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-light text-slate-900 dark:text-white text-center mb-12">
         Contact Me
       </h2>
 
@@ -40,7 +40,7 @@ export default function ContactForm() {
       >
         {/* Name */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
             Name *
           </label>
           <input
@@ -48,14 +48,14 @@ export default function ContactForm() {
             type="text"
             name="name"
             required
-            className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+            className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
             placeholder="Your name"
           />
         </div>
 
         {/* Tel */}
         <div>
-          <label htmlFor="tel" className="block text-sm font-medium text-slate-300 mb-2">
+          <label htmlFor="tel" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
             Phone *
           </label>
           <input
@@ -63,14 +63,14 @@ export default function ContactForm() {
             type="tel"
             name="tel"
             required
-            className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+            className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
             placeholder="+33 X XX XX XX XX"
           />
         </div>
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
             Email *
           </label>
           <input
@@ -78,21 +78,21 @@ export default function ContactForm() {
             type="email"
             name="email"
             required
-            className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+            className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
             placeholder="your@email.com"
           />
         </div>
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
             Message
           </label>
           <textarea
             id='message'
             name="message"
             rows="6"
-            className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition resize-none"
+            className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition resize-none"
             placeholder="Tell me about your project..."
           />
         </div>

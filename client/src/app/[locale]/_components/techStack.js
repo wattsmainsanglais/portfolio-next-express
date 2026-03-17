@@ -23,14 +23,15 @@ const skills = [
 export default function TechStack() {
   return (
     <section className="container mx-auto px-4 py-20" id="skills">
-      <h2 className="text-5xl md:text-6xl font-light text-white text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-16">
         Skills
       </h2>
+
       <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-10">
         {skills.map(({ icon: Icon, label }) => (
           <div key={label} className="flex flex-col items-center gap-3">
-            <Icon className="text-white" size={72} />
-            <span className="text-slate-300 text-lg">{label}</span>
+            <Icon className="text-slate-700 dark:text-white" size={72} />
+            <span className="text-slate-500 dark:text-slate-300 text-lg">{label}</span>
           </div>
         ))}
       </div>

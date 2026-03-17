@@ -6,10 +6,10 @@ export default function Intro() {
   return (
     <section className="container mx-auto px-4 py-20 lg:py-32">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-slate-900 dark:text-white mb-6 leading-tight">
           {t("heading1")}
         </h1>
-        <p className="text-2xl md:text-3xl font-light text-purple-200">
+        <p className="text-2xl md:text-3xl font-light text-purple-700 dark:text-purple-200">
           {t("heading2")}
         </p>
 

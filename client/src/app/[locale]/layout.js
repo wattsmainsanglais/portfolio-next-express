@@ -10,6 +10,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
+import { ThemeProvider } from './_components/ThemeProvider'
 
  
 const genos = Genos({
@@ -186,9 +187,11 @@ export default async function RootLayout({ children, params }) {
           }}
         />
       <NextIntlClientProvider messages={messages} >
-        <Theme data-is-root-theme='false' grayColor="olive" accentColor="purple" >
-        {children}
-        </Theme>
+        <ThemeProvider>
+          <Theme data-is-root-theme='false' grayColor="olive" accentColor="purple" >
+            {children}
+          </Theme>
+        </ThemeProvider>
       </NextIntlClientProvider>
       
         

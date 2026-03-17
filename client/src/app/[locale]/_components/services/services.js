@@ -11,7 +11,7 @@ export default function Services() {
 
   return (
     <section className="container mx-auto px-4 py-20" id="services">
-      <h2 className="text-5xl md:text-6xl font-light text-white text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-16">
         Services
       </h2>
 
@@ -19,14 +19,14 @@ export default function Services() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-8">
 
         {/* Web Design */}
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/50 flex flex-col">
+        <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-400/50 dark:border-purple-500/50 flex flex-col">
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center">
               <FaLaptop className="text-purple-400" size={32} />
             </div>
           </div>
 
-          <h3 className="text-2xl font-semibold text-white text-center mb-2">Web Design</h3>
+          <h3 className="text-2xl font-semibold text-slate-900 dark:text-white text-center mb-2">Web Design</h3>
 
           {/* Price badge */}
           <div className="flex justify-center mb-6">
@@ -39,25 +39,25 @@ export default function Services() {
             {["b1", "b2", "b3", "b4"].map((key) => (
               <li key={key} className="flex items-start gap-3">
                 <CheckIcon className="text-purple-400 flex-shrink-0 mt-1" width={20} height={20} />
-                <span className="text-slate-200 text-2xl">{t(`dev.${key}`)}</span>
+                <span className="text-slate-700 dark:text-slate-200 text-2xl">{t(`dev.${key}`)}</span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-6 text-center text-purple-300 font-medium text-lg">
+          <p className="mt-6 text-center text-purple-700 dark:text-purple-300 font-medium text-lg">
             {t("dev.price_note")}
           </p>
         </div>
 
         {/* IT Support */}
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-purple-500 transition-all flex flex-col">
+        <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-500 transition-all flex flex-col">
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center">
               <MdOutlineSupportAgent className="text-purple-400" size={32} />
             </div>
           </div>
 
-          <h3 className="text-2xl font-semibold text-white text-center mb-2">IT Support</h3>
+          <h3 className="text-2xl font-semibold text-slate-900 dark:text-white text-center mb-2">IT Support</h3>
 
           {/* Price badge */}
           <div className="flex justify-center mb-6">
@@ -70,7 +70,7 @@ export default function Services() {
             {["b1", "b2", "b3"].map((key) => (
               <li key={key} className="flex items-start gap-3">
                 <CheckIcon className="text-purple-400 flex-shrink-0 mt-1" width={20} height={20} />
-                <span className="text-slate-200 text-2xl">{t(`support.${key}`)}</span>
+                <span className="text-slate-700 dark:text-slate-200 text-2xl">{t(`support.${key}`)}</span>
               </li>
             ))}
           </ul>
@@ -79,16 +79,16 @@ export default function Services() {
 
       {/* AI Workshop strip */}
       <div className="max-w-5xl mx-auto">
-        <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-700 hover:border-purple-500 transition-all flex flex-col sm:flex-row items-center gap-6">
+        <div className="bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-500 transition-all flex flex-col sm:flex-row items-center gap-6">
           <div className="w-14 h-14 bg-purple-600/20 rounded-full flex items-center justify-center flex-shrink-0">
             <RiRobot2Line className="text-purple-400" size={28} />
           </div>
           <div className="flex-1 text-center sm:text-left">
-            <h3 className="text-xl font-semibold text-white mb-1">{t("workshop.title")}</h3>
-            <p className="text-slate-300 text-2xl">{t("workshop.desc")}</p>
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">{t("workshop.title")}</h3>
+            <p className="text-slate-600 dark:text-slate-300 text-2xl">{t("workshop.desc")}</p>
           </div>
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-white">€40<span className="text-base font-normal text-slate-300"> / person</span></span>
+            <span className="text-2xl font-bold text-slate-900 dark:text-white">€40<span className="text-base font-normal text-slate-500 dark:text-slate-300"> / person</span></span>
           </div>
         </div>
       </div>

@@ -6,15 +6,16 @@ import Projects from './_components/projects'
 import ContactForm from './_components/contact_form'
 import Services from './_components/services/services'
 import TechStack from './_components/techStack'
+import ThemeToggle from './_components/ThemeToggle'
+import FooterLogo from './_components/FooterLogo'
 import LanguageSwitcher from './_components/language/LanguageSwitcher'
 import awattsdevImg from '../../../public/images/nologo.svg'
-import whiteLogo from '../../../public/images/White-logo-no background.svg'
 
 export default async function Page({params}) {
   const {locale} = await params
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-purple-50 to-white dark:from-slate-900 dark:via-purple-900 dark:to-slate-900">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
@@ -35,7 +36,7 @@ export default async function Page({params}) {
               href='https://www.facebook.com/profile.php?id=61553113778974'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-white hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
               aria-label="Facebook"
             >
               <FaFacebookSquare size={24} />
@@ -44,7 +45,7 @@ export default async function Page({params}) {
               href='https://www.instagram.com/awattsdev/'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-white hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
               aria-label="Instagram"
             >
               <FaInstagram size={24} />
@@ -53,7 +54,7 @@ export default async function Page({params}) {
               href='https://www.linkedin.com/in/andrew-watts-9a7145269/'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-white hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
               aria-label="LinkedIn"
             >
               <FaLinkedinIn size={24} />
@@ -62,7 +63,7 @@ export default async function Page({params}) {
               href='https://github.com/wattsmainsanglais'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-white hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
               aria-label="GitHub"
             >
               <FaGithub size={24} />
@@ -75,6 +76,7 @@ export default async function Page({params}) {
       {/* Main Content */}
       <main>
         <Intro />
+        <ThemeToggle />
         <Services />
         <Bio />
         <Projects />
@@ -82,19 +84,14 @@ export default async function Page({params}) {
       </main>
 
       {/* Footer with Contact */}
-      <footer className="w-full bg-slate-950 text-white" >
+      <footer className="w-full bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-white" >
         <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row justify-center md:justify-between items-center gap-8">
           <section className="flex w-full md:w-1/2 max-w-2xl">
             <ContactForm />
           </section>
 
           <div className="flex justify-center w-full md:w-1/2 items-center">
-            <Image
-              src={whiteLogo}
-              alt='awattsdev logo white, web developer'
-              width={300}
-              className="opacity-80"
-            />
+            <FooterLogo />
           </div>
         </div>
       </footer>

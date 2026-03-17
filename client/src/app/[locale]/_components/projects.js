@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-light text-white text-center mb-16">
+        <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-16">
           Portfolio
         </h2>
 
@@ -28,7 +28,7 @@ export default function Projects() {
           />
 
           <SingleProject
-            link="https://tc-photography.vercel.app"
+            link="https://www.terrycarrollphoto.com"
             heading="TC Photography"
             src={tcThumb}
             alt="TC Photography - professional photographer Bristol UK"
