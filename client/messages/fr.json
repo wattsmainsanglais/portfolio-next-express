@@ -2,47 +2,26 @@
 
 {
     "Intro": {
-        "heading1": "Développeur Web | Sites Web Professionnels pour Votre Entreprise",
-        "heading2": "Un nouveau site à partir de zéro ou un coup de main, awattsdev est là pour vous"
+        "heading1": "Web Designer | Sud-Ouest France & UK | Sites Web Professionnels",
+        "heading2": "Sites web professionnels pour les petites entreprises dans le Sud-Ouest de la France et au Royaume-Uni"
     },
     "Services": {
     "dev": {
-        "1": "-Vous êtes une nouvelle entreprise et vous souhaitez vendre vos produits en ligne?",
-        "2": "-Système de réservation en ligne pour gagner du temps ?",
-        "3": "-Besoin d'un site plus personnalisé que ce que les créateurs de sites Web tiers peuvent vous proposer ?",
-        "end": "Je propose une gamme de services de développement Web pour répondre à vos besoins"
+        "b1": "Conçu sur mesure selon vos besoins — pas de templates, pas de constructeurs de pages",
+        "b2": "Optimisé pour le SEO, responsive mobile, et bilingue si besoin",
+        "b3": "Propriété totale transférée — aucun constructeur de site tiers ne vous retient en otage",
+        "b4": "Sites vitrines, En ligne en 10 jours après réception du contenu",
+        "price_note": "Paiement unique. Sans abonnement."
     },
     "support": {
-        "1": "-Vous créez votre propre site mais vous avez besoin de conseils ? ",
-        "2": "-Besoin de conseils pour choisir un domaine et un fournisseur d'hébergement ?",
-        "3": "-Confus par le SEO ?",
-        "end": "Je peux vous fournir un support technique pour vous guider tout au long de votre parcours en ligne"
+        "b1": "Sur place ou à distance — matériel, logiciels, configuration email et plus",
+        "b2": "Conseils clairs, sans jargon technique",
+        "b3": "Vous créez votre propre site ? Je peux vous guider"
     },
-    "tabs": {
-        "dev": {
-            "1": "Site 100% personnalisable, construit selon les spécifications",
-            "2": "Plusieurs options d'hébergement adaptées à la taille de votre entreprise",
-            "3": "Site optimisé pour SEO, prêt à l'emploi",
-            "4": "Sites commerciaux avec choix d'options de paiement",
-            "5": "Systèmes de réservation personnalisés pour vous faire gagner du temps",
-            "6": "Sites multilingues",
-            "7": "Intégrez vos réseaux sociaux",
-            "8": "Vous êtes intéressé par Web3 ? Je peux discuter des options",
-            "9": "Nouveaux sites à partir de 375 €"
-        },
-        "support": {
-            "1": "Conseils, aide ou clarification du jargon technique",
-            "2": "Approche pratique pour mettre à jour votre projet existant",
-            "3": "Expérience avec les techniques modernes de conception Web",
-            "4": "Je peux travailler avec des logiciels tiers tels que Shopify",
-            "5": "Offrir une assistance en personne (selon le distance) ou virtuelle",
-            "6": "Tarifs horaires ou forfaits d'assistance",
-            "7": "Lignes de communication ouvertes",
-            "8": "Ne payez pas des milliers de dollars aux « experts » SEO, parlez-moi d'abord",
-            "9": "Support étendu, je travaille avec des experts en conception et en marketing"
-        }
+    "workshop": {
+        "title": "Atelier IA",
+        "desc": "Session pratique de 60 minutes pour faire utiliser Claude AI à votre entreprise — prompts, automatisation, gain de temps."
     }
-
 },
 "About": {
     "heading": "Qui suis je?",
@@ -50,7 +29,7 @@
 }, 
 "Portfolio": {
     "sage": "Un site accueillant pour une école de langues dans le sud-ouest de la France proposant des cours d'anglais et de français. Entièrement bilingue pour que les visiteurs puissent naviguer dans les deux langues, avec des formulaires de contact simples et tout ce qu'il faut pour bien se positionner dans les résultats de recherche Google.",
-    "bois": "Le Gîte de Bois renard est un charmant gîte familial dans le département des Deux Sèvres. Site construit en Next Js 15 avec l'utilisation de ShanCn pour l'interface utilisateur professionnelle.",
+    "tc": "Un site portfolio pour Terry Carroll, photographe basé à Bristol, au Royaume-Uni. Six galeries thématiques avec mise en page en mosaïque et visionneuse lightbox, toutes les images hébergées et optimisées via Cloudinary. Un tableau de bord admin permet à Terry d'uploader de nouvelles photos directement, sans toucher au code.",
     "carpetco": "Service professionnel de pose de moquette à Dukinfield et dans le Grand Manchester. Site web moderne et réactif construit avec Next.js 16, avec des vitrines de services, des formulaires de contact et une optimisation SEO. Design épuré axé sur la conversion et une navigation facile pour les clients locaux.",
     "nd": "Nature Dopes est un projet en cours dédié à la création d'un site d'abord pour l'appréciation de la flore naturelle, ensuite comme outil pédagogique. Pour préserver l'environnement, nous devons d'abord le comprendre. Il s'agit d'une application full stack développée dans NextJs 14 Typescipt, elle utilise de nombreux outils NextJs les plus récents, tels que Next-auth pour l'authentification, Next-intl pour le multilingue, Radix Ui, Iagon pour le stockage décentralisé et Prisma pour la gestion de base de données. Suivez le lien pour voir",
     "pop": "Il s'agit de la page d'accueil d'une nouvelle entreprise en démarrage proposant des options de garde d'enfants pour les mariages et les grands événements. N'hésitez pas à leur jeter un œil si vous avez prévu des événements majeurs dans le sud-ouest de la France. Le site est une application Web développée dans NextJs 14 et utilise Next-Int pour un changement de langue intuitif. Suivez le lien pour voir",

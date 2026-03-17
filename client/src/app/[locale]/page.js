@@ -5,6 +5,7 @@ import Bio from './_components/bio'
 import Projects from './_components/projects'
 import ContactForm from './_components/contact_form'
 import Services from './_components/services/services'
+import TechStack from './_components/techStack'
 import LanguageSwitcher from './_components/language/LanguageSwitcher'
 import awattsdevImg from '../../../public/images/nologo.svg'
 import whiteLogo from '../../../public/images/White-logo-no background.svg'
@@ -77,6 +78,7 @@ export default async function Page({params}) {
         <Services />
         <Bio />
         <Projects />
+        <TechStack />
       </main>
 
       {/* Footer with Contact */}

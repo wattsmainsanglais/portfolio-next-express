@@ -28,8 +28,8 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL(baseUrl),
     title: isEn
-      ? 'Web Designer France & UK | Small Business Websites | awattsdev'
-      : 'Web Designer France & UK | Sites Web pour Entreprises | awattsdev',
+      ? 'Web Designer France & UK | Small Business Websites'
+      : 'Web Designer France & UK | Sites Web pour Entreprises',
     description: isEn
       ? 'Web designer & developer building professional websites for small businesses in France & UK. Based near Civray, serving Vienne, Charente & Greater Manchester. One-time payment from €375, no monthly fees.'
       : 'Web designer créant des sites web professionnels pour entreprises en France & UK. Basé près de Civray, Vienne 86. Paiement unique à partir de 375€, sans abonnement.',

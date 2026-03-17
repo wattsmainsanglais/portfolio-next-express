@@ -3,7 +3,7 @@ import ndThumb from '../../../../public/images/nd-background1.png'
 import popupThumb from '../../../../public/images/popweddingThumb1.png'
 import ptcThumb from '../../../../public/images/PTC.png'
 import spaceThumb from '../../../../public/images/spacescreen.png'
-import boisThumb from '@/public/images/boisrenard.png'
+import tcThumb from '@/public/images/tcphoto.png'
 import carpetcoThumb from '@/public/images/carpetcothumb.png'
 import sageThumb from '@/public/images/sage-bg.png'
 import { useTranslations } from "next-intl"
@@ -28,11 +28,11 @@ export default function Projects() {
           />
 
           <SingleProject
-            link="https://giteduboisrenard.fr/en"
-            heading="Le Gite du Bois Renard"
-            src={boisThumb}
-            alt="Bois Renard placeholder"
-            desc={t("bois")}
+            link="https://tc-photography.vercel.app"
+            heading="TC Photography"
+            src={tcThumb}
+            alt="TC Photography - professional photographer Bristol UK"
+            desc={t("tc")}
           />
 
           <SingleProject
