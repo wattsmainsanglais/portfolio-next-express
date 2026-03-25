@@ -15,7 +15,7 @@ export default function ThemeToggle() {
       </p>
       <button
         onClick={toggleTheme}
-        className="flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800/60 backdrop-blur-sm text-slate-700 dark:text-slate-200 hover:border-purple-500 dark:hover:border-purple-400 hover:text-purple-600 dark:hover:text-purple-300 transition-all text-base font-semibold shadow-md hover:shadow-purple-200 dark:hover:shadow-purple-900/40"
+        className="flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800/60 backdrop-blur-sm text-slate-700 dark:text-slate-200 hover:border-brand-500 dark:hover:border-brand-400 hover:text-brand-600 dark:hover:text-brand-300 transition-all text-base font-semibold shadow-md hover:shadow-brand-200 dark:hover:shadow-brand-900/40"
         aria-label={t('question')}
       >
         {isDark ? (
@@ -25,7 +25,7 @@ export default function ThemeToggle() {
           </>
         ) : (
           <>
-            <HiMoon size={22} className="text-purple-500" />
+            <HiMoon size={22} className="text-brand-500" />
             {t('toDark')}
           </>
         )}

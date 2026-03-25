@@ -19,10 +19,10 @@ export default function Services() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-8">
 
         {/* Web Design */}
-        <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-400/50 dark:border-purple-500/50 flex flex-col">
+        <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-brand-400/50 dark:border-brand-500/50 flex flex-col">
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center">
-              <FaLaptop className="text-purple-400" size={32} />
+            <div className="w-16 h-16 bg-brand-600/20 rounded-full flex items-center justify-center">
+              <FaLaptop className="text-brand-400" size={32} />
             </div>
           </div>
 
@@ -30,7 +30,7 @@ export default function Services() {
 
           {/* Price badge */}
           <div className="flex justify-center mb-6">
-            <div className="bg-purple-600 rounded-xl px-6 py-3 text-center">
+            <div className="bg-brand-600 rounded-xl px-6 py-3 text-center">
               <span className="text-3xl font-bold text-white">from €375</span>
             </div>
           </div>
@@ -38,22 +38,22 @@ export default function Services() {
           <ul className="space-y-3 flex-1">
             {["b1", "b2", "b3", "b4"].map((key) => (
               <li key={key} className="flex items-start gap-3">
-                <CheckIcon className="text-purple-400 flex-shrink-0 mt-1" width={20} height={20} />
+                <CheckIcon className="text-brand-400 flex-shrink-0 mt-1" width={20} height={20} />
                 <span className="text-slate-700 dark:text-slate-200 text-2xl">{t(`dev.${key}`)}</span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-6 text-center text-purple-700 dark:text-purple-300 font-medium text-lg">
+          <p className="mt-6 text-center text-brand-700 dark:text-brand-300 font-medium text-lg">
             {t("dev.price_note")}
           </p>
         </div>
 
         {/* IT Support */}
-        <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-500 transition-all flex flex-col">
+        <div className="bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-400 dark:hover:border-brand-500 transition-all flex flex-col">
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center">
-              <MdOutlineSupportAgent className="text-purple-400" size={32} />
+            <div className="w-16 h-16 bg-brand-600/20 rounded-full flex items-center justify-center">
+              <MdOutlineSupportAgent className="text-brand-400" size={32} />
             </div>
           </div>
 
@@ -69,7 +69,7 @@ export default function Services() {
           <ul className="space-y-3 flex-1">
             {["b1", "b2", "b3"].map((key) => (
               <li key={key} className="flex items-start gap-3">
-                <CheckIcon className="text-purple-400 flex-shrink-0 mt-1" width={20} height={20} />
+                <CheckIcon className="text-brand-400 flex-shrink-0 mt-1" width={20} height={20} />
                 <span className="text-slate-700 dark:text-slate-200 text-2xl">{t(`support.${key}`)}</span>
               </li>
             ))}
@@ -79,9 +79,9 @@ export default function Services() {
 
       {/* AI Workshop strip */}
       <div className="max-w-5xl mx-auto">
-        <div className="bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-purple-400 dark:hover:border-purple-500 transition-all flex flex-col sm:flex-row items-center gap-6">
-          <div className="w-14 h-14 bg-purple-600/20 rounded-full flex items-center justify-center flex-shrink-0">
-            <RiRobot2Line className="text-purple-400" size={28} />
+        <div className="bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-brand-400 dark:hover:border-brand-500 transition-all flex flex-col sm:flex-row items-center gap-6">
+          <div className="w-14 h-14 bg-brand-600/20 rounded-full flex items-center justify-center flex-shrink-0">
+            <RiRobot2Line className="text-brand-400" size={28} />
           </div>
           <div className="flex-1 text-center sm:text-left">
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-1">{t("workshop.title")}</h3>

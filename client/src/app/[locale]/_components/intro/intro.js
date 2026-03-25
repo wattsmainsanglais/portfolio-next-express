@@ -9,7 +9,7 @@ export default function Intro() {
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-slate-900 dark:text-white mb-6 leading-tight">
           {t("heading1")}
         </h1>
-        <p className="text-2xl md:text-3xl font-light text-purple-700 dark:text-purple-200">
+        <p className="text-2xl md:text-3xl font-light text-brand-700 dark:text-brand-200">
           {t("heading2")}
         </p>
 
@@ -17,7 +17,7 @@ export default function Intro() {
         <div className="mt-12">
           <a
             href="#contact"
-            className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-8 py-4 rounded-lg text-lg transition-colors shadow-lg hover:shadow-purple-500/50"
+            className="inline-block bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-4 rounded-lg text-lg transition-colors shadow-lg hover:shadow-brand-500/50"
           >
             Get Started
           </a>

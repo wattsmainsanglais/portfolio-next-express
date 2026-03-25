@@ -15,7 +15,7 @@ export default async function Page({params}) {
   const {locale} = await params
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-purple-50 to-white dark:from-slate-900 dark:via-purple-900 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-brand-50 to-white dark:from-slate-900 dark:via-brand-900 dark:to-slate-900">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
@@ -36,7 +36,7 @@ export default async function Page({params}) {
               href='https://www.facebook.com/profile.php?id=61553113778974'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors"
               aria-label="Facebook"
             >
               <FaFacebookSquare size={24} />
@@ -45,7 +45,7 @@ export default async function Page({params}) {
               href='https://www.instagram.com/awattsdev/'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors"
               aria-label="Instagram"
             >
               <FaInstagram size={24} />
@@ -54,7 +54,7 @@ export default async function Page({params}) {
               href='https://www.linkedin.com/in/andrew-watts-9a7145269/'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors"
               aria-label="LinkedIn"
             >
               <FaLinkedinIn size={24} />
@@ -63,7 +63,7 @@ export default async function Page({params}) {
               href='https://github.com/wattsmainsanglais'
               target='_blank'
               rel="noopener noreferrer"
-              className="text-slate-700 dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+              className="text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors"
               aria-label="GitHub"
             >
               <FaGithub size={24} />
