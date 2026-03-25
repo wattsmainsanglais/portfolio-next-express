@@ -6,6 +6,7 @@ import spaceThumb from '../../../../public/images/spacescreen.png'
 import tcThumb from '@/public/images/tcphoto.png'
 import carpetcoThumb from '@/public/images/carpetcothumb.png'
 import sageThumb from '@/public/images/sage-bg.png'
+import gardapisThumb from '@/public/images/gardapis.png'
 import { useTranslations } from "next-intl"
 
 export default function Projects() {
@@ -19,6 +20,14 @@ export default function Projects() {
         </h2>
 
         <div className="space-y-8">
+          <SingleProject
+            link="https://www.gardapis.eu"
+            heading="Gard'Apis"
+            src={gardapisThumb}
+            alt="Gard'Apis beekeeping products ecommerce store"
+            desc={t("gardapis")}
+          />
+
           <SingleProject
             link="https://www.sophissageschool.com"
             heading="Sophi's Sage School"
