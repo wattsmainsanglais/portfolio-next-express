@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL(baseUrl),
     title: isEn
-      ? 'Web Designer France & UK | Small Business Websites'
-      : 'Web Designer France & UK | Sites Web pour Entreprises',
+      ? 'Web Developer France & UK | Small Business Websites'
+      : 'Web Developer France & UK | Sites Web pour Entreprises',
     description: isEn
       ? 'Web designer & developer building professional websites for small businesses in France & UK. Based near Civray, serving Vienne, Charente & Greater Manchester. One-time payment from €375, no monthly fees.'
       : 'Web designer créant des sites web professionnels pour entreprises en France & UK. Basé près de Civray, Vienne 86. Paiement unique à partir de 375€, sans abonnement.',
@@ -41,13 +41,15 @@ export async function generateMetadata({ params }) {
       'freelance web designer', 'business website', 'website no monthly fees', 'web design France',
       'AI training workshops', 'IT support France', 'Nouvelle-Aquitaine', 'website designer near me',
       'web designer Civray', 'web developer Vienne', 'web designer Ruffec', 'web designer Charroux',
-      'web designer Poitiers', 'web designer Greater Manchester', 'web designer Tameside',
+      'web designer Poitiers', 'web designer Angoulême', 'web designer Limoges',
+      'web designer Greater Manchester', 'web designer Tameside',
       // FR - what French customers search
       'web designer France', 'développement web France', 'création site web', 'site internet professionnel',
       'créateur site web', 'site web pas cher', 'web designer freelance',
       'site web entreprise', 'site internet sans abonnement', 'formation IA',
       'support informatique', 'web designer Nouvelle-Aquitaine', 'site web Charente', 'site web Vienne',
       'création site web Civray', 'création site web Ruffec', 'création site web Vienne 86',
+      'création site web Angoulême', 'création site web Limoges',
       'site internet Civray', 'site internet Charroux', 'web designer Vienne 86',
     ],
     authors: [{ name: 'Andrew Watts' }],
@@ -130,6 +132,8 @@ export default async function RootLayout({ children, params }) {
                 { "@type": "City", "name": "Charroux" },
                 { "@type": "City", "name": "Ruffec" },
                 { "@type": "City", "name": "Poitiers" },
+                { "@type": "City", "name": "Angoulême" },
+                { "@type": "City", "name": "Limoges" },
                 { "@type": "AdministrativeArea", "name": "Vienne" },
                 { "@type": "AdministrativeArea", "name": "Greater Manchester" },
                 { "@type": "City", "name": "Tameside" },
@@ -229,8 +233,8 @@ export default async function RootLayout({ children, params }) {
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Based near Civray in Vienne (86), Nouvelle-Aquitaine, France. Serving businesses across France — particularly Civray, Charroux, Ruffec, Poitiers and the wider Vienne and Charente area — and in Greater Manchester and Tameside in the UK. Remote work available across Europe."
-                      : "Basé près de Civray dans la Vienne (86), Nouvelle-Aquitaine, France. Je travaille avec des entreprises dans toute la France — notamment Civray, Charroux, Ruffec, Poitiers et la région Vienne/Charente — ainsi qu'à Greater Manchester et Tameside au Royaume-Uni. Travail à distance disponible dans toute l'Europe."
+                      ? "Based near Civray in Vienne (86), Nouvelle-Aquitaine, France. Serving businesses across France — particularly Civray, Charroux, Ruffec, Poitiers, Angoulême, Limoges and the wider Vienne, Charente and Haute-Vienne area — and in Greater Manchester and Tameside in the UK. Remote work available across Europe."
+                      : "Basé près de Civray dans la Vienne (86), Nouvelle-Aquitaine, France. Je travaille avec des entreprises dans toute la France — notamment Civray, Charroux, Ruffec, Poitiers, Angoulême, Limoges et la région Vienne/Charente/Haute-Vienne — ainsi qu'à Greater Manchester et Tameside au Royaume-Uni. Travail à distance disponible dans toute l'Europe."
                   }
                 },
                 {
