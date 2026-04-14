@@ -32,25 +32,25 @@ export async function generateMetadata({ params }) {
       ? 'Web Developer France & UK | Small Business Websites'
       : 'Web Developer France & UK | Sites Web pour Entreprises',
     description: isEn
-      ? 'Web designer & developer building professional websites for small businesses in France & UK. Based near Civray, serving Vienne, Charente & Greater Manchester. One-time payment from €375, no monthly fees.'
-      : 'Web designer créant des sites web professionnels pour entreprises en France & UK. Basé près de Civray, Vienne 86. Paiement unique à partir de 375€, sans abonnement.',
+      ? 'Freelance web developer building professional websites for small businesses in France & UK. Based near Civray, serving Vienne, Charente & Greater Manchester. One-time payment from €375, no monthly fees.'
+      : 'Développeur web freelance créant des sites web professionnels pour entreprises en France & UK. Basé près de Civray, Vienne 86. Paiement unique à partir de 375€, sans abonnement.',
     keywords: [
       // EN - what customers actually search
-      'web designer France', 'web developer France', 'web development France', 'website designer',
-      'website for small business', 'professional website', 'affordable web design', 'web design and development',
-      'freelance web designer', 'freelance web developer', 'business website', 'website no monthly fees', 'web design France',
-      'AI training workshops', 'IT support France', 'Nouvelle-Aquitaine', 'website designer near me',
-      'web designer Civray', 'web developer Vienne', 'web designer Ruffec', 'web designer Charroux',
-      'web designer Poitiers', 'web designer Angoulême', 'web designer Limoges',
-      'web designer Greater Manchester', 'web designer Tameside',
+      'web developer France', 'web development France', 'freelance web developer',
+      'website for small business', 'professional website', 'affordable web development', 'web design and development',
+      'web designer France', 'business website', 'website no monthly fees',
+      'AI training workshops', 'IT support France', 'Nouvelle-Aquitaine', 'web developer near me',
+      'web developer Civray', 'web developer Vienne', 'web developer Ruffec', 'web developer Charroux',
+      'web developer Poitiers', 'web developer Angoulême', 'web developer Limoges',
+      'web developer Greater Manchester', 'web developer Tameside',
       // FR - what French customers search
-      'web designer France', 'développement web France', 'création site web', 'site internet professionnel',
-      'créateur site web', 'site web pas cher', 'web designer freelance', 'développeur web freelance',
+      'développeur web France', 'développement web France', 'création site web', 'site internet professionnel',
+      'créateur site web', 'site web pas cher', 'développeur web freelance',
       'site web entreprise', 'site internet sans abonnement', 'formation IA',
-      'support informatique', 'web designer Nouvelle-Aquitaine', 'site web Charente', 'site web Vienne',
+      'support informatique', 'développeur web Nouvelle-Aquitaine', 'site web Charente', 'site web Vienne',
       'création site web Civray', 'création site web Ruffec', 'création site web Vienne 86',
-      'création site web Angoulême', 'création site web Limoges',
-      'site internet Civray', 'site internet Charroux', 'web designer Vienne 86',
+      'création site web Angoulême', 'création site web Limoges', 'création site web Poitiers',
+      'site internet Civray', 'site internet Charroux', 'développeur web Vienne 86',
     ],
     authors: [{ name: 'Andrew Watts' }],
     alternates: {
@@ -62,25 +62,25 @@ export async function generateMetadata({ params }) {
     },
     openGraph: {
       title: isEn
-        ? 'awattsdev - Web Design & Professional Websites for Small Businesses'
-        : 'awattsdev - Web Design & Sites Web Professionnels pour Entreprises',
+        ? 'awattsdev - Web Development & Professional Websites for Small Businesses'
+        : 'awattsdev - Développement Web & Sites Web Professionnels pour Entreprises',
       description: isEn
-        ? 'One-time payment, no monthly fees. Web design, AI training & IT support in France & UK.'
-        : 'Paiement unique, sans abonnement. Web design, formations IA & support informatique en France & UK.',
+        ? 'One-time payment, no monthly fees. Web development, AI training & IT support in France & UK.'
+        : 'Paiement unique, sans abonnement. Développement web, formations IA & support informatique en France & UK.',
       url: `${baseUrl}/${locale}`,
       siteName: 'awattsdev',
       locale: isEn ? 'en_GB' : 'fr_FR',
       type: 'website',
-      images: [{ url: '/images/awattsdev.png', width: 3163, height: 792, alt: 'awattsdev - Web Design' }],
+      images: [{ url: '/images/awattsdev.png', width: 3163, height: 792, alt: 'awattsdev - Web Development' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: isEn
-        ? 'awattsdev - Web Design & Professional Websites for Small Businesses'
-        : 'awattsdev - Web Design & Sites Web Professionnels pour Entreprises',
+        ? 'awattsdev - Web Development & Professional Websites for Small Businesses'
+        : 'awattsdev - Développement Web & Sites Web Professionnels pour Entreprises',
       description: isEn
-        ? 'One-time payment, no monthly fees. Web design, AI training & IT support in France & UK.'
-        : 'Paiement unique, sans abonnement. Web design, formations IA & support informatique en France & UK.',
+        ? 'One-time payment, no monthly fees. Web development, AI training & IT support in France & UK.'
+        : 'Paiement unique, sans abonnement. Développement web, formations IA & support informatique en France & UK.',
       images: ['/images/awattsdev.png'],
     },
   }
@@ -108,8 +108,8 @@ export default async function RootLayout({ children, params }) {
               "name": "awattsdev",
               "alternateName": "Awattsdev Web Development",
               "description": locale === 'en'
-                ? "Web designer & developer building professional websites for small businesses. AI training workshops and IT support."
-                : "Web designer & développeur créant des sites web professionnels pour petites entreprises. Formations IA et support informatique.",
+                ? "Freelance web developer building professional websites for small businesses. AI training workshops and IT support."
+                : "Développeur web freelance créant des sites web professionnels pour petites entreprises. Formations IA et support informatique.",
               "url": "https://www.awattsdev.eu",
               "logo": "https://www.awattsdev.eu/images/awattsdev.png",
               "image": "https://www.awattsdev.eu/images/awattsdev.png",
@@ -117,7 +117,7 @@ export default async function RootLayout({ children, params }) {
               "founder": {
                 "@type": "Person",
                 "name": "Andrew Watts",
-                "jobTitle": "Web Designer & Developer",
+                "jobTitle": "Web Developer & Designer",
               },
               "address": {
                 "@type": "PostalAddress",
