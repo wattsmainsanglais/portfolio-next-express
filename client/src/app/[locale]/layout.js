@@ -43,6 +43,11 @@ export async function generateMetadata({ params }) {
       'web developer Civray', 'web developer Vienne', 'web developer Ruffec', 'web developer Charroux',
       'web developer Poitiers', 'web developer Angoulême', 'web developer Limoges',
       'web developer Greater Manchester', 'web developer Tameside',
+      // EN - specialist / B2B
+      'full-stack developer France', 'custom web application developer', 'freelance developer Europe',
+      'JavaScript developer freelance France', 'Next.js freelance developer', 'Vite developer freelance',
+      'Go developer freelance Europe', 'bespoke web development France', 'web application development France',
+      'freelance web developer Europe', 'custom web development company France',
       // FR - what French customers search
       'développeur web France', 'développement web France', 'création site web', 'site internet professionnel',
       'créateur site web', 'site web pas cher', 'développeur web freelance',
@@ -51,6 +56,10 @@ export async function generateMetadata({ params }) {
       'création site web Civray', 'développeur web Ruffec', 'création site web Vienne 86',
       'développeur web Angoulême', 'développeur web Limoges', 'développeur web Poitiers',
       'site internet Civray', 'site internet Charroux', 'développeur web Vienne 86',
+      // FR - specialist / B2B
+      'développeur full-stack France', 'développeur JavaScript freelance', 'développeur Next.js freelance',
+      'développeur Go freelance', 'application web sur mesure France', 'développement web sur mesure',
+      'développeur React Europe', 'contrat freelance développeur web',
     ],
     authors: [{ name: 'Andrew Watts' }],
     alternates: {
@@ -117,7 +126,7 @@ export default async function RootLayout({ children, params }) {
               "founder": {
                 "@type": "Person",
                 "name": "Andrew Watts",
-                "jobTitle": "Web Developer & Designer",
+                "jobTitle": "Freelance Full-Stack Web Developer",
               },
               "address": {
                 "@type": "PostalAddress",
@@ -180,6 +189,16 @@ export default async function RootLayout({ children, params }) {
                         : "Support logiciel, matériel, email, réseau et sécurité. Sans contrat, paiement à la visite.",
                     },
                   },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": locale === 'en' ? "Custom Web Application Development" : "Développement d'Applications Web Sur Mesure",
+                      "description": locale === 'en'
+                        ? "Full-stack custom web application development for agencies, startups and larger organisations. Modern JavaScript frameworks including Next.js, Vite and React, Go backend services, PostgreSQL. Available for remote freelance contracts across France, UK and Europe."
+                        : "Développement full-stack d'applications web sur mesure pour agences, startups et grandes organisations. Frameworks JavaScript modernes dont Next.js, Vite et React, services backend Go, PostgreSQL. Disponible pour des contrats freelance à distance en France, UK et Europe.",
+                    },
+                  },
                 ],
               },
               "sameAs": [
@@ -239,12 +258,12 @@ export default async function RootLayout({ children, params }) {
                 },
                 {
                   "@type": "Question",
-                  "name": locale === 'en' ? "Do you offer IT support?" : "Proposez-vous un support informatique ?",
+                  "name": locale === 'en' ? "Are you available for freelance contracts or larger custom projects?" : "Êtes-vous disponible pour des contrats freelance ou des projets plus importants ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Yes. On-site IT support for businesses and individuals — hardware issues, software problems, email setup, OS upgrades, network troubleshooting. First hour is €55, then €45/hr. No contracts, pay per visit."
-                      : "Oui. Support informatique sur site pour entreprises et particuliers — problèmes matériels, logiciels, configuration d'email, mises à jour OS, dépannage réseau. Première heure à 55 €, puis 45 €/h. Sans contrat, paiement à la visite."
+                      ? "Yes. Available for short or long-term freelance contracts with agencies, startups and larger organisations across France, UK and Europe. Full-stack development specialisms include modern JavaScript frameworks (Next.js, Vite, React), Go backend services, PostgreSQL, and custom web applications. Remote-first, with occasional on-site availability in France and the UK."
+                      : "Oui. Disponible pour des contrats freelance courts ou longs avec des agences, startups et grandes organisations en France, UK et Europe. Spécialisations full-stack : frameworks JavaScript modernes (Next.js, Vite, React), services backend Go, PostgreSQL et applications web sur mesure. Travail à distance principalement, avec disponibilité ponctuelle sur site en France et au Royaume-Uni."
                   }
                 },
               ]

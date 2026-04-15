@@ -27,7 +27,10 @@ export default function Bio() {
           {/* Bio Text */}
           <div className="flex-1">
             <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-100 leading-relaxed">
-              {t("para")}
+              {t("para1")}
+            </p><br />
+            <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-100 leading-relaxed mt-4">
+              {t("para2")}
             </p>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function Services() {
             </div>
           </div>
 
-          <h3 className="text-2xl font-semibold text-slate-900 dark:text-white text-center mb-2">Web Design</h3>
+          <h3 className="text-2xl font-semibold text-slate-900 dark:text-white text-center mb-2">Web Development</h3>
 
           {/* Price badge */}
           <div className="flex justify-center mb-6">

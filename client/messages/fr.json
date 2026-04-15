@@ -2,8 +2,8 @@
 
 {
     "Intro": {
-        "heading1": "Développeur Web Freelance | Sud-Ouest France & UK | Paiement Unique",
-        "heading2": "Sites web professionnels pour les petites entreprises — paiement unique, sans abonnement"
+        "heading1": "Développeur Web Freelance | Applications Web Sur Mesure | France & Europe",
+        "heading2": "Applications web sur mesure et sites professionnels — contrats freelance en France, UK et Europe"
     },
     "Services": {
     "dev": {
@@ -30,7 +30,8 @@
 },
 "About": {
     "heading": "Qui suis je?",
-    "para": "Bonjour, je suis Andrew, développeur web anglophone et francophone basé près de Civray, dans la Vienne (86), en Nouvelle-Aquitaine. J'interviens auprès des entreprises locales — Charroux, Ruffec, Poitiers, Angoulême, Limoges et toute la région — ainsi qu'auprès de clients au Royaume-Uni, notamment dans le Grand Manchester. Si vous recherchez la création d'un site web, une modernisation, une boutique en ligne ou un support informatique, vous êtes au bon endroit. Contactez-moi via le formulaire ci-dessous ou sur mes réseaux sociaux — liens dans l'en-tête."
+    "para1": "Bonjour, je suis Andrew, développeur web anglophone et francophone basé près de Civray, dans la Vienne (86), en Nouvelle-Aquitaine. J'interviens auprès des entreprises locales — Charroux, Ruffec, Poitiers, Angoulême, Limoges et toute la région — ainsi qu'auprès de clients au Royaume-Uni, notamment dans le Grand Manchester. Si vous recherchez la création d'un site web, une modernisation, une boutique en ligne ou un support informatique, vous êtes au bon endroit.",
+    "para2": "Je suis également disponible pour des contrats freelance spécialisés — si vous êtes une agence, une startup ou une organisation plus grande à la recherche d'un développeur full-stack travaillant avec des frameworks JavaScript modernes, Next.js, Vite ou Go, contactez-moi. Contactez-moi via le formulaire ci-dessous ou sur mes réseaux sociaux — liens dans l'en-tête."
 }, 
 "Portfolio": {
     "gardapis": "Une boutique en ligne complète pour une marque française de produits apicoles. Construite sur un serveur sur mesure avec un tableau de bord d'administration des produits, la boutique est disponible en 6 langues, avec des remises sur volume, des options produits, des avis clients vérifiés et le paiement par PayPal — le tout hébergé sur un serveur dédié pour environ 13 € par mois.",

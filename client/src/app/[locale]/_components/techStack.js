@@ -23,9 +23,13 @@ const skills = [
 export default function TechStack() {
   return (
     <section className="container mx-auto px-4 py-20" id="skills">
-      <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-6">
         Skills
       </h2>
+
+      <p className="text-xl text-slate-500 dark:text-slate-400 text-center mb-16 max-w-2xl mx-auto">
+        Full-stack development using modern JavaScript frameworks — Next.js, Vite, React — plus Go backend and PostgreSQL. Available for freelance contracts across Europe.
+      </p>
 
       <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-10">
         {skills.map(({ icon: Icon, label }) => (
