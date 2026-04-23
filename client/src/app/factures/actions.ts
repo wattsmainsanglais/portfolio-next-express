@@ -35,6 +35,18 @@ export async function getInvoicesAction(): Promise<SuperPDPInvoice[]> {
   return listInvoices(token);
 }
 
+export async function getNextInvoiceNumberAction(): Promise<string> {
+  const year = new Date().getFullYear();
+  try {
+    const token = await getSellerToken();
+    const invoices = await listInvoices(token);
+    const seq = String(invoices.length + 1).padStart(3, '0');
+    return `AW-${year}-${seq}`;
+  } catch {
+    return `AW-${year}-001`;
+  }
+}
+
 export async function getInvoiceEventsAction(): Promise<SuperPDPInvoiceEvent[]> {
   const token = await getSellerToken();
   return getInvoiceEvents(token);
@@ -60,7 +72,6 @@ export async function createInvoiceAction(
   try {
     const token = await getSellerToken();
     const en16931 = buildEN16931(formData);
-
     const result = await convertAndSubmitInvoice(en16931, token);
     return { success: true, invoiceId: result.id };
   } catch (err) {

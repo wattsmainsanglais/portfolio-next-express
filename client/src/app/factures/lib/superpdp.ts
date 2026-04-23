@@ -132,8 +132,16 @@ export async function createInvoiceEvent(
   return resp.json();
 }
 
+export async function getInvoice(id: number, token: string): Promise<SuperPDPInvoice> {
+  const resp = await fetch(`${ENDPOINT}/v1.beta/invoices/${id}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!resp.ok) throw new Error(`getInvoice failed: ${resp.status}`);
+  return resp.json();
+}
+
 export async function listInvoices(token: string): Promise<SuperPDPInvoice[]> {
-  const resp = await fetch(`${ENDPOINT}/v1.beta/invoices?order=desc`, {
+  const resp = await fetch(`${ENDPOINT}/v1.beta/invoices?order=desc&expand[]=en_invoice.invoice&expand[]=en_invoice.buyer`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   if (!resp.ok) throw new Error(`listInvoices failed: ${resp.status}`);
@@ -151,7 +159,7 @@ export async function convertAndSubmitInvoice(
 
   const convertBody = new FormData();
   convertBody.append('invoice', new Blob([JSON.stringify(en16931Json)], { type: 'application/json' }));
-  convertBody.append('pdf', new Blob([pdfBuffer], { type: 'application/pdf' }));
+  convertBody.append('pdf', new Blob([new Uint8Array(pdfBuffer)], { type: 'application/pdf' }));
 
   const facturXResp = await fetch(`${ENDPOINT}/v1.beta/invoices/convert?from=en16931&to=factur-x`, {
     method: 'POST',

@@ -10,12 +10,19 @@ export default function LoginPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-      <div className="w-full max-w-sm">
-        <h1 className="text-white text-2xl font-semibold mb-8 text-center">Factures</h1>
-        <form action={formAction} className="bg-gray-900 rounded-xl p-8 space-y-4">
+    <div className="min-h-screen bg-background flex items-center justify-center px-4">
+      <div className="w-full max-w-sm space-y-8">
+
+        <div className="text-center space-y-1">
+          <div className="text-2xl font-semibold">
+            <span className="text-brand-600">awatts</span><span className="text-foreground">dev</span>
+          </div>
+          <p className="text-sm text-muted-foreground">Factures</p>
+        </div>
+
+        <form action={formAction} className="bg-card rounded-2xl border border-border shadow-sm p-8 space-y-5">
           <div>
-            <label htmlFor="password" className="block text-sm text-gray-400 mb-1">
+            <label htmlFor="password" className="block text-xs text-muted-foreground mb-1.5">
               Password
             </label>
             <input
@@ -24,16 +31,16 @@ export default function LoginPage() {
               type="password"
               required
               autoFocus
-              className="w-full bg-gray-800 text-white rounded-lg px-4 py-2.5 text-sm border border-gray-700 focus:outline-none focus:border-gray-500"
+              className="w-full bg-muted text-foreground rounded-lg px-4 py-2.5 text-sm border border-input focus:outline-none focus:border-brand-500/60 focus:ring-1 focus:ring-brand-500/20 transition-colors"
             />
           </div>
           {state?.error && (
-            <p className="text-red-400 text-sm">{state.error}</p>
+            <p className="text-red-500 text-xs">{state.error}</p>
           )}
           <button
             type="submit"
             disabled={isPending}
-            className="w-full bg-white text-gray-950 rounded-lg py-2.5 text-sm font-medium hover:bg-gray-100 disabled:opacity-50"
+            className="w-full bg-brand-600 hover:bg-brand-700 text-white rounded-lg py-2.5 text-sm font-medium disabled:opacity-50 transition-colors shadow-sm"
           >
             {isPending ? 'Signing in…' : 'Sign in'}
           </button>
