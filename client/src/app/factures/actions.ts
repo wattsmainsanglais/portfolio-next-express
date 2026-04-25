@@ -68,12 +68,12 @@ export async function sendInvoiceStatusAction(
 
 export async function createInvoiceAction(
   formData: InvoiceFormData
-): Promise<{ success: boolean; invoiceId?: number; error?: string }> {
+): Promise<{ success: boolean; invoiceId?: number; invoiceNumber?: string; error?: string }> {
   try {
     const token = await getSellerToken();
     const en16931 = buildEN16931(formData);
     const result = await convertAndSubmitInvoice(en16931, token);
-    return { success: true, invoiceId: result.id };
+    return { success: true, invoiceId: result.id, invoiceNumber: formData.invoiceNumber };
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     return { success: false, error: message };
