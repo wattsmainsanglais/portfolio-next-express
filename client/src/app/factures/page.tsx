@@ -167,11 +167,11 @@ export default function FacturesPage() {
 
       {/* Header */}
       <header className="border-b border-border bg-background/90 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-6xl mx-auto px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="max-w-6xl mx-auto px-8 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-5">
             <img src="/images/awattsdev.png" alt="awattsdev" className="h-8 w-auto" />
-            <span className="text-border">/</span>
-            <span className="text-base text-muted-foreground">Factures</span>
+            <div className="w-px h-8 bg-border" />
+            <span className="text-4xl font-bold text-foreground tracking-tight">E-Invoicing & E-Reporting Portal</span>
           </div>
           <form action={logoutAction}>
             <button type="submit" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -181,7 +181,7 @@ export default function FacturesPage() {
         </div>
       </header>
 
-      <div className="max-w-6xl mx-auto px-8 py-10">
+<div className="max-w-6xl mx-auto px-8 py-10">
 
         {/* Tabs */}
         <div className="flex gap-1 mb-10 bg-muted rounded-xl p-1 w-fit">
@@ -193,7 +193,15 @@ export default function FacturesPage() {
 
         {/* New invoice — start screen */}
         {tab === 'new' && !invoiceReady && (
-          <div className="flex flex-col items-center justify-center py-32 gap-5">
+          <div className="flex flex-col items-center justify-center py-24 gap-6 text-center">
+            <div className="space-y-3">
+              <h1 className="text-5xl font-bold text-foreground tracking-tight">
+                English-speaking<br />E-Invoicing for France
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-md mx-auto">
+                Certified. Compliant. No French required.
+              </p>
+            </div>
             {status && (
               <div className={`w-full max-w-md rounded-xl px-5 py-4 text-sm ring-1 ${
                 status.type === 'success'
@@ -206,7 +214,7 @@ export default function FacturesPage() {
             <button
               onClick={handleNewInvoice}
               disabled={generatingNumber}
-              className="bg-brand-600 hover:bg-brand-700 text-white rounded-xl px-8 py-3 text-sm font-medium disabled:opacity-50 transition-colors shadow-sm"
+              className="bg-brand-600 hover:bg-brand-700 text-white rounded-xl px-10 py-3.5 text-base font-semibold disabled:opacity-50 transition-colors shadow-sm"
             >
               {generatingNumber ? 'Checking number…' : '+ New Invoice'}
             </button>
@@ -423,6 +431,12 @@ export default function FacturesPage() {
                   </button>
                 </div>
 
+                <img
+                  src="/images/plateforme-agreee-logo.svg"
+                  alt="Plateforme Agréée"
+                  className="h-24 w-auto mt-4"
+                />
+
               </div>
 
             </div>
@@ -490,48 +504,18 @@ export default function FacturesPage() {
                           </a>
                         </td>
                         <td className="px-5 py-4">
-                          <div className="space-y-2">
+                          <div className="space-y-1">
                             {sendResult?.invoiceId === inv.id && (
                               <span className={`text-xs font-medium ${sendResult.type === 'success' ? 'text-green-600' : 'text-red-500'}`}>
                                 {sendResult.message}
                               </span>
                             )}
-                            {sendPopup?.invoiceId === inv.id ? (
-                              <div className="flex items-center gap-2">
-                                <input
-                                  type="email"
-                                  value={sendPopup.email}
-                                  onChange={(e) => setSendPopup({ invoiceId: inv.id, email: e.target.value })}
-                                  onKeyDown={(e) => {
-                                    if (e.key === 'Enter') { e.preventDefault(); handleSendInvoice(inv.id, sendPopup.email); }
-                                    if (e.key === 'Escape') setSendPopup(null);
-                                  }}
-                                  placeholder="email@example.com"
-                                  autoFocus
-                                  className="bg-muted text-foreground rounded-lg px-2.5 py-1.5 text-xs border border-input focus:outline-none focus:border-brand-500/60 w-44 placeholder:text-muted-foreground/50"
-                                />
-                                <button
-                                  disabled={sendPending}
-                                  onClick={() => handleSendInvoice(inv.id, sendPopup.email)}
-                                  className="text-xs text-white bg-brand-600 hover:bg-brand-700 disabled:opacity-40 rounded-lg px-2.5 py-1.5 transition-colors font-medium"
-                                >
-                                  {sendPending ? '…' : 'Send'}
-                                </button>
-                                <button
-                                  onClick={() => setSendPopup(null)}
-                                  className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-                                >
-                                  ✕
-                                </button>
-                              </div>
-                            ) : (
-                              <button
-                                onClick={() => { setSendResult(null); setSendPopup({ invoiceId: inv.id, email: '' }); }}
-                                className="text-xs text-brand-600 hover:text-brand-700 transition-colors font-medium"
-                              >
-                                Send
-                              </button>
-                            )}
+                            <button
+                              onClick={() => { setSendResult(null); setSendPopup({ invoiceId: inv.id, email: '' }); }}
+                              className="text-xs text-brand-600 hover:text-brand-700 transition-colors font-medium"
+                            >
+                              Send
+                            </button>
                           </div>
                         </td>
                         <td className="px-5 py-4">
@@ -571,6 +555,48 @@ export default function FacturesPage() {
           </div>
         )}
       </div>
+
+      {/* Send to Client modal */}
+      {sendPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-card rounded-2xl border border-border shadow-2xl p-8 w-full max-w-md mx-4">
+            <h2 className="text-3xl font-bold text-foreground mb-2">Send to Client</h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              The invoice will be sent as a PDF attachment to the address below.
+            </p>
+            <input
+              type="email"
+              value={sendPopup.email}
+              onChange={(e) => setSendPopup({ invoiceId: sendPopup.invoiceId, email: e.target.value })}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  handleSendInvoice(sendPopup.invoiceId, sendPopup.email);
+                }
+                if (e.key === 'Escape') setSendPopup(null);
+              }}
+              placeholder="client@example.com"
+              autoFocus
+              className="w-full bg-muted text-foreground rounded-lg px-4 py-3 text-sm border border-input focus:outline-none focus:border-brand-500/60 focus:ring-1 focus:ring-brand-500/20 transition-colors placeholder:text-muted-foreground/50 mb-4"
+            />
+            <div className="flex gap-3">
+              <button
+                disabled={sendPending}
+                onClick={() => handleSendInvoice(sendPopup.invoiceId, sendPopup.email)}
+                className="flex-1 bg-brand-600 hover:bg-brand-700 text-white rounded-xl py-3 text-sm font-semibold disabled:opacity-50 transition-colors shadow-sm"
+              >
+                {sendPending ? 'Sending…' : 'Send Invoice'}
+              </button>
+              <button
+                onClick={() => setSendPopup(null)}
+                className="px-5 py-3 rounded-xl text-sm text-muted-foreground hover:text-foreground border border-border hover:border-foreground/30 transition-colors"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

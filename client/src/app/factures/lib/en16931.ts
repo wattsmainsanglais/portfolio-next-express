@@ -78,7 +78,7 @@ export function buildEN16931(form: InvoiceFormData): EN16931Invoice {
     vat_identifier: 'VAT',
     vat_category_rate: rate,
     ...(g.rate === 0 && {
-      vat_exemption_reason_text: 'TVA non applicable, art. 293 B du CGI',
+      vat_exemption_reason: 'TVA non applicable, art. 293 B du CGI',
       vat_exemption_reason_code: 'VATEX-EU-O',
     }),
   }));

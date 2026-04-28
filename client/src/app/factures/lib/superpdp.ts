@@ -56,7 +56,7 @@ export interface EN16931VatBreakdown {
   vat_category_rate: string;
   exemption_reason_text?: string;
   exemption_reason_code?: string;
-  vat_exemption_reason_text?: string;
+  vat_exemption_reason?: string;
   vat_exemption_reason_code?: string;
 }
 
