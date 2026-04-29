@@ -5,7 +5,7 @@ export interface InvoiceFormData {
   issueDate: string;
   dueDate: string;
   buyerName: string;
-  buyerSiret: string;
+  buyerSiren: string;
   buyerVat: string;
   buyerStreet: string;
   buyerCity: string;
@@ -22,21 +22,13 @@ export interface FormLine {
   vatRate: number; // 0, 5.5, 10, or 20
 }
 
-// SIREN = first 9 digits of SIRET
-function siretToSiren(siret: string): string {
-  return siret.replace(/\s/g, '').substring(0, 9);
-}
-
 function sellerFromEnv(): EN16931Invoice['seller'] {
-  const siret = process.env.SELLER_SIRET || '81996076600023';
-  const siren = siretToSiren(siret);
+  const siren = (process.env.SELLER_SIREN || '819960766').replace(/\s/g, '');
   return {
     name: process.env.SELLER_NAME || 'Andrew Watts',
-    // legal_registration_identifier requires SIREN (9 digits), not SIRET
     legal_registration_identifier: { value: siren, scheme: '0002' },
-    identifiers: [{ value: siret, scheme: '0225' }],
     vat_identifier: process.env.SELLER_VAT || undefined,
-    electronic_address: { value: siret, scheme: '0225' },
+    electronic_address: { value: siren, scheme: '0225' },
     postal_address: { country_code: 'FR' },
   };
 }
@@ -119,8 +111,7 @@ export function buildEN16931(form: InvoiceFormData): EN16931Invoice {
     notes.push({ subject_code: 'AAI', note: form.notes });
   }
 
-  const buyerSiret = form.buyerSiret.replace(/\s/g, '');
-  const buyerSiren = buyerSiret ? siretToSiren(buyerSiret) : undefined;
+  const buyerSiren = form.buyerSiren.replace(/\s/g, '') || undefined;
 
   return {
     number: form.invoiceNumber,
@@ -139,12 +130,9 @@ export function buildEN16931(form: InvoiceFormData): EN16931Invoice {
       legal_registration_identifier: buyerSiren
         ? { value: buyerSiren, scheme: '0002' }
         : undefined,
-      identifiers: buyerSiret
-        ? [{ value: buyerSiret, scheme: '0225' }]
-        : undefined,
       vat_identifier: form.buyerVat || undefined,
-      electronic_address: buyerSiret
-        ? { value: buyerSiret, scheme: '0225' }
+      electronic_address: buyerSiren
+        ? { value: buyerSiren, scheme: '0225' }
         : undefined,
       postal_address: {
         street: form.buyerStreet || undefined,

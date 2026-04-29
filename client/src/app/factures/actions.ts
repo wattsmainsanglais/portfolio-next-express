@@ -2,7 +2,7 @@
 
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { getSellerToken, listInvoices, convertAndSubmitInvoice, getInvoiceEvents, createInvoiceEvent, type SuperPDPInvoice, type SuperPDPInvoiceEvent } from './lib/superpdp';
+import { getSellerToken, listInvoices, listIncomingInvoices, convertAndSubmitInvoice, getInvoiceEvents, createInvoiceEvent, type SuperPDPInvoice, type SuperPDPInvoiceEvent } from './lib/superpdp';
 import { buildEN16931, type InvoiceFormData } from './lib/en16931';
 
 export async function loginAction(formData: FormData): Promise<{ error?: string }> {
@@ -33,6 +33,11 @@ export async function logoutAction(): Promise<void> {
 export async function getInvoicesAction(): Promise<SuperPDPInvoice[]> {
   const token = await getSellerToken();
   return listInvoices(token);
+}
+
+export async function getIncomingInvoicesAction(): Promise<SuperPDPInvoice[]> {
+  const token = await getSellerToken();
+  return listIncomingInvoices(token);
 }
 
 export async function getNextInvoiceNumberAction(): Promise<string> {

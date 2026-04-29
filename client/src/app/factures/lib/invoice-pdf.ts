@@ -51,8 +51,8 @@ export async function generateInvoicePDF(
     doc.on('error', reject);
 
     const { seller, buyer, lines, totals, notes = [] } = invoice;
-    const sellerSiret = seller.identifiers?.[0]?.value ?? '';
-    const buyerSiret  = buyer.identifiers?.[0]?.value ?? '';
+    const sellerSiren = seller.legal_registration_identifier?.value ?? '';
+    const buyerSiren  = buyer.legal_registration_identifier?.value ?? '';
     const pageW = doc.page.width;
     const margin = 50;
     const contentW = pageW - margin * 2;
@@ -84,8 +84,8 @@ export async function generateInvoicePDF(
     doc.fontSize(10).font('Helvetica-Bold').fillColor(DARK)
       .text(seller.name, margin, partyTop + 12);
     doc.fontSize(9).font('Helvetica').fillColor(GREY);
-    if (sellerSiret) doc.text(`SIRET : ${sellerSiret}`, margin, partyTop + 26);
-    const sellerVatY = sellerSiret ? partyTop + 38 : partyTop + 26;
+    if (sellerSiren) doc.text(`SIREN : ${sellerSiren}`, margin, partyTop + 26);
+    const sellerVatY = sellerSiren ? partyTop + 38 : partyTop + 26;
     const sellerVatText = seller.vat_identifier
       ? `N° TVA : ${seller.vat_identifier}`
       : 'TVA non applicable, art. 293 B du CGI';
@@ -99,7 +99,7 @@ export async function generateInvoicePDF(
       .text(buyer.name, buyerX, partyTop + 12);
     doc.fontSize(9).font('Helvetica').fillColor(GREY);
     let buyerY = partyTop + 26;
-    if (buyerSiret) { doc.text(`SIRET : ${buyerSiret}`, buyerX, buyerY, { width: colW }); buyerY += 12; }
+    if (buyerSiren) { doc.text(`SIREN : ${buyerSiren}`, buyerX, buyerY, { width: colW }); buyerY += 12; }
     if (buyer.vat_identifier) { doc.text(`N° TVA : ${buyer.vat_identifier}`, buyerX, buyerY, { width: colW }); buyerY += 12; }
     if (buyer.postal_address?.street) { doc.text(buyer.postal_address.street, buyerX, buyerY, { width: colW }); buyerY += 12; }
     if (buyer.postal_address?.city) {

@@ -141,10 +141,20 @@ export async function getInvoice(id: number, token: string): Promise<SuperPDPInv
 }
 
 export async function listInvoices(token: string): Promise<SuperPDPInvoice[]> {
-  const resp = await fetch(`${ENDPOINT}/v1.beta/invoices?order=desc&expand[]=en_invoice.invoice&expand[]=en_invoice.buyer`, {
+  const resp = await fetch(`${ENDPOINT}/v1.beta/invoices?direction=out&order=desc&expand[]=en_invoice.invoice&expand[]=en_invoice.buyer`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   if (!resp.ok) throw new Error(`listInvoices failed: ${resp.status}`);
+  const body = await resp.json();
+  return body.data as SuperPDPInvoice[];
+}
+
+export async function listIncomingInvoices(token: string): Promise<SuperPDPInvoice[]> {
+  const resp = await fetch(
+    `${ENDPOINT}/v1.beta/invoices?direction=in&order=desc&expand[]=en_invoice&expand[]=en_invoice.seller`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  if (!resp.ok) throw new Error(`listIncomingInvoices failed: ${resp.status}`);
   const body = await resp.json();
   return body.data as SuperPDPInvoice[];
 }
