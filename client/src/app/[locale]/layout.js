@@ -29,11 +29,11 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL(baseUrl),
     title: isEn
-      ? 'Freelance Next.js Developer | Full-Stack | France & Europe'
-      : 'Développeur Next.js Freelance | Full-Stack | France & Europe',
+      ? 'Web Developer France & UK | Small Business Websites'
+      : 'Web Developer France & UK | Sites Web pour Entreprises',
     description: isEn
-      ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
-      : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
+      ? 'Freelance web developer building professional websites for small businesses in France & UK. Based near Civray, serving Vienne, Charente & Greater Manchester. One-time payment from €375, no monthly fees.'
+      : 'Développeur web freelance créant des sites web professionnels pour entreprises en France & UK. Basé près de Civray, Vienne 86. Paiement unique à partir de 375€, sans abonnement.',
     keywords: [
       // EN - what customers actually search
       'web developer France', 'web development France', 'freelance web developer',
@@ -71,11 +71,11 @@ export async function generateMetadata({ params }) {
     },
     openGraph: {
       title: isEn
-        ? 'awattsdev — Freelance Next.js & Go Developer | France & Europe'
-        : 'awattsdev — Développeur Next.js & Go Freelance | France & Europe',
+        ? 'awattsdev - Web Development & Professional Websites for Small Businesses'
+        : 'awattsdev - Développement Web & Sites Web Professionnels pour Entreprises',
       description: isEn
-        ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
-        : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
+        ? 'One-time payment, no monthly fees. Web development, AI training & IT support in France & UK.'
+        : 'Paiement unique, sans abonnement. Développement web, formations IA & support informatique en France & UK.',
       url: `${baseUrl}/${locale}`,
       siteName: 'awattsdev',
       locale: isEn ? 'en_GB' : 'fr_FR',
@@ -85,11 +85,11 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: 'summary_large_image',
       title: isEn
-        ? 'awattsdev — Freelance Next.js & Go Developer | France & Europe'
-        : 'awattsdev — Développeur Next.js & Go Freelance | France & Europe',
+        ? 'awattsdev - Web Development & Professional Websites for Small Businesses'
+        : 'awattsdev - Développement Web & Sites Web Professionnels pour Entreprises',
       description: isEn
-        ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
-        : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
+        ? 'One-time payment, no monthly fees. Web development, AI training & IT support in France & UK.'
+        : 'Paiement unique, sans abonnement. Développement web, formations IA & support informatique en France & UK.',
       images: ['/images/awattsdev.png'],
     },
   }
@@ -117,8 +117,8 @@ export default async function RootLayout({ children, params }) {
               "name": "awattsdev",
               "alternateName": "Awattsdev Web Development",
               "description": locale === 'en'
-                ? "Freelance full-stack web developer available for remote contracts across France, UK and Europe. Specialising in Next.js, React, Go and PostgreSQL. Also builds professional websites for small businesses from €375."
-                : "Développeur web full-stack freelance disponible pour des contrats à distance en France, UK et Europe. Spécialisé en Next.js, React, Go et PostgreSQL. Création de sites web pour petites entreprises à partir de 375€.",
+                ? "Freelance web developer building professional websites for small businesses. AI training workshops and IT support."
+                : "Développeur web freelance créant des sites web professionnels pour petites entreprises. Formations IA et support informatique.",
               "url": "https://www.awattsdev.eu",
               "logo": "https://www.awattsdev.eu/images/awattsdev.png",
               "image": "https://www.awattsdev.eu/images/awattsdev.png",
@@ -218,52 +218,52 @@ export default async function RootLayout({ children, params }) {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": locale === 'en' ? "How much does a freelance Next.js developer charge in France?" : "Combien facture un développeur Next.js freelance en France ?",
+                  "name": locale === 'en' ? "How much does a website cost?" : "Combien coûte un site web ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Senior freelance Next.js developers in France typically charge between €400 and €750 per day depending on project complexity and duration. For fixed-price projects — such as a business website or small web application — I offer project-based rates from €375. Get in touch to discuss your requirements."
-                      : "Les développeurs Next.js freelance seniors en France facturent généralement entre 400 et 750 € par jour selon la complexité et la durée du projet. Pour les projets à prix fixe — site vitrine ou petite application web — je propose des tarifs à partir de 375 €. Contactez-moi pour discuter de vos besoins."
+                      ? "Websites start from €375 as a one-time payment — no monthly fees, no subscriptions. This includes a professional responsive design, dual language support (English & French), contact form, and free hosting on Vercel."
+                      : "Les sites web commencent à partir de 375 € en paiement unique — sans abonnement mensuel. Cela comprend un design professionnel responsive, le support bilingue (anglais et français), un formulaire de contact et l'hébergement gratuit sur Vercel."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": locale === 'en' ? "Can you work remotely for UK or EU companies?" : "Pouvez-vous travailler à distance pour des entreprises au Royaume-Uni ou en Europe ?",
+                  "name": locale === 'en' ? "How long does it take to build a website?" : "Combien de temps faut-il pour créer un site web ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Yes. I'm based in France with a registered French business (SIRET 81996076600023), so I invoice EU clients cleanly under French freelance status with no complications. I'm a UK national and fully bilingual in English and French, making collaboration straightforward across France, the EU and internationally."
-                      : "Oui. Je suis basé en France avec un statut d'auto-entrepreneur enregistré (SIRET 81996076600023), ce qui me permet de facturer les clients européens sans complications. Je suis de nationalité britannique et parfaitement bilingue anglais-français, ce qui facilite la collaboration en France, dans l'UE et à l'international."
+                      ? "Websites are delivered within 10 days of receiving all content (text, images, logo). The process starts with a planning call, then build, review, and launch."
+                      : "Les sites web sont livrés dans les 10 jours suivant la réception de tous les contenus (textes, images, logo). Le processus commence par un appel de planification, puis la construction, la révision et le lancement."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": locale === 'en' ? "What is your tech stack?" : "Quelle est votre stack technique ?",
+                  "name": locale === 'en' ? "Are there any monthly fees after the website is built?" : "Y a-t-il des frais mensuels après la création du site ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Frontend: Next.js, React, TypeScript, Tailwind CSS, Vite. Backend: Go (Fiber), Node.js, PostgreSQL, REST APIs. Infrastructure: Vercel, Docker, Railway, GitHub Actions. I build full-stack — from database schema through to deployed frontend — and can work within an existing codebase or start greenfield."
-                      : "Frontend : Next.js, React, TypeScript, Tailwind CSS, Vite. Backend : Go (Fiber), Node.js, PostgreSQL, API REST. Infrastructure : Vercel, Docker, Railway, GitHub Actions. Je développe full-stack — de la base de données jusqu'au frontend déployé — sur un projet existant ou en greenfield."
+                      ? "No monthly fees. The €375 is a one-time payment. Hosting is free on Vercel (client's own account). You own your website, your code, and all your accounts outright."
+                      : "Aucun frais mensuel. Les 375 € sont un paiement unique. L'hébergement est gratuit sur Vercel (compte du client). Vous êtes propriétaire de votre site, de votre code et de tous vos comptes."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": locale === 'en' ? "Do you take on short-term contracts or one-off projects?" : "Acceptez-vous des contrats courts ou des projets ponctuels ?",
+                  "name": locale === 'en' ? "What areas do you serve?" : "Quelles zones géographiques couvrez-vous ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Yes. I'm available for short-term contracts (a few days to a few weeks), longer engagements, and fixed-price project work. I've delivered ecommerce platforms, SaaS products, and client websites — so I can flex between a targeted sprint and an ongoing retainer depending on what you need."
-                      : "Oui. Je suis disponible pour des missions courtes (quelques jours à quelques semaines), des engagements plus longs et des projets à prix fixe. J'ai livré des plateformes e-commerce, des produits SaaS et des sites clients — je m'adapte entre un sprint ciblé et une mission longue durée."
+                      ? "Based near Civray in Vienne (86), Nouvelle-Aquitaine, France. Serving businesses across France — particularly Civray, Charroux, Ruffec, Poitiers, Angoulême, Limoges and the wider Vienne, Charente and Haute-Vienne area — and in Greater Manchester and Tameside in the UK. Remote work available across Europe."
+                      : "Basé près de Civray dans la Vienne (86), Nouvelle-Aquitaine, France. Je travaille avec des entreprises dans toute la France — notamment Civray, Charroux, Ruffec, Poitiers, Angoulême, Limoges et la région Vienne/Charente/Haute-Vienne — ainsi qu'à Greater Manchester et Tameside au Royaume-Uni. Travail à distance disponible dans toute l'Europe."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": locale === 'en' ? "Do you work with agencies on a subcontract or white-label basis?" : "Travaillez-vous avec des agences en sous-traitance ou en marque blanche ?",
+                  "name": locale === 'en' ? "Are you available for freelance contracts or larger custom projects?" : "Êtes-vous disponible pour des contrats freelance ou des projets plus importants ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Yes. I'm comfortable working as a subcontractor or white-label developer for agencies needing Next.js or Go expertise on client projects. I work discreetly, deliver clean documented code, and don't approach your clients directly."
-                      : "Oui. Je travaille volontiers en sous-traitance ou en marque blanche pour des agences ayant besoin d'expertise Next.js ou Go. Je travaille discrètement, livre un code propre et documenté, et ne contacte pas vos clients directement."
+                      ? "Yes. Available for short or long-term freelance contracts with agencies, startups and larger organisations across France, UK and Europe. Full-stack development specialisms include modern JavaScript frameworks (Next.js, Vite, React), Go backend services, PostgreSQL, and custom web applications. Remote-first, with occasional on-site availability in France and the UK."
+                      : "Oui. Disponible pour des contrats freelance courts ou longs avec des agences, startups et grandes organisations en France, UK et Europe. Spécialisations full-stack : frameworks JavaScript modernes (Next.js, Vite, React), services backend Go, PostgreSQL et applications web sur mesure. Travail à distance principalement, avec disponibilité ponctuelle sur site en France et au Royaume-Uni."
                   }
                 },
               ]
