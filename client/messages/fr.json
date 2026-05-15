@@ -34,6 +34,7 @@
     "para2": "Je suis également disponible pour des contrats freelance spécialisés — si vous êtes une agence, une startup ou une organisation plus grande à la recherche d'un développeur full-stack travaillant avec des frameworks JavaScript modernes, Next.js, Vite ou Go, contactez-moi. Contactez-moi via le formulaire ci-dessous ou sur mes réseaux sociaux — liens dans l'en-tête."
 }, 
 "Portfolio": {
+    "silsoup": "Boutique en ligne sur mesure, conçue pour remplacer un site WooCommerce — vend des lecteurs RFID et de l'électronique avec un système d'options flexible permettant au propriétaire de configurer les variantes et les tarifs sans intervention technique. Comprend un tableau de bord d'administration complet, un paiement PayPal en direct et un système d'avis clients. Hébergée sur un serveur dédié pour un contrôle total, sans abonnement mensuel à une plateforme. Vite Js, Typescript, backend -Golang.",
     "gardapis": "Une boutique en ligne complète pour une marque française de produits apicoles. Construite sur un serveur sur mesure avec un tableau de bord d'administration des produits, la boutique est disponible en 6 langues, avec des remises sur volume, des options produits, des avis clients vérifiés et le paiement par PayPal — le tout hébergé sur un serveur dédié pour environ 13 € par mois.",
     "sage": "Un site accueillant pour une école de langues dans le sud-ouest de la France proposant des cours d'anglais et de français. Entièrement bilingue pour que les visiteurs puissent naviguer dans les deux langues, avec des formulaires de contact simples et tout ce qu'il faut pour bien se positionner dans les résultats de recherche Google.",
     "tc": "Un site portfolio pour Terry Carroll, photographe basé à Bristol, au Royaume-Uni. Six galeries thématiques avec mise en page en mosaïque et visionneuse lightbox, toutes les images hébergées et optimisées via Cloudinary. Un tableau de bord admin permet à Terry d'uploader de nouvelles photos directement, sans toucher au code.",
@@ -42,6 +43,7 @@
     "pop": "Il s'agit de la page d'accueil d'une nouvelle entreprise en démarrage proposant des options de garde d'enfants pour les mariages et les grands événements. N'hésitez pas à leur jeter un œil si vous avez prévu des événements majeurs dans le sud-ouest de la France. Le site est une application Web développée dans NextJs 14 et utilise Next-Int pour un changement de langue intuitif. Suivez le lien pour voir",
     "pocket": "Il s'agit d'une refonte complète du site pour un prochain projet de jeu Web 3 et NFT appelé Pocket Towne. Développé en HTML, CSS, Javascript. N'hésitez pas à les consulter si vous êtes intéressé par le métaverse et le Web 3",
     "space": "S.P.A.C.E est un projet NFT Art/Utility. J'ai développé une page de destination pour servir de page d'accueil au projet. Le site a été développé à l'aide de NextJs, en utilisant des hooks et des composants React pour donner au site une sensation réactive et animée."
+    
 }
             
 }

@@ -8,6 +8,7 @@ import carpetcoThumb from '@/public/images/carpetcothumb.png'
 import sageThumb from '@/public/images/sage-bg.png'
 import gardapisThumb from '@/public/images/gardapis.png'
 import { useTranslations } from "next-intl"
+import silsoup from '@/public/images/silsoup.png'
 
 export default function Projects() {
   const t = useTranslations("Portfolio")
@@ -20,6 +21,13 @@ export default function Projects() {
         </h2>
 
         <div className="space-y-8">
+          <SingleProject
+            link="https://www.siliconsoup.com/"
+            heading="Silicon Soup"
+            src={silsoup}
+            alt="Silicon Soup homepage, electronics"
+            desc={t("silsoup")}
+          />
           <SingleProject
             link="https://www.gardapis.eu"
             heading="Gard'Apis"
