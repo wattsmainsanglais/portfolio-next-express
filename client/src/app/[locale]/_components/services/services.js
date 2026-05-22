@@ -88,7 +88,7 @@ export default function Services() {
             <p className="text-slate-600 dark:text-slate-300 text-2xl">{t("workshop.desc")}</p>
           </div>
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-slate-900 dark:text-white">€40<span className="text-base font-normal text-slate-500 dark:text-slate-300"> / person</span></span>
+            <span className="text-2xl font-bold text-slate-900 dark:text-white">€50<span className="text-base font-normal text-slate-500 dark:text-slate-300"> / person</span></span>
           </div>
         </div>
       </div>
