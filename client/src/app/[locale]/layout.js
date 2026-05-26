@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL(baseUrl),
     title: isEn
-      ? 'Freelance Next.js Developer | Custom Web Applications & Sites | France & Europe'
-      : 'Développeur Next.js Freelance | Applications Web Sur Mesure | France & Europe',
+      ? 'Andrew Watts | Next.js & Go Developer | France & Europe'
+      : 'Andrew Watts | Développeur Next.js & Go | France & Europe',
     description: isEn
       ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
       : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
