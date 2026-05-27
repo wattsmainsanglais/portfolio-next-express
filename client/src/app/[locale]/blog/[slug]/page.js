@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import { getPostBySlug, getAllPosts, formatDate } from '@/lib/blog'
+import { getPostBySlug, formatDate } from '@/lib/blog'
 import awattsdevImg from '../../../../../public/images/nologo.svg'
 
 export async function generateMetadata({ params }) {
@@ -25,11 +25,6 @@ export async function generateMetadata({ params }) {
       publishedTime: post.date,
     },
   }
-}
-
-export async function generateStaticParams() {
-  const posts = getAllPosts()
-  return posts.map(post => ({ slug: post.slug }))
 }
 
 export default async function BlogPost({ params }) {
