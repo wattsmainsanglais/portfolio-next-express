@@ -9,7 +9,8 @@ export const metadata = {
   description: 'Practical articles on web development, working with developers vs designers, and building a professional online presence for your business.',
 }
 
-export default function BlogIndex({ params }) {
+export default async function BlogIndex({ params }) {
+  const { locale } = await params
   const posts = getAllPosts()
 
   return (
@@ -47,7 +48,7 @@ export default function BlogIndex({ params }) {
         <div className="flex flex-col gap-8">
           {posts.map(post => (
             <article key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>
+              <Link href={`/${locale}/blog/${post.slug}`}>
                 <div className="group p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/60 dark:bg-slate-800/60 hover:border-brand-400 dark:hover:border-brand-500 hover:shadow-md transition-all duration-200">
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">

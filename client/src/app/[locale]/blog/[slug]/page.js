@@ -33,7 +33,7 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }) {
-  const { slug } = await params
+  const { locale, slug } = await params
   const post = getPostBySlug(slug)
 
   if (!post) notFound()
@@ -53,7 +53,7 @@ export default async function BlogPost({ params }) {
             />
           </Link>
           <Link
-            href="/blog"
+            href={`/${locale}/blog`}
             className="text-sm text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
           >
             ← All posts
@@ -84,7 +84,7 @@ export default async function BlogPost({ params }) {
         {/* Back link */}
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
           <Link
-            href="/blog"
+            href={`/${locale}/blog`}
             className="text-sm text-brand-600 dark:text-brand-400 hover:underline"
           >
             ← Back to all posts
