@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa"
 import Intro from './_components/intro/intro'
@@ -32,6 +33,12 @@ export default async function Page({params}) {
 
           {/* Social Links & Language Switcher */}
           <div className="flex items-center gap-4">
+            <Link
+              href="/blog"
+              className="text-sm font-medium text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors mr-2"
+            >
+              Blog
+            </Link>
             <a
               href='https://www.facebook.com/profile.php?id=61553113778974'
               target='_blank'
