@@ -72,7 +72,7 @@ export default async function BlogPost({ params }) {
 
         {/* Post content */}
         <div
-          className="prose prose-slate dark:prose-invert prose-headings:font-semibold prose-a:text-brand-600 dark:prose-a:text-brand-400 prose-strong:text-slate-900 dark:prose-strong:text-white prose-hr:border-slate-300 dark:prose-hr:border-slate-700 max-w-none"
+          className="prose prose-xl prose-slate dark:prose-invert prose-headings:font-semibold prose-a:text-brand-600 dark:prose-a:text-brand-400 prose-strong:text-slate-900 dark:prose-strong:text-white prose-hr:border-slate-300 dark:prose-hr:border-slate-700 max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
