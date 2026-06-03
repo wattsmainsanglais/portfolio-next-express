@@ -11,7 +11,7 @@ export const metadata = {
 
 export default async function BlogIndex({ params }) {
   const { locale } = await params
-  const posts = getAllPosts()
+  const posts = getAllPosts(locale)
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-brand-50 to-white dark:from-slate-900 dark:via-brand-900 dark:to-slate-900">
@@ -59,7 +59,7 @@ export default async function BlogIndex({ params }) {
                         {post.description}
                       </p>
                       <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-500">
-                        <span>{formatDate(post.date)}</span>
+                        <span>{formatDate(post.date, locale)}</span>
                         <span>·</span>
                         <span>{post.readTime}</span>
                       </div>

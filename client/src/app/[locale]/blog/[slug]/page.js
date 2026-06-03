@@ -5,8 +5,8 @@ import { getPostBySlug, formatDate } from '@/lib/blog'
 import awattsdevImg from '../../../../../public/images/nologo.svg'
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params
-  const post = getPostBySlug(slug)
+  const { locale, slug } = await params
+  const post = getPostBySlug(slug, locale)
   if (!post) return {}
 
   const baseUrl = 'https://www.awattsdev.eu'
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogPost({ params }) {
   const { locale, slug } = await params
-  const post = getPostBySlug(slug)
+  const post = getPostBySlug(slug, locale)
 
   if (!post) notFound()
 
@@ -64,7 +64,7 @@ export default async function BlogPost({ params }) {
             {post.title}
           </h1>
           <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
-            <span>{formatDate(post.date)}</span>
+            <span>{formatDate(post.date, locale)}</span>
             <span>·</span>
             <span>{post.readTime}</span>
           </div>
