@@ -28,10 +28,11 @@
 },
 "About": {
     "heading": "About",
-    "para1": "Hi, I'm Andrew, an English & French speaking web developer based near Civray, Vienne (86), in South West France. I serve businesses across the local area — Charroux, Ruffec, Poitiers, Angoulême, Limoges and throughout Nouvelle-Aquitaine — as well as clients in Greater Manchester and Tameside, UK. If you're looking for web design, site modernisation, online shops or IT support, you've come to the right place.",
+    "para1": "Hi, I'm Andrew, an English & French speaking full stack engineer available for remote contracts across France, the UK and Europe. I build custom web applications, ecommerce platforms and SaaS products using Next.js, Go and PostgreSQL — and I provide IT support for local businesses in the Vienne and Nouvelle-Aquitaine area.",
     "para2": "I'm also available for specialist freelance contracts — if you're an agency, startup or larger organisation looking for a full-stack developer working with modern JavaScript frameworks, Next.js, Vite or Go, get in touch. Please contact me using the form below or through my social media — links in the header."
 },
 "Portfolio": {
+    "einvoicer": "A SaaS product for EU-compliant electronic invoicing. Generates Factur-X (PDF/A-3) and Peppol BIS 3.0 documents, integrates with the French Super PDP network, and handles regulated VAT submission flows — built to meet French and EU e-invoicing mandates coming into force from 2026.",
     "silsoup": "Custom online shop built to replace a WooCommerce site — sells RFID readers, and electronics with a flexible product options system that lets the owner configure variants and pricing without developer help. Includes a full admin dashboard, live PayPal checkout, and customer reviews. Hosted on a dedicated server for full control and no monthly platform fees. Written in ViteJs, backend Golang",
     "gardapis": "A full e-commerce store for a French beekeeping products brand. Built on a custom server with a product admin dashboard, the storefront supports 6 languages, bulk discount pricing, product options, verified customer reviews, and PayPal checkout — all hosted on a dedicated server for around €13 per month.",
     "sage": "A welcoming website for a language school in South West France offering English and French courses. Fully bilingual so visitors can browse in either language, with easy-to-use contact forms and everything in place to rank well on Google search results.",

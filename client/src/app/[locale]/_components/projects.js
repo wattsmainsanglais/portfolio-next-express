@@ -9,6 +9,7 @@ import sageThumb from '@/public/images/sage-bg.png'
 import gardapisThumb from '@/public/images/gardapis.png'
 import { useTranslations } from "next-intl"
 import silsoup from '@/public/images/silsoup.png'
+import einvoicerThumb from '@/public/images/einvoicer.png'
 
 export default function Projects() {
   const t = useTranslations("Portfolio")
@@ -21,6 +22,13 @@ export default function Projects() {
         </h2>
 
         <div className="space-y-8">
+          <SingleProject
+            link="https://einvoicer.eu"
+            heading="Einvoicer"
+            src={einvoicerThumb}
+            alt="Einvoicer - EU-compliant electronic invoicing SaaS"
+            desc={t("einvoicer")}
+          />
           <SingleProject
             link="https://www.siliconsoup.com/"
             heading="Silicon Soup"
