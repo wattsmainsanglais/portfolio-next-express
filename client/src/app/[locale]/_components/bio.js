@@ -19,7 +19,7 @@ export default function Bio() {
               width={200}
               height={200}
               src={profilePic}
-              alt='Picture of Andrew Watts (awattsdev)'
+              alt='Picture of Andrew Watts- Fullstack developer (awattsdev)'
               className="rounded-full shadow-xl"
             />
           </div>
