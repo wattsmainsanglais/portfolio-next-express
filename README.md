@@ -6,6 +6,7 @@ But first you have to enter each of the root, client and server folders and run 
 
 Further details on NextJS below...
 
+now has blogging page too
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
