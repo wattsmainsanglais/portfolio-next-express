@@ -10,6 +10,7 @@ import gardapisThumb from '@/public/images/gardapis.png'
 import { useTranslations } from "next-intl"
 import silsoup from '@/public/images/silsoup.png'
 import einvoicerThumb from '@/public/images/einvoicer.png'
+import anteluxiaThumb from '@/public/images/anteluxia.png'
 
 export default function Projects() {
   const t = useTranslations("Portfolio")
@@ -22,6 +23,13 @@ export default function Projects() {
         </h2>
 
         <div className="space-y-8">
+          <SingleProject
+            link="https://anteluxia-resonance.com"
+            heading="Anteluxia Resonance"
+            src={anteluxiaThumb}
+            alt="Anteluxia Resonance - animal communication and holistic practice website"
+            desc={t("anteluxia")}
+          />
           <SingleProject
             link="https://einvoicer.eu"
             heading="Einvoicer"
