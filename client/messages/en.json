@@ -44,7 +44,13 @@
     "pocket": "This is a complete site redesign for an upcoming Web 3 gaming and NFT project called Pocket Towne. Developed in HTML, CSS , Javascript. Please check them out if you're interested in Metaverse & web 3",
     "space": "S.P.A.C.E is an NFT Art/ Utility project. I've developed a landing page to serve as the homepage for the project. The site has been developed using NextJs, using React hooks & components to give the site a responsive and animated feel. "
 
-}
-
-    
+},
+    "Blog": {
+        "intro": "Practical writing on web development, working online, and building a professional presence for your business.",
+        "backToSite": "← Back to site",
+        "allPosts": "← All posts",
+        "backToAllPosts": "← Back to all posts",
+        "metaTitle": "Blog | awattsdev — Web Development Insights",
+        "metaDescription": "Practical articles on web development, working with developers vs designers, and building a professional online presence for your business."
+    }
 }

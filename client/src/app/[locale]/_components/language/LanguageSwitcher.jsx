@@ -8,7 +8,8 @@ import { usePathname } from "next/navigation";
 import { Text, DropdownMenu, Button } from "@radix-ui/themes";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 
-export default function LanguageSwitcher({locale}){
+// textClassName overrides the default white text (for light backgrounds)
+export default function LanguageSwitcher({locale, textClassName}){
 
     const pathname = usePathname()
     const currentRoute = pathname.slice(3)
@@ -22,7 +23,7 @@ export default function LanguageSwitcher({locale}){
         <DropdownMenu.Root modal={false}  >
             <DropdownMenu.Trigger >
                 <Button  variant="ghost" size='4' ml='3'>
-                    <Text style={{color:'white'}}>{getFlag(locale)} {locale}</Text><ChevronDownIcon/>
+                    <Text className={textClassName} style={textClassName ? undefined : {color:'white'}}>{getFlag(locale)} {locale}</Text><ChevronDownIcon/>
                 </Button>
             </DropdownMenu.Trigger>
 

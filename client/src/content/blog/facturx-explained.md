@@ -6,7 +6,7 @@ slug: facturx-explained
 readTime: 4 min read
 ---
 
-France is mandating structured electronic invoicing for all businesses from September 2026. If you're building anything that touches invoicing for French or European clients, you're going to need to know about Factur-X. Here's what it actually is, because there's a lot of confusion around it.
+Since 1 September 2026, every business in France has to be able to receive electronic invoices, and large and mid-sized companies have to send them too. Small businesses and micro-entreprises follow on 1 September 2027. If you're building anything that touches invoicing for French or European clients, you're going to need to know about Factur-X. Here's what it actually is, because there's a lot of confusion around it.
 
 Factur-X is a hybrid invoice format. On the surface it looks like a normal PDF, something you can open, read and print like any other document. But embedded inside the PDF file is a structured XML document containing all the same invoice data in machine-readable form. The format is built on PDF/A-3, which is an ISO standard for archival PDFs, and the XML follows the Cross Industry Invoice (CII) schema.
 

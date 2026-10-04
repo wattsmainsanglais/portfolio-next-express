@@ -8,6 +8,14 @@ const postsDirectory = path.join(process.cwd(), 'src/content/blog')
 // Matches locale-suffixed files like designer-vs-developer.fr.md
 const localeFileSuffix = /\.[a-z]{2}\.md$/
 
+// Locales a post is written in: always 'en', plus any locale-suffixed files
+function getPostLocales(baseName) {
+  const translated = ['fr'].filter(locale =>
+    fs.existsSync(path.join(postsDirectory, `${baseName}.${locale}.md`))
+  )
+  return ['en', ...translated]
+}
+
 export function getAllPosts(locale = 'en') {
   const fileNames = fs.readdirSync(postsDirectory)
   const posts = fileNames
@@ -17,19 +25,19 @@ export function getAllPosts(locale = 'en') {
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data } = matter(fileContents)
       const slug = data.slug || fileName.replace(/\.md$/, '')
+      const baseName = fileName.replace(/\.md$/, '')
+      const locales = getPostLocales(baseName)
 
-      if (locale !== 'en') {
-        const baseName = fileName.replace(/\.md$/, '')
+      if (locale !== 'en' && locales.includes(locale)) {
         const localePath = path.join(postsDirectory, `${baseName}.${locale}.md`)
-        if (fs.existsSync(localePath)) {
-          const { data: localeData } = matter(fs.readFileSync(localePath, 'utf8'))
-          return {
-            slug,
-            title: localeData.title || data.title,
-            description: localeData.description || data.description,
-            date: data.date,
-            readTime: localeData.readTime || data.readTime,
-          }
+        const { data: localeData } = matter(fs.readFileSync(localePath, 'utf8'))
+        return {
+          slug,
+          title: localeData.title || data.title,
+          description: localeData.description || data.description,
+          date: data.date,
+          readTime: localeData.readTime || data.readTime,
+          locales,
         }
       }
 
@@ -39,6 +47,7 @@ export function getAllPosts(locale = 'en') {
         description: data.description,
         date: data.date,
         readTime: data.readTime,
+        locales,
       }
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -58,20 +67,20 @@ export function getPostBySlug(slug, locale = 'en') {
 
   const baseContents = fs.readFileSync(path.join(postsDirectory, baseFileName), 'utf8')
   const { data: baseData } = matter(baseContents)
+  const baseName = baseFileName.replace(/\.md$/, '')
+  const locales = getPostLocales(baseName)
 
-  if (locale !== 'en') {
-    const baseName = baseFileName.replace(/\.md$/, '')
+  if (locale !== 'en' && locales.includes(locale)) {
     const localePath = path.join(postsDirectory, `${baseName}.${locale}.md`)
-    if (fs.existsSync(localePath)) {
-      const { data: localeData, content } = matter(fs.readFileSync(localePath, 'utf8'))
-      return {
-        slug,
-        title: localeData.title || baseData.title,
-        description: localeData.description || baseData.description,
-        date: baseData.date,
-        readTime: localeData.readTime || baseData.readTime,
-        content: marked(content),
-      }
+    const { data: localeData, content } = matter(fs.readFileSync(localePath, 'utf8'))
+    return {
+      slug,
+      title: localeData.title || baseData.title,
+      description: localeData.description || baseData.description,
+      date: baseData.date,
+      readTime: localeData.readTime || baseData.readTime,
+      locales,
+      content: marked(content),
     }
   }
 
@@ -82,6 +91,7 @@ export function getPostBySlug(slug, locale = 'en') {
     description: baseData.description,
     date: baseData.date,
     readTime: baseData.readTime,
+    locales,
     content: marked(content),
   }
 }
