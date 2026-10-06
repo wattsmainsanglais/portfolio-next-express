@@ -31,7 +31,7 @@ export default function Services() {
           {/* Price badge */}
           <div className="flex justify-center mb-6">
             <div className="bg-brand-600 rounded-xl px-6 py-3 text-center">
-              <span className="text-3xl font-bold text-white">from €375</span>
+              <span className="text-3xl font-bold text-white">from €650</span>
             </div>
           </div>
 

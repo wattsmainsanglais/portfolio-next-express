@@ -4,7 +4,7 @@
 
 ## Services
 
-- **Website Design & Development**: Custom-coded professional websites for small businesses. One-time payment from €375 — no monthly fees, no subscriptions, no vendor lock-in. Built with Next.js. Clients own all accounts (GitHub, Vercel, Google). Dual language (English + French) included. Delivered in 10 days from content receipt.
+- **Website Design & Development**: Custom-coded professional websites for small businesses. One-time payment from €650 — no monthly fees, no subscriptions, no vendor lock-in. Built with Next.js. Clients own all accounts (GitHub, Vercel, Google). Dual language (English + French) included. Delivered in 10 days from content receipt.
 - **IT Support**: On-site tech support for businesses and individuals. Hardware issues, software problems, OS upgrades, email setup, network troubleshooting. First hour €55, subsequent hours €45. No contracts — pay per visit.
 - **AI Workshops**: 60-minute practical Claude AI workshop for small business owners. €35 per attendee. Learn to automate admin tasks, draft emails, and save hours every week using AI tools.
 

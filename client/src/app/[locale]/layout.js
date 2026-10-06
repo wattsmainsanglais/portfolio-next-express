@@ -117,8 +117,8 @@ export default async function RootLayout({ children, params }) {
               "name": "awattsdev",
               "alternateName": "Awattsdev Web Development",
               "description": locale === 'en'
-                ? "Freelance full-stack web developer available for remote contracts across France, UK and Europe. Specialising in Next.js, React, Go and PostgreSQL. Also builds professional websites for small businesses from €375."
-                : "Développeur web full-stack freelance disponible pour des contrats à distance en France, UK et Europe. Spécialisé en Next.js, React, Go et PostgreSQL. Création de sites web pour petites entreprises à partir de 375€.",
+                ? "Freelance full-stack web developer available for remote contracts across France, UK and Europe. Specialising in Next.js, React, Go and PostgreSQL. Also builds professional websites for small businesses from €650."
+                : "Développeur web full-stack freelance disponible pour des contrats à distance en France, UK et Europe. Spécialisé en Next.js, React, Go et PostgreSQL. Création de sites web pour petites entreprises à partir de 650€.",
               "url": "https://www.awattsdev.eu",
               "logo": "https://www.awattsdev.eu/images/awattsdev.png",
               "image": "https://www.awattsdev.eu/images/awattsdev.png",
@@ -164,7 +164,7 @@ export default async function RootLayout({ children, params }) {
                         ? "Professional websites for small businesses. One-time payment, no monthly fees. Mobile responsive, dual language support."
                         : "Sites web professionnels pour petites entreprises. Paiement unique, sans abonnement. Responsive mobile, support bilingue.",
                     },
-                    "price": "375",
+                    "price": "650",
                     "priceCurrency": "EUR",
                   },
                   {
@@ -222,8 +222,8 @@ export default async function RootLayout({ children, params }) {
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Senior freelance Next.js developers in France typically charge between €400 and €750 per day depending on project complexity and duration. For fixed-price projects — such as a business website or small web application — I offer project-based rates from €375. Get in touch to discuss your requirements."
-                      : "Les développeurs Next.js freelance seniors en France facturent généralement entre 400 et 750 € par jour selon la complexité et la durée du projet. Pour les projets à prix fixe — site vitrine ou petite application web — je propose des tarifs à partir de 375 €. Contactez-moi pour discuter de vos besoins."
+                      ? "Senior freelance Next.js developers in France typically charge between €400 and €750 per day depending on project complexity and duration. For fixed-price projects — such as a business website or small web application — I offer project-based rates from €650. Get in touch to discuss your requirements."
+                      : "Les développeurs Next.js freelance seniors en France facturent généralement entre 400 et 750 € par jour selon la complexité et la durée du projet. Pour les projets à prix fixe — site vitrine ou petite application web — je propose des tarifs à partir de 650 €. Contactez-moi pour discuter de vos besoins."
                   }
                 },
                 {
