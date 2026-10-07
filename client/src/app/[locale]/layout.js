@@ -29,37 +29,22 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL(baseUrl),
     title: isEn
-      ? 'Andrew Watts | Next.js & Go Developer | France & Europe'
-      : 'Andrew Watts | Développeur Next.js & Go | France & Europe',
+      ? 'Custom Web Apps, SaaS & AI Integration | Andrew Watts'
+      : 'Applications Web Sur Mesure & Intégration IA | Andrew Watts',
     description: isEn
-      ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
-      : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
+      ? 'Custom web apps, SaaS and AI integration for businesses in Civray, Sud Vienne, Poitiers and Angoulême. Built around how you work, and you own the code.'
+      : "Applications web sur mesure, SaaS et intégration IA pour les entreprises de Civray, du Sud Vienne, de Poitiers et d'Angoulême. Vous êtes propriétaire du code.",
     keywords: [
-      // EN - what customers actually search
-      'web developer France', 'web development France', 'freelance web developer',
-      'website for small business', 'professional website', 'affordable web development', 'web design and development',
-      'web designer France', 'business website', 'website no monthly fees',
-      'AI training workshops', 'IT support France', 'Nouvelle-Aquitaine', 'web developer near me',
-      'web developer Civray', 'web developer Vienne', 'web developer Ruffec', 'web developer Charroux',
-      'web developer Poitiers', 'web developer Angoulême', 'web developer Limoges',
-      'web developer Greater Manchester', 'web developer Tameside',
-      // EN - specialist / B2B
-      'full-stack developer France', 'custom web application developer', 'freelance developer Europe',
-      'JavaScript developer freelance France', 'Next.js freelance developer', 'Vite developer freelance',
-      'Go developer freelance Europe', 'bespoke web development France', 'web application development France',
-      'freelance web developer Europe', 'custom web development company France',
-      // FR - what French customers search
-      'développeur web France', 'développement web France', 'création site web', 'site internet professionnel',
-      'créateur site web', 'site web pas cher', 'développeur web freelance',
-      'site web entreprise', 'site internet sans abonnement', 'formation IA',
-      'support informatique', 'développeur web Nouvelle-Aquitaine', 'site web Charente', 'site web Vienne',
-      'création site web Civray', 'développeur web Ruffec', 'création site web Vienne 86',
-      'développeur web Angoulême', 'développeur web Limoges', 'développeur web Poitiers',
-      'site internet Civray', 'site internet Charroux', 'développeur web Vienne 86',
-      // FR - specialist / B2B
-      'développeur full-stack France', 'développeur JavaScript freelance', 'développeur Next.js freelance',
-      'développeur Go freelance', 'application web sur mesure France', 'développement web sur mesure',
-      'développeur React Europe', 'contrat freelance développeur web',
+      // EN
+      'custom web application development', 'custom software for small business', 'SaaS development',
+      'AI integration for business', 'AI automation for small business', 'business process automation',
+      'web app developer Poitiers', 'custom software Angoulême', 'software developer Civray',
+      'software developer Sud Vienne', 'freelance software developer Nouvelle-Aquitaine',
+      // FR
+      'application web sur mesure', 'logiciel sur mesure', 'développement SaaS',
+      'intégration IA entreprise', 'automatisation IA PME', 'développeur logiciel Poitiers',
+      'logiciel sur mesure Angoulême', 'développeur Civray', 'développeur Sud Vienne',
+      'développeur logiciel Nouvelle-Aquitaine',
     ],
     authors: [{ name: 'Andrew Watts' }],
     alternates: {
@@ -71,25 +56,25 @@ export async function generateMetadata({ params }) {
     },
     openGraph: {
       title: isEn
-        ? 'awattsdev — Freelance Next.js & Go Developer | France & Europe'
-        : 'awattsdev — Développeur Next.js & Go Freelance | France & Europe',
+        ? 'awattsdev | Custom Web Apps, SaaS & AI Integration'
+        : 'awattsdev | Applications Web Sur Mesure & Intégration IA',
       description: isEn
-        ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
-        : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
+        ? 'Custom software and AI tools for businesses in Civray, Sud Vienne, Poitiers and Angoulême.'
+        : 'Logiciels et outils IA sur mesure pour les entreprises de Civray, du Sud Vienne, de Poitiers et d’Angoulême.',
       url: `${baseUrl}/${locale}`,
       siteName: 'awattsdev',
       locale: isEn ? 'en_GB' : 'fr_FR',
       type: 'website',
-      images: [{ url: '/images/awattsdev.png', width: 3163, height: 792, alt: 'awattsdev - Web Development' }],
+      images: [{ url: '/images/awattsdev.png', width: 3163, height: 792, alt: 'awattsdev - Custom Web Apps, SaaS & AI Integration' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: isEn
-        ? 'awattsdev — Freelance Next.js & Go Developer | France & Europe'
-        : 'awattsdev — Développeur Next.js & Go Freelance | France & Europe',
+        ? 'awattsdev | Custom Web Apps, SaaS & AI Integration'
+        : 'awattsdev | Applications Web Sur Mesure & Intégration IA',
       description: isEn
-        ? 'Freelance full-stack developer for remote contracts across France, UK and Europe. Next.js, React, Go and PostgreSQL. Available for agency and startup projects.'
-        : 'Développeur full-stack freelance pour contrats à distance en France, UK et Europe. Spécialisé Next.js, React, Go et PostgreSQL. Agences et startups bienvenus.',
+        ? 'Custom software and AI tools for businesses in Civray, Sud Vienne, Poitiers and Angoulême.'
+        : 'Logiciels et outils IA sur mesure pour les entreprises de Civray, du Sud Vienne, de Poitiers et d’Angoulême.',
       images: ['/images/awattsdev.png'],
     },
   }
@@ -115,10 +100,10 @@ export default async function RootLayout({ children, params }) {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "awattsdev",
-              "alternateName": "Awattsdev Web Development",
+              "alternateName": "awattsdev Custom Software & AI Integration",
               "description": locale === 'en'
-                ? "Freelance full-stack web developer available for remote contracts across France, UK and Europe. Specialising in Next.js, React, Go and PostgreSQL. Also builds professional websites for small businesses from €650."
-                : "Développeur web full-stack freelance disponible pour des contrats à distance en France, UK et Europe. Spécialisé en Next.js, React, Go et PostgreSQL. Création de sites web pour petites entreprises à partir de 650€.",
+                ? "Freelance software developer based in Civray. Custom web applications, SaaS and AI integration for businesses in Sud Vienne, Poitiers, Angoulême and across Nouvelle-Aquitaine. Also professional websites, IT support and AI workshops."
+                : "Développeur logiciel freelance basé à Civray. Applications web sur mesure, SaaS et intégration IA pour les entreprises du Sud Vienne, de Poitiers, d'Angoulême et de toute la Nouvelle-Aquitaine. Également sites internet, support informatique et ateliers IA.",
               "url": "https://www.awattsdev.eu",
               "logo": "https://www.awattsdev.eu/images/awattsdev.png",
               "image": "https://www.awattsdev.eu/images/awattsdev.png",
@@ -126,26 +111,25 @@ export default async function RootLayout({ children, params }) {
               "founder": {
                 "@type": "Person",
                 "name": "Andrew Watts",
-                "jobTitle": "Freelance Full-Stack Web Developer",
+                "jobTitle": "Freelance Software Developer",
               },
               "address": {
                 "@type": "PostalAddress",
+                "addressLocality": "Civray",
+                "postalCode": "86400",
                 "addressRegion": "Nouvelle-Aquitaine",
                 "addressCountry": "FR",
               },
               "areaServed": [
-                { "@type": "Country", "name": "France" },
-                { "@type": "Country", "name": "United Kingdom" },
-                { "@type": "AdministrativeArea", "name": "Nouvelle-Aquitaine" },
                 { "@type": "City", "name": "Civray" },
-                { "@type": "City", "name": "Charroux" },
-                { "@type": "City", "name": "Ruffec" },
+                { "@type": "AdministrativeArea", "name": "Sud Vienne" },
                 { "@type": "City", "name": "Poitiers" },
                 { "@type": "City", "name": "Angoulême" },
-                { "@type": "City", "name": "Limoges" },
                 { "@type": "AdministrativeArea", "name": "Vienne" },
-                { "@type": "AdministrativeArea", "name": "Greater Manchester" },
-                { "@type": "City", "name": "Tameside" },
+                { "@type": "AdministrativeArea", "name": "Charente" },
+                { "@type": "AdministrativeArea", "name": "Nouvelle-Aquitaine" },
+                { "@type": "Country", "name": "France" },
+                { "@type": "Country", "name": "United Kingdom" },
               ],
               "priceRange": "€€",
               "currenciesAccepted": "EUR, GBP",
@@ -155,6 +139,26 @@ export default async function RootLayout({ children, params }) {
                 "@type": "OfferCatalog",
                 "name": "Services",
                 "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": locale === 'en' ? "Custom Web Applications & SaaS" : "Applications Web Sur Mesure & SaaS",
+                      "description": locale === 'en'
+                        ? "Custom web applications, ecommerce platforms and SaaS products built around how your business works. Admin dashboards, payments, integrations with your existing tools. You own the code."
+                        : "Applications web, plateformes e-commerce et produits SaaS sur mesure, conçus autour du fonctionnement de votre entreprise. Tableaux de bord, paiements, intégrations avec vos outils existants. Vous êtes propriétaire du code.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": locale === 'en' ? "AI Integration & Automation" : "Intégration IA & Automatisation",
+                      "description": locale === 'en'
+                        ? "AI features and automation built into your business tools: document processing, drafting, data extraction and workflow automation."
+                        : "Fonctionnalités IA et automatisations intégrées à vos outils : traitement de documents, rédaction, extraction de données et automatisation des tâches.",
+                    },
+                  },
                   {
                     "@type": "Offer",
                     "itemOffered": {
@@ -176,7 +180,7 @@ export default async function RootLayout({ children, params }) {
                         ? "Practical AI workshops for small businesses. Learn to automate admin tasks and save hours every week."
                         : "Formations IA pratiques pour petites entreprises. Apprenez à automatiser vos tâches administratives.",
                     },
-                    "price": "35",
+                    "price": "50",
                     "priceCurrency": "EUR",
                   },
                   {
@@ -189,16 +193,6 @@ export default async function RootLayout({ children, params }) {
                         : "Support logiciel, matériel, email, réseau et sécurité. Sans contrat, paiement à la visite.",
                     },
                   },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": locale === 'en' ? "Custom Web Application Development" : "Développement d'Applications Web Sur Mesure",
-                      "description": locale === 'en'
-                        ? "Full-stack custom web application development for agencies, startups and larger organisations. Modern JavaScript frameworks including Next.js, Vite and React, Go backend services, PostgreSQL. Available for remote freelance contracts across France, UK and Europe."
-                        : "Développement full-stack d'applications web sur mesure pour agences, startups et grandes organisations. Frameworks JavaScript modernes dont Next.js, Vite et React, services backend Go, PostgreSQL. Disponible pour des contrats freelance à distance en France, UK et Europe.",
-                    },
-                  },
                 ],
               },
               "sameAs": [
@@ -209,6 +203,7 @@ export default async function RootLayout({ children, params }) {
             }),
           }}
         />
+        {/* FAQPage disabled 7 Oct 2026: Google deprecated FAQ rich results (May 2026), and the Q&As pitched agency/contract work.
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -270,6 +265,7 @@ export default async function RootLayout({ children, params }) {
             })
           }}
         />
+        */}
       <NextIntlClientProvider messages={messages} >
         <ThemeProvider>
           <Theme data-is-root-theme='false' grayColor="olive" accentColor="purple" >

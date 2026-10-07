@@ -1,52 +1,66 @@
-
-
 {
     "Intro": {
         "heading1": "Développeur Logiciel Freelance | Applications Web, SaaS et Intégration IA Sur Mesure | France & Europe",
         "heading2": "Logiciels et outils IA sur mesure, conçus autour du fonctionnement réel de votre entreprise. Depuis la Nouvelle-Aquitaine, pour des clients en France, au Royaume-Uni et en Europe."
     },
     "Services": {
-    "dev": {
-        "b1": "Conçu sur mesure selon vos besoins — pas de templates, pas de constructeurs de pages",
-        "b2": "Optimisé pour le SEO, responsive mobile, et bilingue si besoin",
-        "b3": "Propriété totale transférée — aucun constructeur de site tiers ne vous retient en otage",
-        "b4": "Sites vitrines, En ligne en 10 jours après réception du contenu",
-        "price_note": "Paiement unique. Sans abonnement."
+        "heading": "Services",
+        "apps": {
+            "title": "Applications Web Sur Mesure & SaaS",
+            "price": "Sur devis",
+            "b1": "Conçu autour du fonctionnement réel de votre entreprise, pas d'un modèle",
+            "b2": "Boutiques en ligne, systèmes de commande et de réservation, tableaux de bord, espaces clients",
+            "b3": "Paiements, multilingue et connexion aux outils que vous utilisez déjà",
+            "b4": "Le code vous appartient, sans frais de plateforme qui vous retiennent en otage",
+            "note": "Réalisations récentes : SiliconSoup, Gard'Apis, einvoicer"
+        },
+        "ai": {
+            "title": "Intégration IA & Automatisation",
+            "price": "Sur devis",
+            "b1": "L'IA intégrée à vos propres outils, pas un abonnement de plus à gérer",
+            "b2": "Lecture de documents, rédaction de réponses, extraction de données depuis vos PDF et e-mails",
+            "b3": "Automatisation des tâches administratives répétitives qui vous prennent la semaine",
+            "note": "Vous ne savez pas où l'IA peut vous aider ? Commencez par un atelier."
+        },
+        "web": {
+            "title": "Sites Internet",
+            "price": "à partir de 650 €",
+            "desc": "Sites professionnels codés sur mesure et bilingues. Paiement unique, sans abonnement, en ligne en 10 jours."
+        },
+        "support": {
+            "title": "Support Informatique",
+            "price": "40 € / h",
+            "desc": "Aide sur place ou à distance pour le matériel, les logiciels et les e-mails, sans jargon."
+        },
+        "workshop": {
+            "title": "Atelier IA",
+            "price": "50 € / personne",
+            "desc": "Session pratique de 60 minutes pour faire utiliser Claude AI à votre entreprise : prompts, automatisation, gain de temps."
+        }
     },
-    "support": {
-        "b1": "Sur place ou à distance — matériel, logiciels, configuration email et plus",
-        "b2": "Conseils clairs, sans jargon technique",
-        "b3": "Vous créez votre propre site ? Je peux vous guider"
+    "ThemeToggle": {
+        "question": "Votre site a-t-il un mode clair et sombre ? Essayez",
+        "toLight": "Passer en mode clair",
+        "toDark": "Passer en mode sombre"
     },
-    "workshop": {
-        "title": "Atelier IA",
-        "desc": "Session pratique de 60 minutes pour faire utiliser Claude AI à votre entreprise — prompts, automatisation, gain de temps."
-    }
-},
-"ThemeToggle": {
-    "question": "Votre site a-t-il un mode clair et sombre ? Essayez",
-    "toLight": "Passer en mode clair",
-    "toDark": "Passer en mode sombre"
-},
-"About": {
-    "heading": "Qui suis je?",
-    "para1": "Bonjour, je suis Andrew, ingénieur full stack anglophone et francophone, disponible pour des contrats à distance en France, au Royaume-Uni et en Europe. Je développe des applications web sur mesure, des plateformes e-commerce et des produits SaaS avec Next.js, Go et PostgreSQL — et je fournis un support informatique aux entreprises locales dans la Vienne et en Nouvelle-Aquitaine.",
-    "para2": "Je suis également disponible pour des contrats freelance spécialisés — si vous êtes une agence, une startup ou une organisation plus grande à la recherche d'un développeur full-stack travaillant avec des frameworks JavaScript modernes, Next.js, Vite ou Go, contactez-moi. Contactez-moi via le formulaire ci-dessous ou sur mes réseaux sociaux — liens dans l'en-tête."
-}, 
-"Portfolio": {
-    "anteluxia": "Un site apaisant pour une pratique de communication animale et de bien-être holistique dans le Sud-Ouest de la France. Développé avec Next.js 16 et Stripe pour les paiements en ligne sécurisés, dans une palette chaude forêt et or, avec mode clair et sombre. Entièrement bilingue (anglais et français) et adapté à tous les écrans, y compris les ordinateurs portables tactiles.",
-    "einvoicer": "Un produit SaaS pour la facturation électronique conforme à l'UE. Génère des documents Factur-X (PDF/A-3) et Peppol BIS 3.0, s'intègre au réseau Super PDP français et gère les flux de soumission TVA réglementés — conçu pour répondre aux obligations de facturation électronique françaises et européennes entrant en vigueur à partir de 2026.",
-    "silsoup": "Boutique en ligne sur mesure, conçue pour remplacer un site WooCommerce — vend des lecteurs RFID et de l'électronique avec un système d'options flexible permettant au propriétaire de configurer les variantes et les tarifs sans intervention technique. Comprend un tableau de bord d'administration complet, un paiement PayPal en direct et un système d'avis clients. Hébergée sur un serveur dédié pour un contrôle total, sans abonnement mensuel à une plateforme. Vite Js, Typescript, backend -Golang.",
-    "gardapis": "Une boutique en ligne complète pour une marque française de produits apicoles. Construite sur un serveur sur mesure avec un tableau de bord d'administration des produits, la boutique est disponible en 6 langues, avec des remises sur volume, des options produits, des avis clients vérifiés et le paiement par PayPal — le tout hébergé sur un serveur dédié pour environ 13 € par mois.",
-    "sage": "Un site accueillant pour une école de langues dans le sud-ouest de la France proposant des cours d'anglais et de français. Entièrement bilingue pour que les visiteurs puissent naviguer dans les deux langues, avec des formulaires de contact simples et tout ce qu'il faut pour bien se positionner dans les résultats de recherche Google.",
-    "tc": "Un site portfolio pour Terry Carroll, photographe basé à Bristol, au Royaume-Uni. Six galeries thématiques avec mise en page en mosaïque et visionneuse lightbox, toutes les images hébergées et optimisées via Cloudinary. Un tableau de bord admin permet à Terry d'uploader de nouvelles photos directement, sans toucher au code.",
-    "carpetco": "Service professionnel de pose de moquette à Dukinfield et dans le Grand Manchester. Site web moderne et réactif construit avec Next.js 16, avec des vitrines de services, des formulaires de contact et une optimisation SEO. Design épuré axé sur la conversion et une navigation facile pour les clients locaux.",
-    "nd": "Nature Dopes est un projet en cours dédié à la création d'un site d'abord pour l'appréciation de la flore naturelle, ensuite comme outil pédagogique. Pour préserver l'environnement, nous devons d'abord le comprendre. Il s'agit d'une application full stack développée dans NextJs 14 Typescipt, elle utilise de nombreux outils NextJs les plus récents, tels que Next-auth pour l'authentification, Next-intl pour le multilingue, Radix Ui, Iagon pour le stockage décentralisé et Prisma pour la gestion de base de données. Suivez le lien pour voir",
-    "pop": "Il s'agit de la page d'accueil d'une nouvelle entreprise en démarrage proposant des options de garde d'enfants pour les mariages et les grands événements. N'hésitez pas à leur jeter un œil si vous avez prévu des événements majeurs dans le sud-ouest de la France. Le site est une application Web développée dans NextJs 14 et utilise Next-Int pour un changement de langue intuitif. Suivez le lien pour voir",
-    "pocket": "Il s'agit d'une refonte complète du site pour un prochain projet de jeu Web 3 et NFT appelé Pocket Towne. Développé en HTML, CSS, Javascript. N'hésitez pas à les consulter si vous êtes intéressé par le métaverse et le Web 3",
-    "space": "S.P.A.C.E est un projet NFT Art/Utility. J'ai développé une page de destination pour servir de page d'accueil au projet. Le site a été développé à l'aide de NextJs, en utilisant des hooks et des composants React pour donner au site une sensation réactive et animée."
-    
-},
+    "About": {
+        "heading": "Qui suis je?",
+        "para1": "Bonjour, je suis Andrew, développeur logiciel anglophone et francophone basé à Civray. Je conçois des applications web, des produits SaaS et des outils IA sur mesure pour les entreprises du Sud Vienne, de Poitiers, d'Angoulême et de toute la Nouvelle-Aquitaine : des boutiques en ligne qui ont remplacé WooCommerce jusqu'à une plateforme de facturation électronique conçue pour l'obligation française de 2026.",
+        "para2": "Si votre entreprise fonctionne avec des tableurs, des copier-coller ou un outil qui ne convient pas tout à fait, je peux créer exactement ce dont vous avez besoin, et le code vous appartient. Je propose aussi un support informatique aux entreprises et aux particuliers. Contactez-moi via le formulaire ci-dessous ou sur mes réseaux sociaux, liens dans l'en-tête."
+    },
+    "Portfolio": {
+        "anteluxia": "Un site apaisant pour une pratique de communication animale et de bien-être holistique dans le Sud-Ouest de la France. Développé avec Next.js 16 et Stripe pour les paiements en ligne sécurisés, dans une palette chaude forêt et or, avec mode clair et sombre. Entièrement bilingue (anglais et français) et adapté à tous les écrans, y compris les ordinateurs portables tactiles.",
+        "einvoicer": "Un produit SaaS pour la facturation électronique conforme à l'UE. Génère des documents Factur-X (PDF/A-3) et Peppol BIS 3.0, s'intègre au réseau Super PDP français et gère les flux de soumission TVA réglementés — conçu pour répondre aux obligations de facturation électronique françaises et européennes entrant en vigueur à partir de 2026.",
+        "silsoup": "Boutique en ligne sur mesure, conçue pour remplacer un site WooCommerce — vend des lecteurs RFID et de l'électronique avec un système d'options flexible permettant au propriétaire de configurer les variantes et les tarifs sans intervention technique. Comprend un tableau de bord d'administration complet, un paiement PayPal en direct et un système d'avis clients. Hébergée sur un serveur dédié pour un contrôle total, sans abonnement mensuel à une plateforme. Vite Js, Typescript, backend -Golang.",
+        "gardapis": "Une boutique en ligne complète pour une marque française de produits apicoles. Construite sur un serveur sur mesure avec un tableau de bord d'administration des produits, la boutique est disponible en 6 langues, avec des remises sur volume, des options produits, des avis clients vérifiés et le paiement par PayPal — le tout hébergé sur un serveur dédié pour environ 13 € par mois.",
+        "sage": "Un site accueillant pour une école de langues dans le sud-ouest de la France proposant des cours d'anglais et de français. Entièrement bilingue pour que les visiteurs puissent naviguer dans les deux langues, avec des formulaires de contact simples et tout ce qu'il faut pour bien se positionner dans les résultats de recherche Google.",
+        "tc": "Un site portfolio pour Terry Carroll, photographe basé à Bristol, au Royaume-Uni. Six galeries thématiques avec mise en page en mosaïque et visionneuse lightbox, toutes les images hébergées et optimisées via Cloudinary. Un tableau de bord admin permet à Terry d'uploader de nouvelles photos directement, sans toucher au code.",
+        "carpetco": "Service professionnel de pose de moquette à Dukinfield et dans le Grand Manchester. Site web moderne et réactif construit avec Next.js 16, avec des vitrines de services, des formulaires de contact et une optimisation SEO. Design épuré axé sur la conversion et une navigation facile pour les clients locaux.",
+        "nd": "Nature Dopes est un projet en cours dédié à la création d'un site d'abord pour l'appréciation de la flore naturelle, ensuite comme outil pédagogique. Pour préserver l'environnement, nous devons d'abord le comprendre. Il s'agit d'une application full stack développée dans NextJs 14 Typescipt, elle utilise de nombreux outils NextJs les plus récents, tels que Next-auth pour l'authentification, Next-intl pour le multilingue, Radix Ui, Iagon pour le stockage décentralisé et Prisma pour la gestion de base de données. Suivez le lien pour voir",
+        "pop": "Il s'agit de la page d'accueil d'une nouvelle entreprise en démarrage proposant des options de garde d'enfants pour les mariages et les grands événements. N'hésitez pas à leur jeter un œil si vous avez prévu des événements majeurs dans le sud-ouest de la France. Le site est une application Web développée dans NextJs 14 et utilise Next-Int pour un changement de langue intuitif. Suivez le lien pour voir",
+        "pocket": "Il s'agit d'une refonte complète du site pour un prochain projet de jeu Web 3 et NFT appelé Pocket Towne. Développé en HTML, CSS, Javascript. N'hésitez pas à les consulter si vous êtes intéressé par le métaverse et le Web 3",
+        "space": "S.P.A.C.E est un projet NFT Art/Utility. J'ai développé une page de destination pour servir de page d'accueil au projet. Le site a été développé à l'aide de NextJs, en utilisant des hooks et des composants React pour donner au site une sensation réactive et animée."
+    },
     "Blog": {
         "intro": "Des articles concrets sur le développement web, le travail en ligne et la création d'une présence professionnelle pour votre entreprise.",
         "backToSite": "← Retour au site",

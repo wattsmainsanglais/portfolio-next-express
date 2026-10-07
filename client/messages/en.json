@@ -1,50 +1,66 @@
 {
-"Intro": {
-    "heading1": "Freelance Software Developer | Custom Web Apps, SaaS & AI Integration | France & Europe",
-    "heading2": "Custom software and AI tools built around how your business actually works. From Nouvelle-Aquitaine, for clients across France, the UK and Europe."
-},
-"Services": {
-    "dev": {
-        "b1": "Custom-built to your spec — no templates, no page builders",
-        "b2": "SEO-ready, mobile-responsive, and bilingual if needed",
-        "b3": "Full ownership transferred to you — no third-party site builders holding you hostage",
-        "b4": "Landing pages, Live in 10 days from content receipt",
-        "price_note": "One-time payment. No monthly fees."
+    "Intro": {
+        "heading1": "Freelance Software Developer | Custom Web Apps, SaaS & AI Integration | France & Europe",
+        "heading2": "Custom software and AI tools built around how your business actually works. From Nouvelle-Aquitaine, for clients across France, the UK and Europe."
     },
-    "support": {
-        "b1": "On-site or remote — hardware, software, email setup and more",
-        "b2": "Plain-English advice, no jargon",
-        "b3": "Building your own site? I can guide you through it"
+    "Services": {
+        "heading": "Services",
+        "apps": {
+            "title": "Custom Web Apps & SaaS",
+            "price": "Quoted per project",
+            "b1": "Built around how your business actually works, not a template",
+            "b2": "Online shops, ordering and booking systems, admin dashboards, client portals",
+            "b3": "Payments, multiple languages and links to the tools you already use",
+            "b4": "You own the code, with no platform fees holding you hostage",
+            "note": "Recent work: SiliconSoup, Gard'Apis, einvoicer"
+        },
+        "ai": {
+            "title": "AI Integration & Automation",
+            "price": "Quoted per project",
+            "b1": "AI built into your own tools, not another subscription to juggle",
+            "b2": "Reading documents, drafting replies, pulling data out of PDFs and emails",
+            "b3": "Automating the repetitive admin that eats your week",
+            "note": "Not sure where AI fits? Start with a workshop."
+        },
+        "web": {
+            "title": "Websites",
+            "price": "from €650",
+            "desc": "Custom-coded, bilingual business websites. One-time payment, no monthly fees, live in 10 days."
+        },
+        "support": {
+            "title": "IT Support",
+            "price": "€40 / hr",
+            "desc": "On-site or remote help with hardware, software and email, without the jargon."
+        },
+        "workshop": {
+            "title": "AI Workshop",
+            "price": "€50 / person",
+            "desc": "60-minute hands-on session to get your business using Claude AI: prompting, automating tasks, saving time."
+        }
     },
-    "workshop": {
-        "title": "AI Workshop",
-        "desc": "60-minute hands-on session to get your business using Claude AI — prompting, automating tasks, saving time."
-    }
-},
-"ThemeToggle": {
-    "question": "Does your site have light & dark mode? Give it a try",
-    "toLight": "Switch to light mode",
-    "toDark": "Switch to dark mode"
-},
-"About": {
-    "heading": "About",
-    "para1": "Hi, I'm Andrew, an English & French speaking full stack engineer available for remote contracts across France, the UK and Europe. I build custom web applications, ecommerce platforms and SaaS products using Next.js, Go and PostgreSQL — and I provide IT support for local businesses in the Vienne and Nouvelle-Aquitaine area.",
-    "para2": "I'm also available for specialist freelance contracts — if you're an agency, startup or larger organisation looking for a full-stack developer working with modern JavaScript frameworks, Next.js, Vite or Go, get in touch. Please contact me using the form below or through my social media — links in the header."
-},
-"Portfolio": {
-    "anteluxia": "A calming site for an animal communication and holistic wellbeing practice in South West France. Built with Next.js 16 and Stripe for secure online payments, in a warm forest-and-gold palette with light and dark modes. Fully bilingual (English and French) and responsive across every screen, including touch-screen laptops.",
-    "einvoicer": "A SaaS product for EU-compliant electronic invoicing. Generates Factur-X (PDF/A-3) and Peppol BIS 3.0 documents, integrates with the French Super PDP network, and handles regulated VAT submission flows — built to meet French and EU e-invoicing mandates coming into force from 2026.",
-    "silsoup": "Custom online shop built to replace a WooCommerce site — sells RFID readers, and electronics with a flexible product options system that lets the owner configure variants and pricing without developer help. Includes a full admin dashboard, live PayPal checkout, and customer reviews. Hosted on a dedicated server for full control and no monthly platform fees. Written in ViteJs, backend Golang",
-    "gardapis": "A full e-commerce store for a French beekeeping products brand. Built on a custom server with a product admin dashboard, the storefront supports 6 languages, bulk discount pricing, product options, verified customer reviews, and PayPal checkout — all hosted on a dedicated server for around €13 per month.",
-    "sage": "A welcoming website for a language school in South West France offering English and French courses. Fully bilingual so visitors can browse in either language, with easy-to-use contact forms and everything in place to rank well on Google search results.",
-    "tc": "A portfolio site for Terry Carroll, a photographer based in Bristol, UK. Features six themed galleries with a masonry layout and lightbox viewer, all images hosted and optimised via Cloudinary. An admin dashboard lets Terry upload new photos directly without touching any code.",
-    "carpetco": "Professional carpet fitting service in Dukinfield and Greater Manchester. Modern, responsive website built with Next.js 16, featuring service showcases, contact forms, and SEO optimization. Clean design focused on conversion and easy navigation for local customers.",
-    "nd": "Nature Dopes is an ongoing project dedicated to creating a site firstly for the appreciation of natural flora, secondly as an educational tool. To preserve the environment, we first need to understand it. It's a full stack application developed in NextJs 14 Typescipt, It utilizes many of the latest NextJs tools, such as Next-auth for authentification, Next-intl for multi language, Radix Ui, Iagon for decentralized storage and Prisma for Database management. Follow the link to view",
-    "pop": "This is the homepage page for a new startup business offering childcare options for weddings and large events, please give them a look if you have any major events planned in South West France. The site is a web application developed in NextJs 14 and uses Next-Int for intuitive language switching. Follow the link to view ",
-    "pocket": "This is a complete site redesign for an upcoming Web 3 gaming and NFT project called Pocket Towne. Developed in HTML, CSS , Javascript. Please check them out if you're interested in Metaverse & web 3",
-    "space": "S.P.A.C.E is an NFT Art/ Utility project. I've developed a landing page to serve as the homepage for the project. The site has been developed using NextJs, using React hooks & components to give the site a responsive and animated feel. "
-
-},
+    "ThemeToggle": {
+        "question": "Does your site have light & dark mode? Give it a try",
+        "toLight": "Switch to light mode",
+        "toDark": "Switch to dark mode"
+    },
+    "About": {
+        "heading": "About",
+        "para1": "Hi, I'm Andrew, an English and French speaking software developer based in Civray. I build custom web applications, SaaS products and AI tools for businesses in Sud Vienne, Poitiers, Angoulême and across Nouvelle-Aquitaine, from online shops that replaced WooCommerce to an e-invoicing platform built for the 2026 French mandate.",
+        "para2": "If your business runs on spreadsheets, copy-pasting or a tool that almost fits, I can build something that does exactly what you need, and you own the code. I also provide IT support for local businesses and individuals. Get in touch using the form below or through my social media, links in the header."
+    },
+    "Portfolio": {
+        "anteluxia": "A calming site for an animal communication and holistic wellbeing practice in South West France. Built with Next.js 16 and Stripe for secure online payments, in a warm forest-and-gold palette with light and dark modes. Fully bilingual (English and French) and responsive across every screen, including touch-screen laptops.",
+        "einvoicer": "A SaaS product for EU-compliant electronic invoicing. Generates Factur-X (PDF/A-3) and Peppol BIS 3.0 documents, integrates with the French Super PDP network, and handles regulated VAT submission flows — built to meet French and EU e-invoicing mandates coming into force from 2026.",
+        "silsoup": "Custom online shop built to replace a WooCommerce site — sells RFID readers, and electronics with a flexible product options system that lets the owner configure variants and pricing without developer help. Includes a full admin dashboard, live PayPal checkout, and customer reviews. Hosted on a dedicated server for full control and no monthly platform fees. Written in ViteJs, backend Golang",
+        "gardapis": "A full e-commerce store for a French beekeeping products brand. Built on a custom server with a product admin dashboard, the storefront supports 6 languages, bulk discount pricing, product options, verified customer reviews, and PayPal checkout — all hosted on a dedicated server for around €13 per month.",
+        "sage": "A welcoming website for a language school in South West France offering English and French courses. Fully bilingual so visitors can browse in either language, with easy-to-use contact forms and everything in place to rank well on Google search results.",
+        "tc": "A portfolio site for Terry Carroll, a photographer based in Bristol, UK. Features six themed galleries with a masonry layout and lightbox viewer, all images hosted and optimised via Cloudinary. An admin dashboard lets Terry upload new photos directly without touching any code.",
+        "carpetco": "Professional carpet fitting service in Dukinfield and Greater Manchester. Modern, responsive website built with Next.js 16, featuring service showcases, contact forms, and SEO optimization. Clean design focused on conversion and easy navigation for local customers.",
+        "nd": "Nature Dopes is an ongoing project dedicated to creating a site firstly for the appreciation of natural flora, secondly as an educational tool. To preserve the environment, we first need to understand it. It's a full stack application developed in NextJs 14 Typescipt, It utilizes many of the latest NextJs tools, such as Next-auth for authentification, Next-intl for multi language, Radix Ui, Iagon for decentralized storage and Prisma for Database management. Follow the link to view",
+        "pop": "This is the homepage page for a new startup business offering childcare options for weddings and large events, please give them a look if you have any major events planned in South West France. The site is a web application developed in NextJs 14 and uses Next-Int for intuitive language switching. Follow the link to view ",
+        "pocket": "This is a complete site redesign for an upcoming Web 3 gaming and NFT project called Pocket Towne. Developed in HTML, CSS , Javascript. Please check them out if you're interested in Metaverse & web 3",
+        "space": "S.P.A.C.E is an NFT Art/ Utility project. I've developed a landing page to serve as the homepage for the project. The site has been developed using NextJs, using React hooks & components to give the site a responsive and animated feel. "
+    },
     "Blog": {
         "intro": "Practical writing on web development, working online, and building a professional presence for your business.",
         "backToSite": "← Back to site",

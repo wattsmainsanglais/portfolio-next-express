@@ -1,19 +1,24 @@
 # awattsdev
 
-> Andrew Watts — freelance web designer & developer based near Civray, Nouvelle-Aquitaine, France. Building professional websites for small businesses in France and the UK.
+> Andrew Watts, freelance software developer based in Civray (Vienne 86), Nouvelle-Aquitaine, France. Builds custom web applications, SaaS products and AI integrations for businesses in Sud Vienne, Poitiers, Angoulême and across France, the UK and Europe.
 
 ## Services
 
-- **Website Design & Development**: Custom-coded professional websites for small businesses. One-time payment from €650 — no monthly fees, no subscriptions, no vendor lock-in. Built with Next.js. Clients own all accounts (GitHub, Vercel, Google). Dual language (English + French) included. Delivered in 10 days from content receipt.
-- **IT Support**: On-site tech support for businesses and individuals. Hardware issues, software problems, OS upgrades, email setup, network troubleshooting. First hour €55, subsequent hours €45. No contracts — pay per visit.
-- **AI Workshops**: 60-minute practical Claude AI workshop for small business owners. €35 per attendee. Learn to automate admin tasks, draft emails, and save hours every week using AI tools.
+- **Custom Web Applications & SaaS**: Web applications, ecommerce platforms and SaaS products built around how a business actually works. Admin dashboards, payments (PayPal, Stripe), multi-language storefronts, integrations with existing tools. Built with Next.js, React, Go and PostgreSQL. The client owns the code. Quoted per project.
+- **AI Integration & Automation**: AI features and automation built into business tools: document processing, drafting, data extraction and workflow automation. Quoted per project.
+- **Websites**: Custom-coded professional websites for small businesses from €650, one-time payment, no monthly fees. Bilingual English/French. Delivered in 10 days from content receipt.
+- **AI Workshops**: 60-minute hands-on Claude AI workshop for small business owners. €50 per person.
+- **IT Support**: On-site or remote tech support for businesses and individuals. Hardware, software, email and network. Hourly, no contracts.
+
+## Work
+
+- SiliconSoup: custom online shop replacing WooCommerce, with admin dashboard, product options, PayPal checkout and verified reviews (Go + Vite).
+- Gard'Apis: ecommerce store for a French beekeeping brand, 6 languages, hosted for around €13/month.
+- einvoicer: SaaS for EU-compliant e-invoicing (Factur-X, Peppol BIS 3.0), integrated with the French Super PDP network.
 
 ## Location & Service Areas
 
-Based in Civray (Vienne 86), Nouvelle-Aquitaine, France. Serving:
-- France: Civray, Charroux, Ruffec, Poitiers, Vienne (86), Charente (16), Nouvelle-Aquitaine
-- United Kingdom: Greater Manchester, Tameside, and surrounding areas
-- Also serving clients remotely across France, UK, and Europe
+Based in Civray (Vienne 86), Nouvelle-Aquitaine, France. Serving Civray, Sud Vienne, Poitiers, Angoulême, Vienne (86), Charente (16) and Nouvelle-Aquitaine in person, and clients across France, the UK and Europe remotely.
 
 ## Contact
 
@@ -24,9 +29,6 @@ Based in Civray (Vienne 86), Nouvelle-Aquitaine, France. Serving:
 
 ## Key Facts
 
-- Registered French business — SIRET: 81996076600015
-- Languages: English & French (bilingual service)
-- Payment: One-time fee, bank transfer — no ongoing charges
-- Websites delivered in 10 days from content receipt
-- Free hosting on Vercel — client owns their own hosting account forever
-- Competitive advantage over GoDaddy/Wix: no monthly fees, full code ownership, professional custom design
+- Registered French business, SIRET 81996076600023
+- Bilingual English and French
+- Clients own their code and accounts, no vendor lock-in
