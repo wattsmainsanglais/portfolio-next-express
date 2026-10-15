@@ -11,17 +11,19 @@ import ThemeToggle from './_components/ThemeToggle'
 import FooterLogo from './_components/FooterLogo'
 import LanguageSwitcher from './_components/language/LanguageSwitcher'
 import awattsdevImg from '../../../public/images/nologo.svg'
+import { getTranslations } from 'next-intl/server'
 
 export default async function Page({params}) {
   const {locale} = await params
+  const t = await getTranslations({ locale, namespace: 'DiscoveryCall' })
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-brand-50 to-white dark:from-slate-900 dark:via-brand-900 dark:to-slate-900">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between gap-y-4">
           {/* Logo */}
-          <div className="w-48">
+          <div className="w-48 shrink-0">
             <Image
               alt='Awattsdev Logo'
               src={awattsdevImg}
@@ -32,12 +34,18 @@ export default async function Page({params}) {
           </div>
 
           {/* Social Links & Language Switcher */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/blog"
               className="text-sm font-medium text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors mr-2"
             >
               Blog
+            </Link>
+            <Link
+              href={`/${locale}/discovery-call`}
+              className="text-sm font-medium text-slate-700 dark:text-white hover:text-brand-500 dark:hover:text-brand-400 transition-colors mr-2"
+            >
+              {t('navLink')}
             </Link>
             <a
               href='https://www.facebook.com/profile.php?id=61553113778974'

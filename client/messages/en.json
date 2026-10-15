@@ -68,5 +68,20 @@
         "backToAllPosts": "← Back to all posts",
         "metaTitle": "Blog | awattsdev — Web Development Insights",
         "metaDescription": "Practical articles on web development, working with developers vs designers, and building a professional online presence for your business."
+    },
+    "DiscoveryCall": {
+        "navLink": "Free discovery call",
+        "backToSite": "← Back to site",
+        "heading": "Free 30-minute discovery call",
+        "intro": "Not sure what you need yet? That's fine. Book a free call and we'll talk it through, in English or French.",
+        "coverHeading": "What we can cover",
+        "point1": "A new website for your business, or what's not working with the one you have",
+        "point2": "A custom tool or app to replace spreadsheets and paperwork",
+        "point3": "Getting ready for electronic invoicing (facturation électronique)",
+        "point4": "IT problems: slow computers, email, backups, security",
+        "noObligation": "No obligation and no sales pitch. If I'm not the right fit, I'll tell you and point you to someone who is.",
+        "cta": "Book your free call",
+        "metaTitle": "Free Discovery Call | awattsdev",
+        "metaDescription": "Book a free 30-minute call with Andrew Watts to talk about your website, custom software, e-invoicing or IT support. Civray, Sud Vienne, Poitiers and Angoulême."
     }
 }

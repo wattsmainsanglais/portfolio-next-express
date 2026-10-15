@@ -68,5 +68,20 @@
         "backToAllPosts": "← Retour à tous les articles",
         "metaTitle": "Blog | awattsdev — Développement web",
         "metaDescription": "Des articles concrets sur le développement web, la différence entre designer et développeur, et la création d'une présence professionnelle en ligne pour votre entreprise."
+    },
+    "DiscoveryCall": {
+        "navLink": "Appel découverte gratuit",
+        "backToSite": "← Retour au site",
+        "heading": "Appel découverte gratuit de 30 minutes",
+        "intro": "Vous ne savez pas encore exactement ce dont vous avez besoin ? Pas de souci. Réservez un appel gratuit et on en parle ensemble, en français ou en anglais.",
+        "coverHeading": "De quoi on peut parler",
+        "point1": "Un nouveau site pour votre entreprise, ou ce qui ne va pas avec votre site actuel",
+        "point2": "Un outil ou une application sur mesure pour remplacer tableurs et paperasse",
+        "point3": "Se préparer à la facturation électronique",
+        "point4": "Les soucis informatiques : ordinateur lent, e-mails, sauvegardes, sécurité",
+        "noObligation": "Sans engagement et sans discours commercial. Si je ne suis pas la bonne personne, je vous le dirai et je vous orienterai vers quelqu'un qui l'est.",
+        "cta": "Réserver mon appel gratuit",
+        "metaTitle": "Appel Découverte Gratuit | awattsdev",
+        "metaDescription": "Réservez un appel gratuit de 30 minutes avec Andrew Watts pour parler de votre site web, d'un logiciel sur mesure, de la facturation électronique ou de support informatique. Civray, Sud Vienne, Poitiers et Angoulême."
     }
 }

@@ -23,6 +23,11 @@ export default function sitemap() {
     'fr': `${baseUrl}/fr/blog`,
   }
 
+  const discoveryCallLanguages = {
+    'en': `${baseUrl}/en/discovery-call`,
+    'fr': `${baseUrl}/fr/discovery-call`,
+  }
+
   return [
     {
       url: `${baseUrl}/en`,
@@ -49,6 +54,20 @@ export default function sitemap() {
       changeFrequency: 'weekly',
       priority: 0.8,
       alternates: { languages: blogIndexLanguages },
+    },
+    {
+      url: `${baseUrl}/en/discovery-call`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: { languages: discoveryCallLanguages },
+    },
+    {
+      url: `${baseUrl}/fr/discovery-call`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: { languages: discoveryCallLanguages },
     },
     ...blogUrls,
   ]
