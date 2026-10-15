@@ -31,7 +31,7 @@ export default function Projects() {
             desc={t("anteluxia")}
           />
           <SingleProject
-            link="https://einvoicer.eu"
+            link="https://www.einvoicer.fr"
             heading="Einvoicer"
             src={einvoicerThumb}
             alt="Einvoicer - EU-compliant electronic invoicing SaaS"
