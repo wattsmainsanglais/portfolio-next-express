@@ -7,12 +7,13 @@ import { usePathname } from "next/navigation";
 
 import { Text, DropdownMenu, Button } from "@radix-ui/themes";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
+import { switchLocalePath } from "@/lib/routes";
 
 // textClassName overrides the default white text (for light backgrounds)
 export default function LanguageSwitcher({locale, textClassName}){
 
+    // Localized slugs differ per language (/fr/creation-site-internet <-> /en/websites)
     const pathname = usePathname()
-    const currentRoute = pathname.slice(3)
 
     const getFlag = (lang) => {
         return lang === 'en' ? '🇬🇧' : '🇫🇷'
@@ -27,10 +28,10 @@ export default function LanguageSwitcher({locale, textClassName}){
                 </Button>
             </DropdownMenu.Trigger>
 
-                <DropdownMenu.Content size='2' side='bottom'>
+                <DropdownMenu.Content size='2' side='bottom' style={{ zIndex: 60 }}>
 
-                        <Link href={'/en'+currentRoute}><DropdownMenu.Item ><Text size="4">🇬🇧 en</Text></DropdownMenu.Item></Link>
-                        <Link href={'/fr'+currentRoute}><DropdownMenu.Item ><Text size="4">🇫🇷 fr</Text></DropdownMenu.Item></Link>
+                        <Link href={switchLocalePath(pathname, 'en')}><DropdownMenu.Item ><Text size="4">🇬🇧 en</Text></DropdownMenu.Item></Link>
+                        <Link href={switchLocalePath(pathname, 'fr')}><DropdownMenu.Item ><Text size="4">🇫🇷 fr</Text></DropdownMenu.Item></Link>
 
 
                 </DropdownMenu.Content>

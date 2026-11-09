@@ -12,15 +12,17 @@ import silsoup from '@/public/images/silsoup.png'
 import einvoicerThumb from '@/public/images/einvoicer.png'
 import anteluxiaThumb from '@/public/images/anteluxia.png'
 
-export default function Projects() {
+export default function Projects({ showHeading = true }) {
   const t = useTranslations("Portfolio")
 
   return (
     <section className="container mx-auto px-4 py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-16">
-          Portfolio
-        </h2>
+        {showHeading && (
+          <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-16">
+            Portfolio
+          </h2>
+        )}
 
         <div className="space-y-8">
           <SingleProject

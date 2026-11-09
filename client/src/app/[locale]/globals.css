@@ -14,7 +14,9 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* clip, not hidden: hidden on both html and body makes body a scroll
+     container, which breaks the scroll-driven ScrollBlend animation */
+  overflow-x: clip;
   
 
 }
@@ -194,5 +196,110 @@ a {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+
+/* ---------- UI toolkit (test-project/technical/skills) ---------- */
+
+/* Moving beam border (ui-buttons Design 1, BeamBorder.js). The ring is masked
+   to a thin band around the edge; inside it an oversized conic-gradient square
+   spins with transform: rotate only, so it runs on the compositor. */
+.btn-beam {
+  position: relative;
+}
+
+.beam-border {
+  --beam-width: 1px;
+  --beam-duration: 3.5s;
+  --beam-head: #f5f3ff;
+  --beam-tail: hsl(251 85% 75%);
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: var(--beam-width);
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000);
+  mask-clip: content-box, padding-box;
+  mask-composite: intersect;
+}
+
+.beam-border::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  aspect-ratio: 1;
+  background: conic-gradient(transparent 0deg 280deg, var(--beam-tail) 330deg, var(--beam-head) 360deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+  will-change: transform;
+  animation: beam-spin var(--beam-duration) linear infinite;
+}
+
+@keyframes beam-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+/* Shine text (ui-buttons Design 2): a highlight sweeps across the label of a
+   solid button, then rests. White text on brand-700, so the base is a pale
+   lavender and the highlight pure white. */
+.shine-text {
+  --shine-base: hsl(251 90% 90%);
+  --shine-highlight: #ffffff;
+  background: linear-gradient(110deg, var(--shine-base) 42%, var(--shine-highlight) 50%, var(--shine-base) 58%);
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine-sweep 3.5s ease-in-out infinite;
+}
+
+@keyframes shine-sweep {
+  0% { background-position: 100% 0; }
+  45%, 100% { background-position: 0% 0; }
+}
+
+/* Floating icon bubbles (FloatingBubbles.js) */
+.bubble {
+  position: absolute;
+  top: 95%;
+  left: calc(var(--x) * 1%);
+  width: calc(var(--size) * 1px);
+  height: calc(var(--size) * 1px);
+  transform: translate(-50%, 0);
+  opacity: 0;
+  pointer-events: none;
+  animation-name: bubble-float;
+  animation-duration: calc(var(--speed) * 1s);
+  animation-delay: calc(var(--delay) * -1s);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bubble-float {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0);
+  }
+  to {
+    opacity: 0.16;
+    transform: translate(-50%, calc(var(--distance) * -1vh)) scale(var(--scale));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .beam-border {
+    display: none;
+  }
+  .shine-text {
+    animation: none;
+  }
+  .bubble {
+    animation: none;
   }
 }

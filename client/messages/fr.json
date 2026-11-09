@@ -67,7 +67,7 @@
         "allPosts": "← Tous les articles",
         "backToAllPosts": "← Retour à tous les articles",
         "metaTitle": "Blog | awattsdev — Développement web",
-        "metaDescription": "Des articles concrets sur le développement web, la différence entre designer et développeur, et la création d'une présence professionnelle en ligne pour votre entreprise."
+        "metaDescription": "Des articles concrets sur le développement web, le choix entre designer et développeur, et la présence en ligne de votre entreprise."
     },
     "DiscoveryCall": {
         "navLink": "Appel découverte gratuit",
@@ -82,6 +82,301 @@
         "noObligation": "Sans engagement et sans discours commercial. Si je ne suis pas la bonne personne, je vous le dirai et je vous orienterai vers quelqu'un qui l'est.",
         "cta": "Réserver mon appel gratuit",
         "metaTitle": "Appel Découverte Gratuit | awattsdev",
-        "metaDescription": "Réservez un appel gratuit de 30 minutes avec Andrew Watts pour parler de votre site web, d'un logiciel sur mesure, de la facturation électronique ou de support informatique. Civray, Sud Vienne, Poitiers et Angoulême."
+        "metaDescription": "Appel gratuit de 30 minutes avec Andrew Watts : site internet, application, facturation électronique ou souci informatique. En français ou en anglais."
+    },
+    "Nav": {
+        "label": "Navigation principale",
+        "home": "Accueil",
+        "websites": "Sites internet",
+        "itSupport": "Dépannage",
+        "webApps": "Applications",
+        "aiWorkshop": "Atelier IA",
+        "work": "Réalisations",
+        "about": "À propos",
+        "contact": "Contact",
+        "blog": "Blog",
+        "discoveryCall": "Appel découverte gratuit",
+        "websitesLong": "Création de site internet",
+        "itSupportLong": "Dépannage informatique",
+        "webAppsLong": "Applications web et IA",
+        "aiWorkshopLong": "Atelier IA",
+        "cta": "Appel gratuit",
+        "openMenu": "Ouvrir le menu",
+        "closeMenu": "Fermer le menu",
+        "toLight": "Passer en mode clair",
+        "toDark": "Passer en mode sombre"
+    },
+    "Footer": {
+        "tagline": "Sites internet, dépannage informatique et applications sur mesure, depuis Civray, en français et en anglais.",
+        "servicesHeading": "Services",
+        "moreHeading": "En savoir plus",
+        "contactHeading": "Contact",
+        "rights": "Entreprise individuelle, Andrew Watts."
+    },
+    "Common": {
+        "learnMore": "En savoir plus",
+        "bookCall": "Réserver un appel gratuit",
+        "writeMe": "Ou écrivez-moi",
+        "faqHeading": "Questions fréquentes",
+        "areaHeading": "Où j'interviens",
+        "processHeading": "Comment ça se passe",
+        "includedHeading": "Ce qui est inclus",
+        "examplesHeading": "Quelques exemples",
+        "seeAllWork": "Toutes les réalisations",
+        "ctaHeading": "On en parle ?",
+        "ctaText": "Un appel de 30 minutes, gratuit et sans engagement, suffit souvent à y voir clair. En français ou en anglais.",
+        "rotate": "Projet suivant",
+        "visit": "Voir le site",
+        "contactMe": "Me contacter"
+    },
+    "Home": {
+        "eyebrow": "Civray · Sud Vienne · Nord Charente",
+        "h1": "Sites internet, applications, dépannage et formation IA",
+        "sub": "Je suis Andrew, développeur freelance bilingue. Je crée des sites codés sur mesure dont vous restez propriétaire, et j'aide particuliers et entreprises avec leurs soucis informatiques, en français ou en anglais.",
+        "ctaSecondary": "Voir les services",
+        "trust1": "Noté 5/5 sur Google",
+        "trust2": "Français et anglais",
+        "trust3": "Entreprise locale, à Civray",
+        "servicesHeading": "Ce que je fais",
+        "servicesSub": "Quatre services, une seule personne à qui parler.",
+        "websites": {
+            "title": "Création de site internet",
+            "price": "à partir de 650 €",
+            "desc": "Un site professionnel codé sur mesure, bilingue si besoin, en ligne en 10 jours. Il est à vous, sans abonnement à une plateforme."
+        },
+        "itSupport": {
+            "title": "Dépannage informatique",
+            "price": "40 € / h",
+            "desc": "Ordinateur lent, e-mails, imprimante, Wi-Fi, mises à jour. Je viens chez vous ou je vous aide à distance, sans jargon."
+        },
+        "webApps": {
+            "title": "Applications web et IA",
+            "price": "Sur devis",
+            "desc": "Boutiques en ligne, outils de gestion, automatisations avec l'IA. Conçus autour de votre façon de travailler."
+        },
+        "aiWorkshop": {
+            "title": "Atelier IA",
+            "price": "50 € / personne",
+            "desc": "Une heure de pratique pour faire travailler l'IA pour votre entreprise : e-mails, devis, documents."
+        },
+        "workHeading": "Quelques réalisations",
+        "workSub": "Des sites et des applications pour des entreprises en France et au Royaume-Uni.",
+        "whyHeading": "Pourquoi travailler avec moi",
+        "why": [
+            {
+                "title": "Tout vous appartient",
+                "text": "Le code, l'hébergement et les comptes sont à votre nom. Aucune plateforme ne vous retient."
+            },
+            {
+                "title": "Un interlocuteur local",
+                "text": "Une seule personne, basée à Civray, qui répond au téléphone et peut passer vous voir."
+            },
+            {
+                "title": "Bilingue",
+                "text": "Je travaille en français et en anglais, et votre site peut parler les deux langues."
+            },
+            {
+                "title": "Un prix clair",
+                "text": "Un prix annoncé d'avance, à régler en une fois ou en mensualités, sans surprise."
+            }
+        ],
+        "areaSub": "À domicile autour de Civray, et à distance partout en France et au Royaume-Uni.",
+        "aboutHeading": "Qui suis-je ?",
+        "aboutText": "Bonjour, je suis Andrew. Britannique installé dans la Vienne, je travaille en français et en anglais. Je code chaque site moi-même, et je m'occupe aussi des soucis informatiques des particuliers et des entreprises du coin.",
+        "aboutLink": "En savoir plus sur moi",
+        "popTag": "Garde d'enfants sur place pour les mariages dans le Sud-Ouest de la France. Site bilingue, rafraîchi en 2026."
+    },
+    "WebsitesPage": {
+        "metaTitle": "Création de Site Internet à Civray & Sud Vienne | awattsdev",
+        "metaDescription": "Site internet codé sur mesure dès 650 €, en ligne en 10 jours. Bilingue, hébergement gratuit, et tout vous appartient. Civray, Sud Vienne, Nord Charente.",
+        "eyebrow": "Création de site internet",
+        "h1": "Un site internet sur mesure, qui vous appartient",
+        "intro": "Pour les artisans, commerçants et indépendants de Civray, du Sud Vienne et du Nord Charente. Un site professionnel codé à la main, bilingue si vous le souhaitez, en ligne en 10 jours.",
+        "price": "à partir de 650 €",
+        "priceNote": "Prix fixe annoncé d'avance. Un acompte de 100 € réserve votre créneau, le reste à la livraison. Paiement mensualisé possible.",
+        "included": [
+            "Un design adapté au mobile, à la tablette et à l'ordinateur",
+            "Une version française et anglaise",
+            "Un formulaire de contact qui arrive dans votre boîte mail",
+            "Une carte Google Maps",
+            "L'hébergement gratuit, sur votre propre compte",
+            "Le code complet, sur votre compte GitHub",
+            "Le référencement de base : titres, descriptions, sitemap, données structurées",
+            "Une semaine de suivi après la mise en ligne"
+        ],
+        "steps": [
+            {
+                "title": "Appel découverte",
+                "text": "On parle de votre activité, de vos clients et de ce que le site doit faire pour vous."
+            },
+            {
+                "title": "Maquette",
+                "text": "On dessine ensemble la structure de la page, avant d'écrire une ligne de code."
+            },
+            {
+                "title": "Vos contenus",
+                "text": "Vous m'envoyez textes, photos et logo. Les 10 jours démarrent."
+            },
+            {
+                "title": "Mise en ligne",
+                "text": "Vous relisez, je corrige, et le site part en ligne sur vos comptes."
+            }
+        ],
+        "vsHeading": "Pourquoi pas Wix ou WordPress ?",
+        "vsText": "Avec un constructeur de sites, vous payez chaque mois sans jamais posséder votre site, et vous le construisez vous-même. Ici, vous payez une fois, quelqu'un s'en occupe pour vous, et tout reste à votre nom.",
+        "vsLink": "Lire l'article : dois-je choisir WordPress ?",
+        "darkModeHeading": "Mode clair, mode sombre",
+        "faq": [
+            {
+                "q": "Combien de pages comprend le forfait ?",
+                "a": "Une page bien construite suffit à la plupart des artisans et commerces. Le forfait va jusqu'à trois pages. Pour plus de pages, une boutique en ligne ou des réservations, je fais un devis."
+            },
+            {
+                "q": "Dois-je payer un abonnement ?",
+                "a": "Ça dépend du forfait. Un petit site vitrine se paie en une fois : l'hébergement est gratuit sur votre propre compte, et seul le nom de domaine se renouvelle chaque année, en général une dizaine d'euros. Un site plus complet, avec boutique en ligne, réservations ou espace client, a besoin d'un hébergement payant et d'un suivi, et se fait alors avec une formule mensuelle. Je vous dis clairement ce qui s'applique avant de commencer."
+            },
+            {
+                "q": "Et si j'ai besoin de changements plus tard ?",
+                "a": "Vous pouvez me demander des modifications à l'heure, ou choisir une formule mensuelle qui inclut les petites mises à jour."
+            },
+            {
+                "q": "Vous travaillez avec des entreprises anglophones ?",
+                "a": "Oui. Je suis britannique et je travaille au quotidien en français et en anglais. Plusieurs de mes clients sont des entreprises tenues par des Britanniques en Vienne et en Charente."
+            }
+        ]
+    },
+    "ITSupportPage": {
+        "metaTitle": "Dépannage Informatique à Domicile, Civray | awattsdev",
+        "metaDescription": "Dépannage informatique à domicile ou à distance autour de Civray : ordinateur lent, e-mails, imprimante, Wi-Fi. 40 €/h, sans contrat, en français ou en anglais.",
+        "eyebrow": "Dépannage informatique",
+        "h1": "Dépannage informatique à domicile autour de Civray",
+        "intro": "Ordinateur lent, e-mails qui ne marchent plus, imprimante capricieuse ? Je viens chez vous ou je vous aide à distance, sans jargon, en français ou en anglais.",
+        "price": "40 € / heure",
+        "priceNote": "Sur place ou à distance, sans contrat. Pour une première visite, on prévoit une heure, puis on voit ensemble s'il faut continuer. Pour les longues distances, les frais de déplacement sont convenus d'avance.",
+        "problemsHeading": "Les soucis que je règle le plus souvent",
+        "problems": [
+            "Ordinateur lent ou qui plante",
+            "E-mails : configuration, mots de passe, boîte pleine",
+            "Mise à jour de Windows ou de macOS",
+            "Imprimante, scanner et Wi-Fi",
+            "Nouvel ordinateur : installation et transfert de vos fichiers",
+            "Sauvegardes et stockage plein",
+            "Arnaques, virus et sécurité de vos comptes",
+            "Téléphone et tablette"
+        ],
+        "whoHeading": "Pour les particuliers et les entreprises",
+        "whoText": "Je dépanne aussi bien les particuliers que les commerces, artisans et associations. Pour les entreprises, je peux aussi mettre en place vos e-mails professionnels avec votre nom de domaine.",
+        "englishHeading": "English-speaking?",
+        "englishText": "L'anglais est ma langue maternelle. Si vous préférez qu'on vous explique les choses en anglais, aucun problème.",
+        "steps": [
+            {
+                "title": "Vous m'appelez",
+                "text": "Par téléphone, par e-mail ou via le formulaire. Expliquez-moi le souci en quelques mots."
+            },
+            {
+                "title": "On fixe un créneau",
+                "text": "Chez vous, ou à distance si le problème le permet."
+            },
+            {
+                "title": "Je règle le problème",
+                "text": "Et je vous explique ce que j'ai fait, pour que vous sachiez quoi faire la prochaine fois."
+            },
+            {
+                "title": "Facture à l'heure",
+                "text": "Pas de contrat, pas d'abonnement. Vous m'appelez quand vous en avez besoin."
+            }
+        ],
+        "faq": [
+            {
+                "q": "Faut-il signer un contrat ?",
+                "a": "Non. Vous payez le temps passé, à 40 € de l'heure, et c'est tout."
+            },
+            {
+                "q": "Comment marche l'aide à distance ?",
+                "a": "Pour beaucoup de soucis logiciels, une session à distance suffit. Vous installez un petit logiciel, et je vois votre écran le temps de l'intervention, avec votre accord."
+            },
+            {
+                "q": "Jusqu'où vous déplacez-vous ?",
+                "a": "J'interviens à domicile autour de Civray. Pour les plus longues distances, on convient des frais de déplacement avant le rendez-vous."
+            },
+            {
+                "q": "Vous aidez aussi les entreprises ?",
+                "a": "Oui : postes de travail, e-mails professionnels, sauvegardes, Wi-Fi et sécurité. Et si votre entreprise a besoin d'un site, je peux aussi m'en charger."
+            }
+        ]
+    },
+    "WebAppsPage": {
+        "metaTitle": "Applications Web Sur Mesure & Intégration IA | awattsdev",
+        "metaDescription": "Applications web, boutiques en ligne et outils IA sur mesure pour les entreprises. Conçus autour de votre façon de travailler, et le code vous appartient.",
+        "eyebrow": "Applications web et IA",
+        "h1": "Applications web sur mesure et intégration IA",
+        "intro": "Si votre entreprise tourne avec des tableurs, du copier-coller ou un outil qui ne convient pas tout à fait, je peux créer exactement ce dont vous avez besoin.",
+        "price": "Sur devis",
+        "priceNote": "Chaque projet est chiffré après un appel découverte, avec un prix fixe par étape.",
+        "appsHeading": "Applications et boutiques en ligne",
+        "aiHeading": "Intégration IA et automatisation",
+        "stackHeading": "Avec quoi je travaille"
+    },
+    "WorkshopPage": {
+        "metaTitle": "Atelier IA pour Petites Entreprises, Civray | awattsdev",
+        "metaDescription": "Atelier pratique de 60 minutes pour utiliser l'IA (Claude) dans votre entreprise : e-mails, devis, documents. 50 € par personne.",
+        "eyebrow": "Atelier IA",
+        "h1": "Un atelier IA pour les petites entreprises",
+        "intro": "Une heure de pratique, sur votre propre ordinateur, pour que l'IA écrive comme vous et connaisse votre entreprise.",
+        "price": "50 € / personne",
+        "priceNote": "Session de 60 minutes, en petit groupe ou en individuel, en français ou en anglais.",
+        "learnHeading": "Ce que vous repartez avec",
+        "learn": [
+            "Un assistant IA configuré avec les infos de votre entreprise",
+            "Des réponses aux clients et des devis rédigés en quelques secondes, dans votre style",
+            "Une méthode pour l'améliorer au fil du temps",
+            "Les bons réflexes : ce qu'on peut confier à l'IA, et ce qu'on ne lui donne pas"
+        ],
+        "bookCta": "Réserver un atelier"
+    },
+    "WorkPage": {
+        "metaTitle": "Réalisations : Sites Internet & Applications | awattsdev",
+        "metaDescription": "Sites internet et applications pour des entreprises en France et au Royaume-Uni : boutiques en ligne, sites bilingues, SaaS de facturation.",
+        "h1": "Réalisations",
+        "intro": "Sites vitrines, boutiques en ligne et applications. Chaque projet est codé sur mesure, et chaque client est propriétaire de son site."
+    },
+    "AboutPage": {
+        "metaTitle": "À Propos : Andrew Watts, Développeur à Civray | awattsdev",
+        "metaDescription": "Andrew Watts, développeur freelance bilingue à Civray (86). Sites internet, applications sur mesure et dépannage informatique, en français et en anglais.",
+        "h1": "Bonjour, je suis Andrew",
+        "para1": "Je suis développeur freelance, britannique, installé dans la Vienne. Je travaille au quotidien en français et en anglais, avec des clients autour de Civray, ailleurs en France et au Royaume-Uni.",
+        "para2": "Je code chaque site moi-même, sans constructeur ni modèle tout fait, et je remets tout à mon client : le code, l'hébergement et les comptes. Pour des projets plus ambitieux, je construis des applications complètes, comme une boutique en ligne qui a remplacé WooCommerce ou einvoicer, un service de facturation électronique.",
+        "para3": "Je m'occupe aussi des soucis informatiques des particuliers et des entreprises du coin. Souvent, c'est la même personne qui a besoin d'un site et d'un coup de main sur son ordinateur.",
+        "factsHeading": "En bref",
+        "facts": [
+            "Basé à Civray (86400), Vienne",
+            "Entreprise individuelle, SIRET 819 960 766 00031",
+            "Français et anglais",
+            "Note de 5/5 sur Google"
+        ]
+    },
+    "ContactPage": {
+        "metaTitle": "Contact : Andrew Watts, Civray | awattsdev",
+        "metaDescription": "Contactez Andrew Watts pour un site internet, un dépannage informatique ou une application sur mesure. Téléphone 07 82 95 04 83, Civray (86400).",
+        "h1": "Contact",
+        "intro": "Un projet de site, un souci informatique, une question ? Appelez-moi, écrivez-moi ou réservez un appel gratuit.",
+        "phoneLabel": "Téléphone",
+        "emailLabel": "E-mail",
+        "areaLabel": "Zone",
+        "area": "Civray (86400) et alentours, à distance partout ailleurs",
+        "callHeading": "Plutôt un appel ?",
+        "callText": "30 minutes gratuites et sans engagement pour parler de votre projet."
+    },
+    "ContactForm": {
+        "heading": "Écrivez-moi",
+        "name": "Nom",
+        "namePlaceholder": "Votre nom",
+        "phone": "Téléphone",
+        "email": "E-mail",
+        "emailPlaceholder": "vous@exemple.fr",
+        "message": "Message",
+        "messagePlaceholder": "Parlez-moi de votre projet ou de votre souci...",
+        "send": "Envoyer",
+        "sending": "Envoi..."
     }
 }
