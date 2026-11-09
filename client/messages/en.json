@@ -83,5 +83,300 @@
         "cta": "Book your free call",
         "metaTitle": "Free Discovery Call | awattsdev",
         "metaDescription": "Book a free 30-minute call with Andrew Watts to talk about your website, custom software, e-invoicing or IT support. Civray, Sud Vienne, Poitiers and Angoulême."
+    },
+    "Nav": {
+        "label": "Main navigation",
+        "home": "Home",
+        "websites": "Websites",
+        "itSupport": "IT support",
+        "webApps": "Web apps",
+        "aiWorkshop": "AI workshop",
+        "work": "Portfolio",
+        "about": "About",
+        "contact": "Contact",
+        "blog": "Blog",
+        "discoveryCall": "Free discovery call",
+        "websitesLong": "Website design",
+        "itSupportLong": "IT support",
+        "webAppsLong": "Web apps and AI",
+        "aiWorkshopLong": "AI workshop",
+        "cta": "Free call",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "toLight": "Switch to light mode",
+        "toDark": "Switch to dark mode"
+    },
+    "Footer": {
+        "tagline": "Websites, IT support and custom apps from Civray, in English and French.",
+        "servicesHeading": "Services",
+        "moreHeading": "More",
+        "contactHeading": "Contact",
+        "rights": "Sole trader, Andrew Watts."
+    },
+    "Common": {
+        "learnMore": "Learn more",
+        "bookCall": "Book a free call",
+        "writeMe": "Or send me a message",
+        "faqHeading": "Questions",
+        "areaHeading": "Where I work",
+        "processHeading": "How it works",
+        "includedHeading": "What's included",
+        "examplesHeading": "A few examples",
+        "seeAllWork": "See the full portfolio",
+        "ctaHeading": "Shall we talk?",
+        "ctaText": "A free 30-minute call, no obligation, is usually enough to see what you need. In English or French.",
+        "rotate": "Next project",
+        "visit": "Visit site",
+        "contactMe": "Get in touch"
+    },
+    "Home": {
+        "eyebrow": "Civray · Sud Vienne · North Charente",
+        "h1": "Websites, Applications, Support & AI training",
+        "sub": "I'm Andrew, a British web developer living in the Vienne. I build custom-coded websites that you own outright, and I help people and businesses with their computer problems, in English or French.",
+        "ctaSecondary": "See services",
+        "trust1": "Rated 5/5 on Google",
+        "trust2": "English and French",
+        "trust3": "Local business, in Civray",
+        "servicesHeading": "What I do",
+        "servicesSub": "Four services, one person to talk to.",
+        "websites": {
+            "title": "Websites",
+            "price": "from €650",
+            "desc": "A professional custom-coded website, bilingual if you need it, live in 10 days. It's yours, with no platform subscription."
+        },
+        "itSupport": {
+            "title": "IT support",
+            "price": "€40 / hr",
+            "desc": "Slow computer, email, printer, Wi-Fi, updates. I come to you or help remotely, without the jargon."
+        },
+        "webApps": {
+            "title": "Web apps and AI",
+            "price": "Quoted",
+            "desc": "Online shops, business tools and AI automation, built around the way you work."
+        },
+        "aiWorkshop": {
+            "title": "AI workshop",
+            "price": "€50 / person",
+            "desc": "One hands-on hour to get AI working for your business: emails, quotes, documents."
+        },
+        "workHeading": "Recent work",
+        "workSub": "Websites and apps for businesses in France and the UK.",
+        "whyHeading": "Why work with me",
+        "why": [
+            {
+                "title": "You own everything",
+                "text": "The code, the hosting and the accounts are in your name. No platform holding you in."
+            },
+            {
+                "title": "Someone local",
+                "text": "One person, based in Civray, who answers the phone and can come round."
+            },
+            {
+                "title": "Bilingual",
+                "text": "I work in English and French every day, and your site can speak both."
+            },
+            {
+                "title": "Clear pricing",
+                "text": "A price agreed up front, paid in one go or monthly, with no surprises."
+            }
+        ],
+        "areaSub": "Home visits around Civray, and remote help anywhere in France and the UK.",
+        "aboutHeading": "About me",
+        "aboutText": "Hi, I'm Andrew. I'm British, I live in the Vienne, and I work in English and French. I code every site myself, and I also sort out computer problems for local people and businesses.",
+        "aboutLink": "More about me",
+        "popTag": "On-site childcare for weddings in South West France. A bilingual site, refreshed in 2026."
+    },
+    "WebsitesPage": {
+        "metaTitle": "Website Design in English, Civray & Charente | awattsdev",
+        "metaDescription": "Custom-coded business websites from €650, live in 10 days. English and French, free hosting, and you own everything. Civray, Sud Vienne, North Charente.",
+        "eyebrow": "Websites",
+        "h1": "A custom website that you own",
+        "intro": "For trades, shops and independents around Civray, Sud Vienne and North Charente. A professional hand-coded website, in English and French if you like, live in 10 days.",
+        "price": "from €650",
+        "priceNote": "A fixed price agreed up front. A €100 deposit secures your slot, the rest on delivery. Monthly payments available.",
+        "included": [
+            "A design that works on mobile, tablet and desktop",
+            "English and French versions",
+            "A contact form that lands in your inbox",
+            "A Google Maps location map",
+            "Free hosting, on your own account",
+            "The full code, on your own GitHub account",
+            "SEO basics: titles, descriptions, sitemap, structured data",
+            "One week of support after launch"
+        ],
+        "steps": [
+            {
+                "title": "Discovery call",
+                "text": "We talk about your business, your customers and what the site needs to do for you."
+            },
+            {
+                "title": "Wireframe",
+                "text": "We sketch the page layout together before any code is written."
+            },
+            {
+                "title": "Your content",
+                "text": "You send me your text, photos and logo. The 10 days start."
+            },
+            {
+                "title": "Launch",
+                "text": "You review, I make changes, and the site goes live on your accounts."
+            }
+        ],
+        "vsHeading": "Why not Wix or WordPress?",
+        "vsText": "With a website builder you pay every month, never own the site, and build it yourself. Here you pay once, someone does it for you, and everything stays in your name.",
+        "vsLink": "Read the post: should I get a WordPress website?",
+        "darkModeHeading": "Light mode, dark mode",
+        "faq": [
+            {
+                "q": "How many pages are included?",
+                "a": "One well-built page is enough for most trades and shops. The package goes up to three pages. For more pages, an online shop or bookings, I'll quote separately."
+            },
+            {
+                "q": "Is there a subscription?",
+                "a": "It depends on the package. A small business website is a one-off payment: hosting is free on your own account, and only the domain name renews each year, usually around ten euros. A bigger site, with an online shop, bookings or a client area, needs paid hosting and upkeep, so it comes with a monthly plan. I'll tell you clearly which applies before we start."
+            },
+            {
+                "q": "What if I need changes later?",
+                "a": "You can ask me for changes by the hour, or choose a monthly plan that includes small updates."
+            },
+            {
+                "q": "Do you work with English-speaking businesses?",
+                "a": "Yes. I'm British and I work in English and French every day. Several of my clients are British-run businesses in the Vienne and the Charente."
+            }
+        ]
+    },
+    "ITSupportPage": {
+        "metaTitle": "English-Speaking IT Support, Civray | awattsdev",
+        "metaDescription": "English-speaking IT support at home or remotely around Civray: slow computers, email, printers, Wi-Fi, updates, backups. €40/hr, no contract.",
+        "eyebrow": "IT support",
+        "h1": "English-speaking IT support around Civray",
+        "intro": "Slow computer, email stopped working, printer playing up? I'll come to you or help remotely, without the jargon, in English or French.",
+        "price": "€40 / hour",
+        "priceNote": "At your home or remotely, no contract. For a first visit we plan one hour, then decide together if more is needed. For longer distances, travel costs are agreed in advance.",
+        "problemsHeading": "The problems I fix most often",
+        "problems": [
+            "Slow or crashing computer",
+            "Email: setup, passwords, full mailbox",
+            "Windows or macOS upgrades",
+            "Printers, scanners and Wi-Fi",
+            "New computer: setup and moving your files across",
+            "Backups and full storage",
+            "Scams, viruses and account security",
+            "Phones and tablets"
+        ],
+        "whoHeading": "For households and businesses",
+        "whoText": "I help households as well as shops, trades and associations. For businesses I can also set up professional email on your own domain.",
+        "englishHeading": "Dealing with French systems?",
+        "englishText": "I'm bilingual, so I can also help with French-language settings, French ISPs (Orange, Free, SFR) and the odd French admin website.",
+        "steps": [
+            {
+                "title": "Get in touch",
+                "text": "By phone, email or the contact form. Tell me the problem in a few words."
+            },
+            {
+                "title": "We book a time",
+                "text": "At your home, or remotely if the problem allows."
+            },
+            {
+                "title": "I fix it",
+                "text": "And I explain what I did, so you know what to do next time."
+            },
+            {
+                "title": "Pay by the hour",
+                "text": "No contract, no subscription. Call me when you need me."
+            }
+        ],
+        "faq": [
+            {
+                "q": "Do I need to sign a contract?",
+                "a": "No. You pay for the time spent, at €40 an hour, and that's it."
+            },
+            {
+                "q": "How does remote help work?",
+                "a": "Many software problems can be fixed remotely. You install a small program and I can see your screen while I work, with your permission."
+            },
+            {
+                "q": "How far do you travel?",
+                "a": "I do home visits around Civray. For longer distances we agree travel costs before the visit."
+            },
+            {
+                "q": "Do you help businesses too?",
+                "a": "Yes: computers, professional email, backups, Wi-Fi and security. And if your business needs a website, I can do that too."
+            }
+        ]
+    },
+    "WebAppsPage": {
+        "metaTitle": "Custom Web Apps & AI Integration | awattsdev",
+        "metaDescription": "Custom web apps, online shops and AI tools for businesses in France, the UK and Europe. Built around the way you work, and you own the code.",
+        "eyebrow": "Web apps and AI",
+        "h1": "Custom web apps and AI integration",
+        "intro": "If your business runs on spreadsheets, copy-pasting or a tool that almost fits, I can build exactly what you need.",
+        "price": "Quoted",
+        "priceNote": "Each project is priced after a discovery call, with a fixed price per stage.",
+        "appsHeading": "Apps and online shops",
+        "aiHeading": "AI integration and automation",
+        "stackHeading": "What I build with"
+    },
+    "WorkshopPage": {
+        "metaTitle": "AI Workshop for Small Businesses, Civray | awattsdev",
+        "metaDescription": "A hands-on 60-minute workshop to start using AI (Claude) in your business: emails, quotes, documents. €50 per person.",
+        "eyebrow": "AI workshop",
+        "h1": "An AI workshop for small businesses",
+        "intro": "One hands-on hour, on your own computer, so the AI writes like you and knows your business.",
+        "price": "€50 / person",
+        "priceNote": "A 60-minute session, small group or one to one, in English or French.",
+        "learnHeading": "What you leave with",
+        "learn": [
+            "An AI assistant set up with your business details",
+            "Customer replies and quotes drafted in seconds, in your own style",
+            "A simple way to keep improving it",
+            "Good habits: what to give the AI, and what never to give it"
+        ],
+        "bookCta": "Book a workshop"
+    },
+    "WorkPage": {
+        "metaTitle": "Portfolio: Websites & Web Apps | awattsdev",
+        "metaDescription": "Websites and apps built for businesses in France and the UK: online shops, bilingual sites, an e-invoicing SaaS.",
+        "h1": "Portfolio",
+        "intro": "Business websites, online shops and apps. Every project is custom-coded, and every client owns their site."
+    },
+    "AboutPage": {
+        "metaTitle": "About Andrew Watts, Web Developer in Civray | awattsdev",
+        "metaDescription": "Andrew Watts, British freelance web developer in Civray (86). Websites, custom apps and IT support in English and French.",
+        "h1": "Hi, I'm Andrew",
+        "para1": "I'm a British freelance developer living in the Vienne. I work in English and French every day, with clients around Civray, elsewhere in France and in the UK.",
+        "para2": "I code every site myself, with no website builder or off-the-shelf theme, and I hand everything over to my client: the code, the hosting and the accounts. For bigger projects I build complete applications, like an online shop that replaced WooCommerce, or einvoicer, an e-invoicing service.",
+        "para3": "I also sort out computer problems for local people and businesses. Quite often it's the same person who needs a website and a hand with their computer.",
+        "factsHeading": "In short",
+        "facts": [
+            "Based in Civray (86400), Vienne",
+            "French sole trader, SIRET 819 960 766 00031",
+            "English and French",
+            "Rated 5/5 on Google"
+        ]
+    },
+    "ContactPage": {
+        "metaTitle": "Contact Andrew Watts, Civray | awattsdev",
+        "metaDescription": "Contact Andrew Watts for a website, IT support or a custom app. Phone 07 82 95 04 83, Civray (86400).",
+        "h1": "Contact",
+        "intro": "A website project, a computer problem, a question? Call me, send a message or book a free call.",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "areaLabel": "Area",
+        "area": "Civray (86400) and around, remotely everywhere else",
+        "callHeading": "Rather talk?",
+        "callText": "30 free minutes, no obligation, to talk about your project."
+    },
+    "ContactForm": {
+        "heading": "Send me a message",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "phone": "Phone",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "message": "Message",
+        "messagePlaceholder": "Tell me about your project or problem...",
+        "send": "Send message",
+        "sending": "Sending..."
     }
 }

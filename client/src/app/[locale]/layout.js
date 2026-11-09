@@ -11,6 +11,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import { ThemeProvider } from './_components/ThemeProvider'
+import SiteHeader from './_components/site/SiteHeader'
+import SiteFooter from './_components/site/SiteFooter'
 
  
 const genos = Genos({
@@ -29,11 +31,11 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL(baseUrl),
     title: isEn
-      ? 'Custom Web Apps, SaaS & AI Integration | Andrew Watts'
-      : 'Applications Web Sur Mesure & Intégration IA | Andrew Watts',
+      ? 'Websites & IT Support in English, Civray | awattsdev'
+      : 'Sites Internet & Dépannage Informatique à Civray | awattsdev',
     description: isEn
-      ? 'Custom web apps, SaaS and AI integration for businesses in Civray, Sud Vienne, Poitiers and Angoulême. Built around how you work, and you own the code.'
-      : "Applications web sur mesure, SaaS et intégration IA pour les entreprises de Civray, du Sud Vienne, de Poitiers et d'Angoulême. Vous êtes propriétaire du code.",
+      ? 'English-speaking web developer around Civray, Sud Vienne and North Charente. Websites you own, IT support at €40/hr, custom apps and AI training.'
+      : "Sites internet sur mesure, dépannage informatique à 40 €/h, applications et formation IA, autour de Civray, du Sud Vienne et du Nord Charente.",
     keywords: [
       // EN
       'custom web application development', 'custom software for small business', 'SaaS development',
@@ -52,15 +54,16 @@ export async function generateMetadata({ params }) {
       languages: {
         'en': `${baseUrl}/en`,
         'fr': `${baseUrl}/fr`,
+        'x-default': `${baseUrl}/fr`,
       },
     },
     openGraph: {
       title: isEn
-        ? 'awattsdev | Custom Web Apps, SaaS & AI Integration'
-        : 'awattsdev | Applications Web Sur Mesure & Intégration IA',
+        ? 'awattsdev | Websites & IT Support around Civray, in English'
+        : 'awattsdev | Sites Internet & Dépannage Informatique à Civray',
       description: isEn
-        ? 'Custom software and AI tools for businesses in Civray, Sud Vienne, Poitiers and Angoulême.'
-        : 'Logiciels et outils IA sur mesure pour les entreprises de Civray, du Sud Vienne, de Poitiers et d’Angoulême.',
+        ? 'Custom-coded websites you own and friendly IT help around Civray, Sud Vienne and North Charente.'
+        : 'Sites internet codés sur mesure dont vous êtes propriétaire, et dépannage informatique autour de Civray.',
       url: `${baseUrl}/${locale}`,
       siteName: 'awattsdev',
       locale: isEn ? 'en_GB' : 'fr_FR',
@@ -70,11 +73,11 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: 'summary_large_image',
       title: isEn
-        ? 'awattsdev | Custom Web Apps, SaaS & AI Integration'
-        : 'awattsdev | Applications Web Sur Mesure & Intégration IA',
+        ? 'awattsdev | Websites & IT Support around Civray, in English'
+        : 'awattsdev | Sites Internet & Dépannage Informatique à Civray',
       description: isEn
-        ? 'Custom software and AI tools for businesses in Civray, Sud Vienne, Poitiers and Angoulême.'
-        : 'Logiciels et outils IA sur mesure pour les entreprises de Civray, du Sud Vienne, de Poitiers et d’Angoulême.',
+        ? 'Custom-coded websites you own and friendly IT help around Civray, Sud Vienne and North Charente.'
+        : 'Sites internet codés sur mesure dont vous êtes propriétaire, et dépannage informatique autour de Civray.',
       images: ['/images/awattsdev.png'],
     },
   }
@@ -108,6 +111,7 @@ export default async function RootLayout({ children, params }) {
               "logo": "https://www.awattsdev.eu/images/awattsdev.png",
               "image": "https://www.awattsdev.eu/images/awattsdev.png",
               "email": "awattsdev@gmail.com",
+              "telephone": "+33782950483",
               "founder": {
                 "@type": "Person",
                 "name": "Andrew Watts",
@@ -196,9 +200,14 @@ export default async function RootLayout({ children, params }) {
                 ],
               },
               "sameAs": [
-                "https://www.facebook.com/awattsdev",
-                "https://www.linkedin.com/in/awattsdev",
-                "https://github.com/awatts",
+                "https://www.facebook.com/profile.php?id=61553113778974",
+                "https://www.instagram.com/awattsdev/",
+                "https://www.linkedin.com/in/andrew-watts-9a7145269/",
+                "https://github.com/wattsmainsanglais",
+                "https://www.malt.fr/profile/andrewwatts",
+                "https://medium.com/@awattsdev",
+                "https://www.youtube.com/@einvoicer",
+                "https://www.google.com/search?kgmid=/g/11ywh_k1hn",
               ],
             }),
           }}
@@ -227,8 +236,8 @@ export default async function RootLayout({ children, params }) {
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": locale === 'en'
-                      ? "Yes. I'm based in France with a registered French business (SIRET 81996076600023), so I invoice EU clients cleanly under French freelance status with no complications. I'm a UK national and fully bilingual in English and French, making collaboration straightforward across France, the EU and internationally."
-                      : "Oui. Je suis basé en France avec un statut d'auto-entrepreneur enregistré (SIRET 81996076600023), ce qui me permet de facturer les clients européens sans complications. Je suis de nationalité britannique et parfaitement bilingue anglais-français, ce qui facilite la collaboration en France, dans l'UE et à l'international."
+                      ? "Yes. I'm based in France with a registered French business (SIRET 81996076600031), so I invoice EU clients cleanly under French freelance status with no complications. I'm a UK national and fully bilingual in English and French, making collaboration straightforward across France, the EU and internationally."
+                      : "Oui. Je suis basé en France avec un statut d'auto-entrepreneur enregistré (SIRET 81996076600031), ce qui me permet de facturer les clients européens sans complications. Je suis de nationalité britannique et parfaitement bilingue anglais-français, ce qui facilite la collaboration en France, dans l'UE et à l'international."
                   }
                 },
                 {
@@ -269,7 +278,9 @@ export default async function RootLayout({ children, params }) {
       <NextIntlClientProvider messages={messages} >
         <ThemeProvider>
           <Theme data-is-root-theme='false' grayColor="olive" accentColor="purple" >
+            <SiteHeader locale={locale} />
             {children}
+            <SiteFooter locale={locale} />
           </Theme>
         </ThemeProvider>
       </NextIntlClientProvider>

@@ -1,10 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getPostBySlug, formatDate } from '@/lib/blog'
-import awattsdevImg from '../../../../../public/images/nologo.svg'
 import { getTranslations } from 'next-intl/server'
-import LanguageSwitcher from '../../_components/language/LanguageSwitcher'
+import { href } from '@/lib/routes'
 
 export async function generateMetadata({ params }) {
   const { locale, slug } = await params
@@ -34,6 +32,8 @@ export async function generateMetadata({ params }) {
       url: canonical,
       type: 'article',
       publishedTime: post.date,
+      siteName: 'awattsdev',
+      images: [{ url: '/images/awattsdev.png', width: 3163, height: 792, alt: 'awattsdev' }],
     },
   }
 }
@@ -45,32 +45,11 @@ export default async function BlogPost({ params }) {
   if (!post) notFound()
 
   const t = await getTranslations({ locale, namespace: 'Blog' })
+  const n = await getTranslations({ locale, namespace: 'Nav' })
+  const c = await getTranslations({ locale, namespace: 'Common' })
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-brand-50 to-white">
-      {/* Header */}
-      <header className="container mx-auto px-4 py-6">
-        <div className="flex items-center justify-between">
-          <Link href="/">
-            <Image
-              alt="Awattsdev Logo"
-              src={awattsdevImg}
-              className="w-48 h-auto"
-              sizes="200px"
-              priority
-            />
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              href={`/${locale}/blog`}
-              className="text-sm text-slate-600 hover:text-brand-600 transition-colors"
-            >
-              {t('allPosts')}
-            </Link>
-            <LanguageSwitcher locale={locale} textClassName="text-slate-700" />
-          </div>
-        </div>
-      </header>
 
       {/* Article */}
       <main className="container mx-auto px-4 py-12 max-w-2xl">
@@ -92,6 +71,20 @@ export default async function BlogPost({ params }) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
+        {/* Services: every post links to the service pages */}
+        <aside className="mt-16 rounded-2xl bg-gradient-to-br from-brand-700 to-brand-900 p-8 text-white">
+          <p className="text-2xl font-light mb-5">{c('ctaHeading')}</p>
+          <ul className="flex flex-wrap gap-3">
+            {['websites', 'itSupport', 'webApps', 'discoveryCall'].map(key => (
+              <li key={key}>
+                <Link href={href(locale, key)} className="inline-flex px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-lg transition-colors">
+                  {key === 'discoveryCall' ? n(key) : n(`${key}Long`)} →
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </aside>
+
         {/* Back link */}
         <div className="mt-12 pt-8 border-t border-slate-200">
           <Link
@@ -103,10 +96,6 @@ export default async function BlogPost({ params }) {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="container mx-auto px-4 py-12 mt-8 border-t border-slate-200 text-center text-sm text-slate-500">
-        <p>© {new Date().getFullYear()} awattsdev — Andrew Watts, Nouvelle-Aquitaine, France</p>
-      </footer>
     </div>
   )
 }

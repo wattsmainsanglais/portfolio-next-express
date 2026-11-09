@@ -1,10 +1,12 @@
 'use client'
 import { useState } from "react"
 import { RxPaperPlane } from "react-icons/rx"
+import { useTranslations } from "next-intl"
 import { submitContactForm } from "../_lib/SubmitContactForm"
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const t = useTranslations("ContactForm")
 
   const onSubmitForm = async (event) => {
     event.preventDefault()
@@ -31,7 +33,7 @@ export default function ContactForm() {
   return (
     <div id="contact" className="w-full mx-auto">
       <h2 className="text-4xl md:text-5xl font-light text-slate-900 dark:text-white text-center mb-12">
-        Contact Me
+        {t('heading')}
       </h2>
 
       <form
@@ -41,7 +43,7 @@ export default function ContactForm() {
         {/* Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
-            Name *
+            {t('name')} *
           </label>
           <input
             id='name'
@@ -49,14 +51,14 @@ export default function ContactForm() {
             name="name"
             required
             className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
-            placeholder="Your name"
+            placeholder={t('namePlaceholder')}
           />
         </div>
 
         {/* Tel */}
         <div>
           <label htmlFor="tel" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
-            Phone *
+            {t('phone')} *
           </label>
           <input
             id='tel'
@@ -71,7 +73,7 @@ export default function ContactForm() {
         {/* Email */}
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
-            Email *
+            {t('email')} *
           </label>
           <input
             id='email'
@@ -79,21 +81,21 @@ export default function ContactForm() {
             name="email"
             required
             className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
-            placeholder="your@email.com"
+            placeholder={t('emailPlaceholder')}
           />
         </div>
 
         {/* Message */}
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
-            Message
+            {t('message')}
           </label>
           <textarea
             id='message'
             name="message"
             rows="6"
             className="w-full px-4 py-3 bg-white dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition resize-none"
-            placeholder="Tell me about your project..."
+            placeholder={t('messagePlaceholder')}
           />
         </div>
 
@@ -104,10 +106,10 @@ export default function ContactForm() {
           className="w-full bg-brand-600 hover:bg-brand-700 disabled:bg-brand-800 disabled:cursor-not-allowed text-white font-medium px-8 py-4 rounded-lg text-lg transition-colors shadow-lg hover:shadow-brand-500/50 flex items-center justify-center gap-2"
         >
           {isSubmitting ? (
-            <>Sending...</>
+            <>{t('sending')}</>
           ) : (
             <>
-              Send Message
+              {t('send')}
               <RxPaperPlane />
             </>
           )}

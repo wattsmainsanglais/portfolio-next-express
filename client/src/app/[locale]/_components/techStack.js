@@ -20,11 +20,11 @@ const skills = [
   { icon: SiJavascript,  label: "JavaScript" },
 ]
 
-export default function TechStack() {
+export default function TechStack({ heading = 'Skills' }) {
   return (
     <section className="container mx-auto px-4 py-20" id="skills">
       <h2 className="text-5xl md:text-6xl font-light text-slate-900 dark:text-white text-center mb-6">
-        Skills
+        {heading}
       </h2>
 
       <p className="text-xl text-slate-500 dark:text-slate-400 text-center mb-16 max-w-2xl mx-auto">
