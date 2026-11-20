@@ -14,7 +14,7 @@ The simple answer is that they give you the tools to create the website. On the 
 
 And the price rarely goes down. In France this year Wix renamed its plans and the cheapest one with your own domain went from around €13 a month to €16.80. Some hosts advertise a couple of euros a month, but only if you pay for four years up front, and the price roughly quadruples when it renews. Over three or four years, a "cheap" monthly plan can easily cost more than having a site built.
 
-Interestingly, there's a new kid on the block who comes closest to [what I offer as a web developer](https://www.awattsdev.eu/en/websites). They give you a tool to build a website, then let you walk away with the code if you don't want to pay their subscription any more. Rather than me plugging the competition, I'll set you a little challenge: guess or find out who it is, and send me your answer.
+Interestingly, there's a new kid on the block who comes closest to what I offer as a web developer. They give you a tool to build a website, then let you walk away with the code if you don't want to pay their subscription any more. Rather than me plugging the competition, I'll set you a little challenge: guess or find out who it is, and send me your answer.
 
 WordPress sits at an interesting crossroads. There are quite a few DIY options within it, but some of them get technical enough that you end up paying a designer to use the tool for you. I'm not here to argue for or against WordPress, or to put you through another one of my rants, so I'd encourage you to read my [previous post on WordPress](https://www.awattsdev.eu/en/blog/should-i-get-a-wordpress-website).
 
