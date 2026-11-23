@@ -17,6 +17,7 @@
         "ai": {
             "title": "AI Integration & Automation",
             "price": "Quoted per project",
+            "chat": "An AI assistant (chatbot) on your website that answers your customers' questions day and night, using your own business information",
             "b1": "AI built into your own tools, not another subscription to juggle",
             "b2": "Reading documents, drafting replies, pulling data out of PDFs and emails",
             "b3": "Automating the repetitive admin that eats your week",
@@ -152,7 +153,7 @@
         "webApps": {
             "title": "Web apps and AI",
             "price": "Quoted",
-            "desc": "Online shops, business tools and AI automation, built around the way you work."
+            "desc": "Online shops, business tools, an AI assistant for your website and AI automation, built around the way you work."
         },
         "aiWorkshop": {
             "title": "AI workshop",
@@ -306,8 +307,8 @@
         ]
     },
     "WebAppsPage": {
-        "metaTitle": "Custom Web Apps & AI Integration | awattsdev",
-        "metaDescription": "Custom web apps, online shops and AI tools for businesses in France, the UK and Europe. Built around the way you work, and you own the code.",
+        "metaTitle": "Custom Web Apps, AI Chatbots & AI Integration | awattsdev",
+        "metaDescription": "Custom web apps, online shops, AI chatbots for your website and AI tools for businesses in France, the UK and Europe. Built around the way you work, and you own the code.",
         "eyebrow": "Web apps and AI",
         "h1": "Custom web apps and AI integration",
         "intro": "If your business runs on spreadsheets, copy-pasting or a tool that almost fits, I can build exactly what you need.",

@@ -17,6 +17,7 @@
         "ai": {
             "title": "Intégration IA & Automatisation",
             "price": "Sur devis",
+            "chat": "Un assistant IA (chatbot) sur votre site internet, qui répond aux questions de vos clients jour et nuit, à partir des infos de votre entreprise",
             "b1": "L'IA intégrée à vos propres outils, pas un abonnement de plus à gérer",
             "b2": "Lecture de documents, rédaction de réponses, extraction de données depuis vos PDF et e-mails",
             "b3": "Automatisation des tâches administratives répétitives qui vous prennent la semaine",
@@ -152,7 +153,7 @@
         "webApps": {
             "title": "Applications web et IA",
             "price": "Sur devis",
-            "desc": "Boutiques en ligne, outils de gestion, automatisations avec l'IA. Conçus autour de votre façon de travailler."
+            "desc": "Boutiques en ligne, outils de gestion, assistant IA pour votre site, automatisations. Conçus autour de votre façon de travailler."
         },
         "aiWorkshop": {
             "title": "Atelier IA",
@@ -306,8 +307,8 @@
         ]
     },
     "WebAppsPage": {
-        "metaTitle": "Applications Web Sur Mesure & Intégration IA | awattsdev",
-        "metaDescription": "Applications web, boutiques en ligne et outils IA sur mesure pour les entreprises. Conçus autour de votre façon de travailler, et le code vous appartient.",
+        "metaTitle": "Applications Web, Chatbot & Intégration IA | awattsdev",
+        "metaDescription": "Applications web, boutiques en ligne, chatbot IA pour votre site internet et outils IA sur mesure pour les entreprises. Conçus autour de votre façon de travailler, et le code vous appartient.",
         "eyebrow": "Applications web et IA",
         "h1": "Applications web sur mesure et intégration IA",
         "intro": "Si votre entreprise tourne avec des tableurs, du copier-coller ou un outil qui ne convient pas tout à fait, je peux créer exactement ce dont vous avez besoin.",

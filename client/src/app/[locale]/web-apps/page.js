@@ -45,7 +45,7 @@ export default async function WebAppsPage({ params }) {
         </div>
         <div>
           <SectionHeading>{t('aiHeading')}</SectionHeading>
-          <CheckList columns={1} items={['b1', 'b2', 'b3'].map(b => s(`ai.${b}`))} />
+          <CheckList columns={1} items={['chat', 'b1', 'b2', 'b3'].map(b => s(`ai.${b}`))} />
           <p className="mt-6 text-xl text-brand-700 dark:text-brand-300">{s('ai.note')}</p>
         </div>
       </section>
